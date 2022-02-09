@@ -286,18 +286,19 @@ ul {
     margin-top: 12vh;
   }
   .services-tab {
-    padding: 0 24vw;
-    margin-left: 27px;
+    padding: 0 20vw;
   }
 
   .services-cont {
     transition: all 0.2s linear;
     margin-bottom: 10%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .services-cont:hover {
     font-weight: 600;
-    transform: scale(1.05);
     position: relative;
   }
 
@@ -342,7 +343,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    top: 1700px;
+    top: 1740px;
     height: 50px;
     width: 93%;
     background-color: var(--light-color);
