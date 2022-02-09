@@ -1,11 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import BannerHero from '../../Assets/banner_hero.mp4';
 import FrameHero from '../../Assets/frame-hero.svg';
+import ArrowDown from '../../Assets/arrow-down.svg';
 
 const Hero = () => {
+
+  const [big, setBig] = useState()
+
+  useEffect(() => {
+    if(window.innerWidth > 480){
+      setBig(true)
+    } else if(window.innerWidth <= 480){
+      setBig(false)
+    }
+  }, [setBig, window.innerWidth])
+  console.log(big)
+
   return (
     <div className='banner'>
-        <h1 className='uppercase title title-hero'>Digital <br></br>heritage</h1>
+        <h1 className='uppercase title title-hero'>Digital {big === true && <br></br>}heritage</h1>
         <p className='play txt small sub-title-hero' >digital preservation, restoration, and reconstruction</p>
         <div className='description-container'>
           <img src={FrameHero}/>

@@ -20,8 +20,7 @@ const NavBar = () => {
         setActive(e.target.value);
     }
 
-console.log(active)
-  return (
+    return (
     <div className='navbar py' onMouseOver={handleLight} onMouseLeave={handleDark}>
         <ul className='flex-around uppercase x-medium exo nav'>
             <Link to='/about'>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const AboutSection1 = () => {
 
     return (
-      <div className='flex-col-bet container about-section'>
+      <div className='flex-col-bet container about-section' >
         <p className='mb medium play'>In this digital era, digital recording, preservation, and reconstruction, constitutes an ever-increasing need to guarantee general public outreach and comprehension of cultural and natural heritage.</p>
         <div className='about-hero-img'></div>
         <div>
