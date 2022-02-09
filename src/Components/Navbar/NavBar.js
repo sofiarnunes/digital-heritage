@@ -23,7 +23,7 @@ const NavBar = () => {
 console.log(active)
   return (
     <div className='navbar py' onMouseOver={handleLight} onMouseLeave={handleDark}>
-        <ul className='flex-around uppercase x-medium exo nav' style={{padding: '0 30%'}}>
+        <ul className='flex-around uppercase x-medium exo nav'>
             <Link to='/about'>
                 <li value={1} onClick={handleCat} className={`cat ${active === 1 && 'active'}`}>
                 about
