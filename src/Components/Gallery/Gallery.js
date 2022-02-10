@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-const Gallery = () => {
+const Gallery = (props) => {
+
+  useEffect(() => {
+    props.home()
+  }, [props.home])
+
   return (
     <div>
         Gallery

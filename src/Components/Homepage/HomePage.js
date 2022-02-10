@@ -8,6 +8,7 @@ import Venus2 from '../../Assets/bg-home2.png';
 import ServicesSection from './ServicesSection';
 import ServicesSection1 from './ServicesSection1';
 import Footer from '../Footer/Footer';
+import Test from '../Test';
 
 console.log(window.innerWidth)
 
@@ -17,6 +18,7 @@ const HomePage = (props) => {
   const [img, setImg] = useState()
 
   useEffect(() => {
+    props.home()
     if(window.innerWidth > 1000){
       setImg(Venus)
     } else if(window.innerWidth <= 1000 && window.innerWidth > 481){
@@ -24,8 +26,9 @@ const HomePage = (props) => {
     } else if(window.innerWidth <= 480){
       setImg(Venus2)
     }
-  }, [setImg, window.innerWidth])
+  }, [setImg, window.innerWidth, props.home()])
 
+ 
   return (
   <div>
       <Hero/>

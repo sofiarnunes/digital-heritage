@@ -1,5 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {Suspense, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import {Canvas} from '@react-three/fiber';
+import {OrbitControls} from '@react-three/drei';
+import Venus from '../Venus';
+import Test from '../Test';
 
 const AboutSection = () => {
 
@@ -12,7 +16,7 @@ const AboutSection = () => {
               <button className='btn btn-light'>Contact us</button>
             </Link>
           </div>
-          <div className='about-hero-img'></div>
+          <div></div>
       </div>
     )
 };

@@ -41,6 +41,12 @@ ul {
     padding: 0 30%;
   }
 
+  .canvasVenus {
+    height: 140vh;
+    width: 500px;
+    position: relative;
+  }
+
   /* HOME PAGE */
   .title-hero {
     position: absolute;
@@ -250,7 +256,7 @@ ul {
 
   .about-section {
     width: 65%;
-    height: 70vh;
+    height: 80vh;
     z-index: 100;
     margin-bottom: 10vh;
   }
