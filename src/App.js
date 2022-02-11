@@ -53,11 +53,11 @@ function App() {
         {nav === 'row' ? <NavBar/> : <NavHamb/>}
         {
           (home === true && venus === 'side') ?
-          <div style={{position: 'absolute', zIndex: '1000', top:'33%', left: '50%'}}>
+          <div style={{position: 'absolute', zIndex: '1000', top:'33%', left: '50%', cursor:'move'}}>
             <Test/>
           </div> 
           : (home === true && venus === 'middle1') ?
-          <div style={{position: 'absolute', zIndex: '1000', top:'45%', left: '18%'}}>
+          <div style={{position: 'absolute', zIndex: '1000', top:'45%', left: '18%', cursor:'move'}}>
             <Test/>
           </div> 
           : (home === true && venus === 'middle2') && 

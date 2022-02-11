@@ -34,7 +34,6 @@ const NavHamb = () => {
             document.removeEventListener("mousedown", handler)
         }
     }, [])
-console.log(menu)
     
   return (
     <div>
