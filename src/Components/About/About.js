@@ -29,7 +29,13 @@ const About = (props) => {
           </div>
           <div className='about-text'>
             <h2 className='sub-title uppercase mb-2'>Digital heritage</h2>
-            <p className='about-p play x-medium'>I’m a Specialist in Virtual Restoration of cultural heritage, with a Master in Virtual Heritage. I also have a degree and a master’s degree in Conservation and Restoration, which proves to be a valuable asset in the manipulation, study, and understanding of cultural heritage objects in any digital project.</p>
+            {active === 1 ?
+            <p className='about-p play x-medium'>Digital Heritage was created by Rute Rebocho, in 2022. Our work aims for the digital preservation, restoration, and reconstruction of cultural and natural heritage. Digital Heritage responds to the pressing need for the digital preservation and dissemination of heritage and allow us to be transported in time and perceive cultural heritage in a way that cannot be attainable in its current physical state.</p>
+            : active === 2 ?
+            <p className='about-p play x-medium'>Rute is a specialist in Virtual Restoration of cultural heritage, with a Master in Virtual Heritage. She also has a degree and a master’s degree in Conservation and Restoration, which proves to be a valuable asset in the manipulation, study, and understanding of cultural heritage objects in any digital project.</p>
+            : active === 3 &&
+            <p className='about-p play x-medium'>Using the rare level of access provided to Rute, by the Calouste Gulbenkian Museum (Lisbon, Portugal), she further developed techniques for the digital capture, preservation, and reconstruction of invaluable artworks at a national and international level, generating new meaning for historical artifacts.</p>
+            }
           </div>
         </div>
       </div>
