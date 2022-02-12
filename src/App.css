@@ -64,6 +64,7 @@ ul {
     transform: translateY(-50%);
     left: 15.3%;
     z-index: 100;
+    letter-spacing: 1px;
   }
 
   .description-container {
@@ -144,7 +145,6 @@ ul {
   }
 
   .services-cont:hover {
-    font-weight: 600;
     transform: scale(1.05);
   }
 
@@ -167,11 +167,10 @@ ul {
     background-color: var(--light);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
     width: 332px;
-    position: fixed;
-    top: 430px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 100%;
   }
+
   /* FOOTER */
   .footer {
     position: relative;

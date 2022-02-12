@@ -47,6 +47,8 @@ const ServicesSection = () => {
     setPopup3(false);
   }
 
+  console.log(popup1)
+
   return (
     <div className='container services-section'>
       <div className='center'>
@@ -55,34 +57,43 @@ const ServicesSection = () => {
             <p className='underline click-txt'>show more</p>
           </Link>
       </div>
-      <div className='flex-bet flex-wrap services-tab'>
+      <div className='flex-bet'>
       <Link to='/services'>
-        <div className={popup2 === true || popup3 === true ? `services-cont disabled` : 'services-cont'}>
-          <div className='services-container'> 
+        <div className='services-cont'>
+          <div className={popup2 === true || popup3 === true ? `services-container disabled` : 'services-container'}> 
             <img className='services-img' src={service1} onMouseOver={handleServiceOne} onMouseLeave={handleLeaveOne}/>
           </div>
-          <p className='small center mt-1'>Virtual Restoration and Reconstruction</p>
+          <div>
+            <p className='center'>Virtual Restoration and Reconstruction</p>
+          </div>
           {popup1 === true && <PopUp text='Virtual restoration and reconstruction allow you to be transported through time and cultures.'/>}
         </div>
       </Link>
+
       <Link to='/services'>
-        <div className={popup1 === true || popup3 === true ? `services-cont disabled` : 'services-cont'}>
-          <div className='services-container'> 
-            <img className='services-img' src={service2} onMouseOver={handleServiceTwo} onMouseLeave={handleLeaveTwo}/>
+        <div className='services-cont'>
+          <div className={popup1 === true || popup3 === true ? `services-container disabled` : 'services-container'}> 
+          <img className='services-img' src={service2} onMouseOver={handleServiceTwo} onMouseLeave={handleLeaveTwo}/>
           </div>
-          <p className='small center mt-1'>Virtual Restoration and Reconstruction</p>
+          <div>
+            <p className='center'>Virtual Restoration and Reconstruction</p>
+          </div>
           {popup2 === true && <PopUp text='Digital photogrammetry and 3D modelling create accurate and photorealistic high-resolution 3D documentation.'/>}
         </div>
       </Link>
+
       <Link to='/services'>
-        <div  className={popup1 === true || popup2 === true ? `services-cont disabled` : 'services-cont'}>
-          <div className='services-container'> 
+        <div className='services-cont'>
+          <div className={popup1 === true || popup2 === true ? `services-container disabled` : 'services-container'}> 
             <img className='services-img' src={service3} onMouseOver={handleServiceThree} onMouseLeave={handleLeaveThree}/>
           </div>
-          <p className='small center mt-1'>Architectural Model</p>
+          <div>
+            <p className='center'>Architectural Model</p>
+          </div>
           {popup3 === true && <PopUp text='Architectural 3D models based on CAD plans, using photorealistic materials and naturalistic assets.'/>}
         </div>
       </Link>
+
       </div>
     </div>
   )
