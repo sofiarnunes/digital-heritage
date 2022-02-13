@@ -40,11 +40,9 @@ function App() {
 
   const homeTrue = () => {
     setHome(true)
-    console.log('hello')
   }
   const homeFalse = () => {
     setHome(false)
-    console.log('hello')
   }
 
   return (
@@ -53,11 +51,11 @@ function App() {
         {nav === 'row' ? <NavBar/> : <NavHamb/>}
         {
           (home === true && venus === 'side') ?
-          <div style={{position: 'absolute', zIndex: '1000', top:'33%', left: '50%', cursor:'move'}}>
-            <Test/>
+          <div style={{position: 'absolute', zIndex: '1000', top:'33%', left: '50%'}}>
+            <Test />
           </div> 
           : (home === true && venus === 'middle1') ?
-          <div style={{position: 'absolute', zIndex: '1000', top:'45%', left: '18%', cursor:'move'}}>
+          <div style={{position: 'absolute', zIndex: '1000', top:'45%', left: '18%'}}>
             <Test/>
           </div> 
           : (home === true && venus === 'middle2') && 

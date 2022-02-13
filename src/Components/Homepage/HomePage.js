@@ -10,9 +10,6 @@ import ServicesSection1 from './ServicesSection1';
 import Footer from '../Footer/Footer';
 import Test from '../Test';
 
-console.log(window.innerWidth)
-
-
 const HomePage = (props) => {
 
   const [img, setImg] = useState()

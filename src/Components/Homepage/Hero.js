@@ -14,7 +14,6 @@ const Hero = () => {
       setBig(false)
     }
   }, [setBig, window.innerWidth])
-  console.log(big)
 
   return (
     <div className='banner'>
