@@ -45,7 +45,7 @@ const About = (props) => {
 
       return(
         <div>
-      <div>
+      <div className='about-general'>
         {active === 1 ?
           <CSSTransition
             in={active === 1 && true}

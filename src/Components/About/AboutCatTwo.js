@@ -6,7 +6,7 @@ const AboutCatTwo = ({img, text, next}) => {
 
   return (
       <div>
-        <div className='flex-bet about-container'> 
+        <div className='about-container'> 
           <div className='about-image-cont'>
           <CSSTransition
               in={true}
