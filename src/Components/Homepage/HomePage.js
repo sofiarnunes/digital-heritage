@@ -8,7 +8,6 @@ import Venus2 from '../../Assets/bg-home2.png';
 import ServicesSection from './ServicesSection';
 import ServicesSection1 from './ServicesSection1';
 import Footer from '../Footer/Footer';
-import Test from '../Test';
 
 const HomePage = (props) => {
 

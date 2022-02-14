@@ -1,9 +1,5 @@
 import React, {Suspense, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import {Canvas} from '@react-three/fiber';
-import {OrbitControls} from '@react-three/drei';
-import Venus from '../Venus';
-import Test from '../Test';
 
 const AboutSection = () => {
 

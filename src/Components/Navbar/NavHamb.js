@@ -52,9 +52,9 @@ const NavHamb = () => {
                         about
                         </li>
                     </Link>
-                    <Link to='/gallery'>
+                    <Link to='/projects'>
                         <li className={`cat`}>
-                        gallery
+                        projects
                         </li>
                     </Link>
                     <Link to='/services'>

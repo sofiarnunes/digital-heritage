@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import BannerHero from '../../Assets/banner_hero.mp4';
 import FrameHero from '../../Assets/frame-hero.svg';
-import ArrowDown from '../../Assets/arrow-down.svg';
 
 const Hero = () => {
 

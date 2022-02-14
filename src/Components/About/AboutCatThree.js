@@ -1,6 +1,8 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import Arrow from '../../Assets/arrow-right-grey.svg';
+import Dots from '../../Assets/three-dots-three.svg';
+
 
 const AboutCatThree = ({img, text, next}) => {
 
@@ -16,6 +18,7 @@ const AboutCatThree = ({img, text, next}) => {
           >
               <img className='big-image' src={img}/>
           </CSSTransition>
+          <img className='dots' src={Dots}/>
           </div>
           <div className='about-text'>
             <h2 className='sub-title uppercase mb-2'>Digital heritage</h2>

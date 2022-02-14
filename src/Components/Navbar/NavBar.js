@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import darkLogo from '../../Assets/logo-dark.svg'
 import lightLogo from '../../Assets/logo-light.svg'
@@ -7,6 +7,13 @@ const NavBar = () => {
 
     const[logo, setLogo] = useState(darkLogo);
     const[active, setActive] = useState('');
+    const [projects, setProjects] = useState(false)
+
+    useEffect(() => {
+      if(window.innerWidth <= 1000){
+        setProjects(true)
+      }
+    }, [setProjects, window.innerWidth])
 
     const handleLight = () => {
         setLogo(lightLogo);
@@ -28,11 +35,20 @@ const NavBar = () => {
                 about
                 </li>
             </Link>
-            <Link to='/gallery'>
+            {projects === false ?
+            <Link to='/latest-projects'>
                 <li value={2} onClick={handleCat} className={`cat ${active === 2 && 'active'}`}>
-                gallery
+                projects
                 </li>
             </Link>
+            :
+            <Link to='/projects'>
+                <li value={2} onClick={handleCat} className={`cat ${active === 2 && 'active'}`}>
+                projects
+                </li>
+            </Link>
+        }
+
             <Link to='/home'>
                 <li value='home' onClick={handleCat}>
                     <img src={logo} alt='logo'/>
