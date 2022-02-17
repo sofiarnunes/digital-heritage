@@ -9,13 +9,14 @@ import HomePage from './Components/Homepage/HomePage';
 import Contact from './Components/Contact/Contact';
 import Services from './Components/Services/Services';
 import Projects from './Components/Projects/Projects';
-import LatestProjects from './Components/Projects/LatestProjects';
+// import LatestProjects from './Components/Projects/LatestProjects';
 import NavHamb from './Components/Navbar/NavHamb';
 import Test from './Components/Test';
 import Digitalization3DPrinting from './Components/Projects/Digitalization3DPrinting';
 import EgyptianLowRelief from './Components/Projects/EgyptianLowRelief';
-import RomanMuralPainting from './Components/Projects/RomanMuralPainting';
-import CasaGuerrero from './Components/Projects/CasaGuerrero';
+import SimpleFormat from './Components/Projects/SimpleFormat';
+import ComplexFormat from './Components/Projects/ComplexFormat';
+import SimpleFormatMobile from './Components/Projects/SimpleFormatMobile';
 
 function App() {
   const history = createBrowserHistory({});
@@ -75,11 +76,20 @@ function App() {
           <Route exact path="/home" element={<HomePage  history={history} home={homeTrue} />} />
           <Route exact path="/about" element={<About home={homeFalse}/>} />
           <Route exact path="/projects" element={<Projects home={homeFalse}/>} />
-          <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<Digitalization3DPrinting home={homeFalse}/>} />
-          <Route path="/projects/virtual-restoration-egyptian-low-relief" element={<EgyptianLowRelief home={homeFalse}/>} />
-          <Route path="/projects/virtual-restoration-roman-mural-painting" element={<RomanMuralPainting home={homeFalse}/>} />
-          <Route path="/projects/3D-modelling-casa-guerrero" element={<CasaGuerrero home={homeFalse}/>} />
-          <Route exact path="/latest-projects" element={<LatestProjects home={homeFalse}/>} />
+          <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<ComplexFormat home={homeFalse}/>} />
+          <Route path="/projects/virtual-restoration-egyptian-low-relief" element={<ComplexFormat home={homeFalse}/>} />
+          {nav === 'row' ?
+            <Route path="/projects/virtual-restoration-roman-mural-painting" element={<SimpleFormat home={homeFalse}/>} />
+            :
+            <Route path="/projects/virtual-restoration-roman-mural-painting" element={<SimpleFormatMobile home={homeFalse}/>} />
+          }
+          {nav === 'row' ?
+            <Route path="/projects/3D-modelling-casa-guerrero" element={<SimpleFormat home={homeFalse}/>} />
+            :
+            <Route path="/projects/3D-modelling-casa-guerrero" element={<SimpleFormatMobile home={homeFalse}/>} />
+          }
+
+          {/* <Route exact path="/latest-projects" element={<LatestProjects home={homeFalse}/>} /> */}
           <Route exact path="/services" element={<Services home={homeFalse}/>} />
           <Route exact path="/contact" element={<Contact home={homeFalse}/>} />
 

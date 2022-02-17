@@ -1,9 +1,27 @@
-import React from 'react';
 import CasaGuerrero from '../../Assets/img/projects/casa-guerrero-1.png';
+import CasaGuerrero2 from '../../Assets/img/projects/casa-guerrero-panel.jpg';
+import CasaGuerrero3 from '../../Assets/img/projects/guerrero-1.jpg';
+import CasaGuerrero4 from '../../Assets/img/projects/guerrero-2.jpg';
+import CasaGuerrero5 from '../../Assets/img/projects/guerrero-3.jpg';
+import CasaGuerrero6 from '../../Assets/img/projects/casa-guerrero-mob-1.jpg';
+import CasaGuerrero7 from '../../Assets/img/projects/casa-guerrero-mob-2.jpg';
+import CasaGuerrero8 from '../../Assets/img/projects/casa-guerrero-mob-3.jpg';
+import CasaGuerrero9 from '../../Assets/img/projects/casa-guerrero-mob-4.jpg';
+import CasaGuerrero10 from '../../Assets/img/projects/casa-guerrero-mob-5.jpg';
+import CasaGuerrero11 from '../../Assets/img/projects/casa-guerrero-mob-6.jpg';
 import RomanMural from '../../Assets/img/projects/roman-mural-1.png';
 import RomanMural2 from '../../Assets/img/projects/roman-mural-2.png';
+import RomanMural3 from '../../Assets/img/projects/mural-panel.jpg';
+import RomanMural4 from '../../Assets/img/projects/mural-1.gif';
+import RomanMural6 from '../../Assets/img/projects/mural-mob-1.jpg';
+import RomanMural7 from '../../Assets/img/projects/mural-mob-2.jpg';
+import RomanMural8 from '../../Assets/img/projects/mural-mob-3.jpg';
+import RomanMural9 from '../../Assets/img/projects/mural-mob-4.jpg';
+import RomanMural10 from '../../Assets/img/projects/mural-mob-5.jpg';
+import RomanMural11 from '../../Assets/img/projects/mural-mob-6.jpg';
 import LowRelief from '../../Assets/img/projects/low-relief-1.png';
 import LowRelief2 from '../../Assets/img/projects/low-relief-2.png';
+import LowRelief3 from '../../Assets/img/projects/relief-panel.jpg';
 
 
 const DataProjects = [
@@ -13,7 +31,7 @@ const DataProjects = [
         type: '3',
         format: 'extended',
         link: '/projects/digitization-3Dprinting-for-touch-collection',
-        date_begin: '2021',
+        date_begin: 'December 2021',
         date_end: 'present',
         img_1: LowRelief,
         img_2: LowRelief2,
@@ -32,11 +50,11 @@ const DataProjects = [
         link: '/projects/virtual-restoration-egyptian-low-relief',
         type: '1',
         format: 'extended',
-        date_begin: '2021',
-        date_end: '2021',
+        date_begin: 'September 2021',
+        date_end: 'November 2021',
         img_1: LowRelief,
         img_2: LowRelief2,
-        img_3: 'xpto',
+        img_3: LowRelief3,
         img_4: 'xpto',
         title_1: '3D model',
         description_1: 'This Egyptian low relief (300-250 B.C.), from the Calouste Gulbenkian Museum, is thought to be a once painted artist\'s study. A 3D model of the artwork was first created, using digital photogrammetry.',
@@ -51,12 +69,19 @@ const DataProjects = [
         type: '1',
         format: 'simple',
         link: '/projects/virtual-restoration-roman-mural-painting',
-        date_begin: '2021',
-        date_end: '2021',
+        date_begin: 'July 2021',
+        date_end: 'August 2021',
         img_1: RomanMural,
         img_2: RomanMural2,
-        img_3: 'xpto',
-        img_4: 'xpto',
+        img_3: RomanMural3,
+        img_4: RomanMural4,
+        img_5: RomanMural6,
+        img_7: RomanMural11,
+        img_8: RomanMural8,
+        img_9: RomanMural9,
+        img_10: RomanMural10,
+        img_11: RomanMural10,
+        img_12: RomanMural10,
         description: 'A thermopolium (hot-food outlet), covered in beautiful frescos, was recently found (2020) in the Alley of the Balconies, in Pompeii. The extensive distortions in the fresco, caused by the volcanic eruption, were digitally recovered, allowing a full perception of the image from thousands of years ago.',
     },
     {
@@ -65,13 +90,21 @@ const DataProjects = [
         type: '3',
         format: 'simple',
         link: '/projects/3D-modelling-casa-guerrero',
-        date_begin: '2021',
-        date_end: '2021',
+        date_begin: 'May 2021',
+        date_end: 'June 2022',
         img_1: CasaGuerrero,
         img_2: CasaGuerrero,
-        img_3: 'xpto',
-        img_4: 'xpto',
-        description_1: 'Using CAD plans from the Casa Guerrero, by architect Alberto Campo Baeza, in Cádiz, Spain, a 3D model of this architectural space was created. The surroundings were also considered in the creation of a photorealistic environment, with the modelling of water, trees and other plant elements.',
+        img_3: CasaGuerrero2,
+        img_4: CasaGuerrero3,
+        img_5: CasaGuerrero4,
+        img_6: CasaGuerrero5,
+        img_7: CasaGuerrero6,
+        img_8: CasaGuerrero7,
+        img_9: CasaGuerrero8,
+        img_10: CasaGuerrero9,
+        img_11: CasaGuerrero10,
+        img_12: CasaGuerrero11,
+        description: 'Using CAD plans from the Casa Guerrero, by architect Alberto Campo Baeza, in Cádiz, Spain, a 3D model of this architectural space was created. The surroundings were also considered in the creation of a photorealistic environment, with the modelling of water, trees and other plant elements.',
     },
 ]
 

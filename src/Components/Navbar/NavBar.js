@@ -7,13 +7,13 @@ const NavBar = () => {
 
     const[logo, setLogo] = useState(darkLogo);
     const[active, setActive] = useState('');
-    const [projects, setProjects] = useState(false)
+    // const [projects, setProjects] = useState(false)
 
-    useEffect(() => {
-      if(window.innerWidth <= 1000){
-        setProjects(true)
-      }
-    }, [setProjects, window.innerWidth])
+    // useEffect(() => {
+    //   if(window.innerWidth <= 1000){
+    //     setProjects(true)
+    //   }
+    // }, [setProjects, window.innerWidth])
 
     const handleLight = () => {
         setLogo(lightLogo);
@@ -35,19 +35,19 @@ const NavBar = () => {
                 about
                 </li>
             </Link>
-            {projects === false ?
+            {/* {projects === false ?
             <Link to='/latest-projects'>
                 <li value={2} onClick={handleCat} className={`cat ${active === 2 && 'active'}`}>
                 projects
                 </li>
             </Link>
-            :
+            : */}
             <Link to='/projects'>
                 <li value={2} onClick={handleCat} className={`cat ${active === 2 && 'active'}`}>
                 projects
                 </li>
             </Link>
-        }
+        {/* } */}
 
             <Link to='/home'>
                 <li value='home' onClick={handleCat}>
