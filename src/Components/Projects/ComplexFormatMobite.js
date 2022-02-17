@@ -12,12 +12,12 @@ const ComplexFormatMobile = () => {
   const [img, setImg] = useState(1);  
   
   useEffect(() => {
-    DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_3)));
-    setTimeout(() => {
-      DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_4)));
-    }, 5000);
+    DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_4)));
     setTimeout(() => {
       DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_5)));
+    }, 5000);
+    setTimeout(() => {
+      DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_6)));
     }, 10000);    
   }, [])
 
