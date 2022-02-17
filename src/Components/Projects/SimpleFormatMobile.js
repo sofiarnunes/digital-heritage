@@ -12,26 +12,19 @@ const SimpleFormatMobile = () => {
 
   useEffect(() => {
     DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_7)));
-    // DataProjects.map(item => setImg(item.img_7))
     setTimeout(() => {
-      // DataProjects.map(item => setImg(item.img_8))
       DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_8)));
     }, 4000);
     setTimeout(() => {
-      // DataProjects.map(item => setImg(item.img_9))
       DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_9)));
-
     }, 8000);
     setTimeout(() => {
-      // DataProjects.map(item => setImg(item.img_10))
       DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_10)));
     }, 12000);
     setTimeout(() => {
-      // DataProjects.map(item => setImg(item.img_11))
       DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_11)));
     }, 16000);
     setTimeout(() => {
-      // DataProjects.map(item => setImg(item.img_12))
       DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_12)));
     }, 20000);
     
@@ -48,19 +41,19 @@ const SimpleFormatMobile = () => {
         return(
           <>
           {item.name_1 === state.name &&
-            <div>
+            <div className='container-1 mt-2'>
               <h2 className='sub-title uppercase center large'>{item.name_1}</h2>
               <p className='mb-2 center x-small'>{item.date_begin} - {item.date_end}</p>
               <div className='mb-2 center'>
                 <img style={{width: '90%'}} src={img}/>
               </div>
-              <p style={{width: '90%', margin: '0 auto'}} className='center'>{item.description}</p>
+              <p style={{width: '90%', margin: '0 auto'}} className='left'>{item.description}</p>
             </div> 
           }
           </>
         ) 
       })}
-        <div className='footer-project'>
+        <div className='footer-project-comp'>
           <div className='border flex-around'>
             <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
             <Link to='/contact'>

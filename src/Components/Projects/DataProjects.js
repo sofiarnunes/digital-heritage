@@ -21,7 +21,9 @@ import RomanMural10 from '../../Assets/img/projects/mural-mob-5.jpg';
 import RomanMural11 from '../../Assets/img/projects/mural-mob-6.jpg';
 import LowRelief from '../../Assets/img/projects/low-relief-1.png';
 import LowRelief2 from '../../Assets/img/projects/low-relief-2.png';
-import LowRelief3 from '../../Assets/img/projects/relief-panel.jpg';
+import LowRelief3 from '../../Assets/img/projects/relief-mob-1.jpg';
+import LowRelief4 from '../../Assets/img/projects/relief-mob-2.jpg';
+import LowRelief5 from '../../Assets/img/projects/relief-mob-3.jpg';
 
 
 const DataProjects = [
@@ -35,8 +37,9 @@ const DataProjects = [
         date_end: 'present',
         img_1: LowRelief,
         img_2: LowRelief2,
-        img_3: 'xpto',
-        img_4: 'xpto',
+        img_3: LowRelief3,
+        img_4: LowRelief4,
+        img_5: LowRelief5,
         title_1: '3D digitization and modelling',
         description_1: 'A group of representative artworks from different collections from the Calouste Gulbenkian Museum were selected to create a 3D printed Touch Collection for visually impaired audiences. The 3D models of the artworks were first created through digital photogrammetry and 3D modelling.',
         title_2: 'Interactive models',
@@ -55,7 +58,8 @@ const DataProjects = [
         img_1: LowRelief,
         img_2: LowRelief2,
         img_3: LowRelief3,
-        img_4: 'xpto',
+        img_4: LowRelief4,
+        img_5: LowRelief5,
         title_1: '3D model',
         description_1: 'This Egyptian low relief (300-250 B.C.), from the Calouste Gulbenkian Museum, is thought to be a once painted artist\'s study. A 3D model of the artwork was first created, using digital photogrammetry.',
         title_2: 'Virtual Restoration',
@@ -76,6 +80,7 @@ const DataProjects = [
         img_3: RomanMural3,
         img_4: RomanMural4,
         img_5: RomanMural6,
+        img_6: RomanMural7,
         img_7: RomanMural11,
         img_8: RomanMural8,
         img_9: RomanMural9,
