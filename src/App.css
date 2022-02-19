@@ -417,11 +417,9 @@ ul {
   }
 
   .footer-projects {
-    position: relative;
-    top: 50px;
-    /* bottom: -60vh; */
-    /* left: 0; */
-    /* top: 110%; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
     height: 50px;
     width: 100%;
     background-color: var(--light-color);

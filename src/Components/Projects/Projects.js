@@ -31,7 +31,7 @@ const Gallery = (props) => {
       appear={true}
       timeout={500}
       classNames='fade'>
-      <div className='container-1' style={{height: '87vh'}}>
+      <div className='container-1' style={{height: '100%'}}>
         <img className='bg-projects' src={Bg}/>
         <div className='title-cont mt'>
           <h2 className='sub-title mb-2 uppercase'>All projects</h2>
@@ -76,14 +76,14 @@ const Gallery = (props) => {
             )
           })}
 
-<div className='footer-projects'>
-          <div className='border flex-around'>
-            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
-            <Link to='/contact'>
-              <img src={Message} alt='message'/>
-            </Link>
+          <div className='footer-projects'>
+            <div className='border flex-around'>
+              <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+              <Link to='/contact'>
+                <img src={Message} alt='message'/>
+              </Link>
+            </div>
           </div>
-        </div>
         </div>
 
       </div>
