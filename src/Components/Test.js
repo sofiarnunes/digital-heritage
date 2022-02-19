@@ -65,7 +65,7 @@ const Model = () => {
         :
       <div>
         <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '30vh', left: '45%'} : {position: 'absolute', top: '55vh', left: '50%', zIndex: '2000', opacity: '0.4', width: '90px'}}/>        {/* <p className='uppercase' style={hover === true ? {display: 'none', zIndex: '2000', position: 'absolute', top: '65vh', left: '40%'}: {zIndex: '2000', position: 'absolute', top: '65vh', left: '40%'}}>Click to manipulate</p> */}
-        <Canvas style={hover === true ? {height: '90vh', width:'500px',  position: 'relative'} : {height: '90vh', width:'500px',  position: 'relative', opacity: '0.7'}} >
+        <Canvas style={hover === true ? {height: '90vh', width:'450px',  position: 'relative', left:'4%'} : {height: '90vh', width:'450px',  position: 'relative', left: '4%', opacity: '0.7'}} >
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} />
