@@ -33,6 +33,13 @@ const SimpleFormat = () => {
           <>
           {item.name_1 === state.name &&
             <div className='container-1 mt-2'>
+              <div className='flex'>
+                <Link to='/projects'>
+                  <p className='x-small breadcrumb-last'>Projects</p>
+                </Link>
+                <p className='x-small ml-0 breadcrumb-last'>/</p>
+                <p className='x-small ml breadcrumb-current'>{item.name_1}</p>
+              </div>
               <h2 className='sub-title uppercase'>{item.name_1}</h2>
               <p className='mb-2'>{item.date_begin} - {item.date_end}</p>
               <div className='mb-2'>

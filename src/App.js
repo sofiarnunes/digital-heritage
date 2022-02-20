@@ -75,7 +75,6 @@ function App() {
           <Route exact path="/home" element={<HomePage  history={history} home={homeTrue} />} />
           <Route exact path="/about" element={<About home={homeFalse}/>} />
           <Route exact path="/projects" element={<Projects home={homeFalse}/>} />
-          <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<ComplexFormat home={homeFalse}/>} />
           {nav === 'row' ?
             <Route path="/projects/virtual-restoration-roman-mural-painting" element={<SimpleFormat home={homeFalse}/>} />
             :
@@ -90,6 +89,11 @@ function App() {
             <Route path="/projects/virtual-restoration-egyptian-low-relief" element={<ComplexFormat home={homeFalse}/>} />
             :
             <Route path="/projects/virtual-restoration-egyptian-low-relief" element={<ComplexFormatMobile home={homeFalse}/>} />
+          }
+          {nav === 'row' ? 
+            <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<ComplexFormat home={homeFalse}/>} />
+          :
+            <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<ComplexFormatMobile home={homeFalse}/>} />
           }
 
           {/* <Route exact path="/latest-projects" element={<LatestProjects home={homeFalse}/>} /> */}

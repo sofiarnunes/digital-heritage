@@ -26,6 +26,13 @@ const ComplexFormat = () => {
           <>
           {item.name_1 === state.name &&
             <div className='container-1 mt-2'>
+              <div className='flex'>
+                <Link to='/projects'>
+                  <p className='x-small breadcrumb-last'>Projects</p>
+                </Link>
+                <p className='x-small ml-0 breadcrumb-last'>/</p>
+                <p className='x-small ml breadcrumb-current'>{item.name_1}</p>
+              </div>
               <h2 className='sub-title uppercase'>{item.name_1}</h2>
               <p className='mb-2'>{item.date_begin} - {item.date_end}</p>
               <div className='mb-2'>
@@ -38,8 +45,8 @@ const ComplexFormat = () => {
               </ul>
               {active === 1 ?
                 <div className='project-grid'>
-                  <div className='grid-img1'></div>
-                  <div className='grid-img2'></div>
+                  <div className='grid-img1'><img src={item.v1}/></div>
+                  <div className='grid-img2'><img src={item.h1}/></div>
                   <p className='grid-txt-1'>{item.description_1}</p>
                 </div>
               : active === 2 ?
