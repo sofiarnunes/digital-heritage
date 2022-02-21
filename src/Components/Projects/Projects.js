@@ -45,36 +45,43 @@ const Gallery = (props) => {
             <img className='drop-arrow' src={Arrow}/>
           </div>
         </div>
-
-        <div className='all-projects'>
-          {DataProjects.map((item, index) => {
-            return(
-              <div className='project-size'>
-                {item.type === type ?
-                  <div onClick={() => goToComponent (item)} className='project-cat ml-0' key={index}>
-                    <div className='img-projects-cont'>
-                    <img className='img-projects' src={item.img_2}/>
-                    </div>
-                    <div>
-                      <p className='projects-title uppercase medium bold'>{item.name_1}</p>
-                      <p className='mb x-small'>{item.date_begin} - {item.date_end}</p>
-                    </div>
-                  </div>
-                : type === 'all' ?
-                  <div onClick={() => goToComponent (item)} className='project-cat ml-0' key={index}>
-                    <div className='img-projects-cont'>
-                    <img className='img-projects' src={item.img_2}/>
-                    </div>
-                    <div>
-                      <p className='projects-title uppercase medium bold'>{item.name_1}</p>
-                      <p className='mb x-small'>{item.date_begin} - {item.date_end}</p>
+        {type !== 'all' ?
+          <div className='all-projects'>
+            {DataProjects.filter(data => data.type === type).map((item, index) => {
+              return(
+                <div className='project-size' key={index}>
+                    <div onClick={() => goToComponent (item)} className='project-cat ml-0' key={index}>
+                      <div className='img-projects-cont'>
+                      <img className='img-projects' src={item.img_2}/>
+                      </div>
+                      <div>
+                        <p className='projects-title uppercase medium bold'>{item.name_1}</p>
+                        <p className='mb x-small'>{item.date_begin} - {item.date_end}</p>
+                      </div>
                     </div>
                   </div>
-                : null
-                }
-              </div>
-            )
-          })}
+                )
+              })}
+            </div>
+            :
+            <div className='all-projects'>
+            {DataProjects.map((item, index) => {
+              return(
+                <div className='project-size' key={index}>
+                    <div onClick={() => goToComponent (item)} className='project-cat ml-0' key={index}>
+                      <div className='img-projects-cont'>
+                      <img className='img-projects' src={item.img_2}/>
+                      </div>
+                      <div>
+                        <p className='projects-title uppercase medium bold'>{item.name_1}</p>
+                        <p className='mb x-small'>{item.date_begin} - {item.date_end}</p>
+                      </div>
+                    </div>
+                  </div>
+              )
+            })}
+          </div>
+      }
 
           <div className='footer-projects'>
             <div className='border flex-around'>
@@ -85,8 +92,6 @@ const Gallery = (props) => {
             </div>
           </div>
         </div>
-
-      </div>
     </CSSTransition>
   )
 };

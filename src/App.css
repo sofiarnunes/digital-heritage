@@ -1096,10 +1096,31 @@ ul {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: grey;
     height: 410px;
     width: 351px;
     overflow: hidden;
+  }
+
+  .grid-img1 img {
+    width: 100%;
+  }
+
+  .grid-img1 video {
+    height: 100%;
+    position: relative;
+    left: -30%;
+  }
+
+  .grid-img1 .relief {
+    position: relative;
+    top: -10%;
+  }
+
+  .grid-img1 .touch {
+    height: 100%;
+    width: 150%;
+    position: relative;
+    left: -20%;
   }
 
   .grid-img2 {
@@ -1107,9 +1128,31 @@ ul {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: grey;
     height: 205px;
     width: 390px;
+    overflow: hidden;
+  }
+
+  .grid-img2 img {
+    width: 100%;
+  }
+
+  .grid-img2 video {
+    width: 100%;
+    position: relative;
+    top: -10%;
+  }
+
+  .grid-img2 .relief {
+    height: 100%;
+    width: 500px;
+    position: relative;
+    left: -17%;
+  }
+
+  .grid-img2 .touch {
+    position: relative;
+    top: -30%;
   }
 
   .grid-txt-1 {
@@ -1124,11 +1167,9 @@ ul {
   }
 
   .footer-projects {
-    /* position: absolute; */
     z-index: 100;
-    /* top: -100%; */
-    bottom: -4%;
-    position: absolute;
+    bottom: -10px;
+    position: fixed;
     height: 50px;
     width: 95%;
     background-color: var(--light-color);
@@ -1767,10 +1808,11 @@ ul {
 
   .all-projects {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0 10px;
   }
 
   .project-size {
@@ -1829,10 +1871,30 @@ ul {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: grey;
     height: 410px;
     width: 321px;
     overflow: hidden;
+  }
+  .grid-img1 img {
+    height: 100%;
+  }
+
+  .grid-img1 video {
+    height: 100%;
+    position: relative;
+    left: -35%;
+  }
+
+  .grid-img1 .relief {
+    position: relative;
+    top: -5%;
+  }
+
+  .grid-img1 .touch {
+    height: 100%;
+    width: 150%;
+    position: relative;
+    left: -20%;
   }
 
   .grid-img2 {
@@ -1840,10 +1902,31 @@ ul {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: grey;
     height: 205px;
     width: 360px;
     overflow: hidden;
+  }
+
+  .grid-img2 img {
+    width: 100%;
+  }
+
+  .grid-img2 video {
+    width: 100%;
+    position: relative;
+    top: -10%;
+  }
+
+  .grid-img2 .relief {
+    height: 100%;
+    width: 500px;
+    position: relative;
+    left: -25%;
+  }
+
+  .grid-img2 .touch {
+    position: relative;
+    top: -5%;
   }
 
   .grid-txt-1 {
@@ -1859,8 +1942,8 @@ ul {
 
   .footer-projects {
     z-index: 100;
-    bottom: -4%;
-    position: absolute;
+    bottom: -10px;
+    position: fixed;
     height: 50px;
     width: 95%;
     background-color: var(--light-color);
@@ -2359,7 +2442,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    top: 1478px;
+    top: 1530px;
     height: 50px;
     width: 100%;
     background-color: var(--light-color);
@@ -2585,10 +2668,10 @@ ul {
   }
 
   .project-menu {
-    font-size: 12px !important;
-    width: 70% !important;
+    font-size: 10px !important;
+    width: 100vw !important;
     margin-bottom: 10% !important;
-    left: 40% !important;
+    left: 50% !important;
     transform: translateX(-50%);
   }
 
@@ -2597,15 +2680,39 @@ ul {
   }
 
   .grid-img1 {
-    background-color: grey;
     height: 150px;
     width: 85%;
+    overflow: hidden;
+  }
+  .grid-img1 img {
+    width: 100%;
+  }
+
+  .grid-img1 video {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+
+  .grid-img1 .relief {
+    position: relative;
+    top: 0;
+  }
+
+  .grid-img1 .touch {
+    width: 100%;
+    position: relative;
+    top: -15%;
   }
 
   .grid-img2 {
-    background-color: grey;
     height: 400px;
     width: 85%;
+    overflow: hidden;
+  }
+
+  .grid-img2 img {
+    width: 100%;
   }
 
   .grid-txt-1 {
@@ -2615,6 +2722,25 @@ ul {
     top: 20%;
     width: 85%;
     margin: 5% 0;
+  }
+
+  .grid-img2 video {
+    height: 100%;
+    position: relative;
+    left: -20%;
+  }
+
+  .grid-img2 .relief {
+    position: relative;
+    top: -10%;
+  }
+
+  .grid-img2 .touch {
+    height: 100%;
+    width: 200%;
+    position: relative;
+    top: 0;
+    left: -30%;
   }
 
   .footer-projects {

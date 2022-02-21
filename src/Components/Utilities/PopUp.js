@@ -5,7 +5,7 @@ const PopUp = ({text}) => {
   console.log(text)
 
   return (
-    <div className='popup'>
+    <div className='popup' >
         <p className='play' style={{fontSize:'15px'}}>{text}</p>
     </div>
   )
