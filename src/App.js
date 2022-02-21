@@ -8,6 +8,7 @@ import About from './Components/About/About';
 import HomePage from './Components/Homepage/HomePage';
 import Contact from './Components/Contact/Contact';
 import Services from './Components/Services/Services';
+import Services1 from './Components/Services/Services1';
 import Projects from './Components/Projects/Projects';
 // import LatestProjects from './Components/Projects/LatestProjects';
 import NavHamb from './Components/Navbar/NavHamb';
@@ -97,7 +98,11 @@ function App() {
           }
 
           {/* <Route exact path="/latest-projects" element={<LatestProjects home={homeFalse}/>} /> */}
+          {venus === 'middle1' || venus === 'middle2'?
+          <Route exact path="/services" element={<Services1 home={homeFalse}/>} />  
+          :
           <Route exact path="/services" element={<Services home={homeFalse}/>} />
+          }
           <Route exact path="/contact" element={<Contact home={homeFalse}/>} />
 
         </Routes>

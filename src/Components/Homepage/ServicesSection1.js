@@ -4,6 +4,7 @@ import RestauroImg from '../../Assets/img/services/restauro-img.png';
 import RestauroGif from '../../Assets/img/services/restauro-gif.gif';
 import HouseClosed from '../../Assets/img/services/arquite-img1.png';
 import HouseOpened from '../../Assets/img/services/arquite-img2.png';
+import Box from '../../Assets/img/services/collection1.png';
 import PopUp from '../Utilities/PopUp';
 
 
@@ -11,7 +12,7 @@ const ServicesSection1 = () => {
 
   const [service1, setService1] = useState(RestauroImg);
   const [popup1, setPopup1] = useState(false);
-  const [service2, setService2] = useState(RestauroImg);
+  const [service2, setService2] = useState(Box);
   const [popup2, setPopup2] = useState(false);
   const [service3, setService3] = useState(HouseClosed);
   const [popup3, setPopup3] = useState(false);
@@ -23,7 +24,7 @@ const ServicesSection1 = () => {
     setService1(RestauroGif);
     setPopup1(true);
     if(popup1 === true){
-      navigate('/services');    
+      navigate('/services', {state:  1 });    
     }
   }
 
@@ -33,15 +34,15 @@ const ServicesSection1 = () => {
   }
 
   const handleServiceTwo = () => {
-    setService2(RestauroGif);
+    setService2(Box);
     setPopup2(true);
     if(popup2 === true){
-      navigate('/services');    
+      navigate('/services', {state:  2 });    
     }
   }
 
   const handleLeaveTwo = () => {
-    setService2(RestauroImg);
+    setService2(Box);
     setPopup2(false);
   }
 
@@ -49,7 +50,7 @@ const ServicesSection1 = () => {
     setService3(HouseOpened);
     setPopup3(true);
     if(popup3 === true){
-      navigate('/services');    
+      navigate('/services', {state:  3 });    
     }
   }
 
@@ -57,6 +58,7 @@ const ServicesSection1 = () => {
     setService3(HouseClosed);
     setPopup3(false);
   }
+
 
   return (
     <div className='container services-section'>
@@ -78,7 +80,7 @@ const ServicesSection1 = () => {
           <div className='services-container'> 
             <img className='services-img' src={service2} onClick={handleServiceTwo} onMouseLeave={handleLeaveTwo}/>
           </div>
-          <p className='x-medium center mt-1'>Virtual Restoration and Reconstruction</p>
+          <p className='x-medium center mt-1'>Digitalization of objects and collections</p>
           {popup2 === true && <PopUp text='Digital photogrammetry and 3D modelling create accurate and photorealistic high-resolution 3D documentation.'/>}
         </div>
         <div className={popup1 === true || popup2 === true ? `services-cont disabled` : 'services-cont'}>

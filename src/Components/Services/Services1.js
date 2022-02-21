@@ -33,11 +33,11 @@ const Services = (props) => {
 
   return (
     <div>
-      <div className='container services-page'>
+      <div className='container-1 services-page'>
         <div className='center'>
-          <h2 className='uppercase catNew mb-2 mt'>Digital heritage services</h2>
+          <h2 className='uppercase catNew mb-2 mt bold'>Digital heritage services</h2>
         </div>
-        <div className='flex-bet flex-wrap'>
+        <div className='flex-wrap' style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <div className={clicked === 1 ? 'services-page-cont service-active' : 'services-page-cont'} onClick={() => handleShow(1)}>
             <div className={clicked === 2 || clicked === 3 ? `services-container disabled-1` : 'services-container'}> 
               <img className='services-img' src={RestauroImg} />
@@ -61,23 +61,24 @@ const Services = (props) => {
               <img className='services-img' src={HouseClosed}/>
             </div>
             <div style={{marginTop: '20px'}}>
-              <p className='center medium'>Architectural Model</p>
+              <p className='center medium'>Architectural Models</p>
             </div>
           </div>
         </div>
       </div>
       {clicked === 1 ?
-          <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '75vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
-            <div className='services-grid'>
+          <div ref={scrollRef} className='center service-box1 container-1'>
+            <h4 className='x-large mb-3 mt-3'>Virtual Restoration and Reconstruction</h4>
+            <div className='services-grid mb-3' style={{}}>
               <div className='services-grid-1'></div>
               <div className='services-grid-2'></div>
               <div className='services-grid-3'></div>
               <div className='services-grid-4'></div>
             </div>
-            <div className='medium' style={{width: '45%'}}>
-              <p className='mb'>We explore conservation and restoration methodologies through a range of digital tools to give new meaning to heritage objects.</p>
-              <p className='mb'>These digital projects support the conservation, preservation, and fuller comprehension of cultural heritage through the:</p>
-              <ol className='ml'>
+            <div className='medium txt-left'>
+              <p className='mb-2 regular'>We explore conservation and restoration methodologies through a range of digital tools to give new meaning to heritage objects.</p>
+              <p className='mb-2 regular'>These digital projects support the conservation, preservation, and fuller comprehension of cultural heritage through the:</p>
+              <ol className='ml regular'>
                 <li>planning and simulation of physical restorations;</li>
                 <li>rebuilding of permanently lost heritage;</li>
                 <li>total or partial reconstruction of an artifact.</li>
@@ -85,34 +86,36 @@ const Services = (props) => {
             </div>
           </div>
           : clicked === 2 ?
-            <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '77vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
-              <div className='services-grid'>
-                <div className='services-grid-1'></div>
-                <div className='services-grid-2'></div>
-                <div className='services-grid-3'></div>
-                <div className='services-grid-4'></div>
-              </div>
-              <div className='medium' style={{width: '45%'}}>
-                <p className='mb'>Using digital photogrammetry and 3D modelling, we create accurate and photorealistic high-resolution 3D documentation that best fits your needs, guaranteeing a fluid and correct visualization.</p>
-                <p className='mb'>From models for online dissemination, to digital preservation or even for study and research, we assure professional results in capturing a wide range of objects of different nature.</p>
-              </div>
-            </div>
-        : clicked === 3 && 
-          <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '77vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
-            <div className='services-grid'>
+          <div ref={scrollRef} className='center service-box2'>
+            <h4 className='x-large mb-3 mt-3'>Digitalization of objects and collections</h4>
+            <div className='services-grid mb-3' style={{}}>
               <div className='services-grid-1'></div>
               <div className='services-grid-2'></div>
               <div className='services-grid-3'></div>
               <div className='services-grid-4'></div>
             </div>
-            <div className='medium' style={{width: '45%'}}>
-              <p className='mb'>We create architectural 3D models based on CAD plans, using photorealistic materials and naturalistic assets that bring the model to life.</p>
-              <p className='mb'>From representing contemporary buildings to reconstructing historic infrastructures, we assure professional results in realistically capturing architectural structures and their surroundings.</p>
+            <div className='medium txt-left'>
+              <p className='mb-2 regular'>Using digital photogrammetry and 3D modelling, we create accurate and photorealistic high-resolution 3D documentation that best fits your needs, guaranteeing a fluid and correct visualization.</p>
+              <p className='mb-2 regular'>From models for online dissemination, to digital preservation or even for study and research, we assure professional results in capturing a wide range of objects of different nature.</p>
             </div>
           </div>
+        : clicked === 3 && 
+        <div ref={scrollRef} className='center service-box3'>
+          <h4 className='x-large mb-3 mt-3'>Architectural Models</h4>
+          <div className='services-grid mb-3' style={{}}>
+            <div className='services-grid-1'></div>
+            <div className='services-grid-2'></div>
+            <div className='services-grid-3'></div>
+            <div className='services-grid-4'></div>
+          </div>
+          <div className='medium txt-left'>
+            <p className='mb-2 regular'>We create architectural 3D models based on CAD plans, using photorealistic materials and naturalistic assets that bring the model to life.</p>
+            <p className='mb-2 regular'>From representing contemporary buildings to reconstructing historic infrastructures, we assure professional results in realistically capturing architectural structures and their surroundings.</p>
+          </div>
+        </div>
       }
       
-      <div className='footer-projects'>
+      <div className='footer-services'>
         <div className='border flex-around'>
           <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
           <Link to='/contact'>

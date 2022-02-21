@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import RestauroImg from '../../Assets/img/services/restauro-img.png';
 import RestauroGif from '../../Assets/img/services/restauro-gif.gif';
 import HouseClosed from '../../Assets/img/services/arquite-img1.png';
 import HouseOpened from '../../Assets/img/services/arquite-img2.png';
+import Box from '../../Assets/img/services/collection1.png';
 import PopUp from '../Utilities/PopUp';
 
 const ServicesSection = () => {
 
   const [service1, setService1] = useState(RestauroImg);
   const [popup1, setPopup1] = useState(false);
-  const [service2, setService2] = useState(RestauroImg);
+  const [service2, setService2] = useState(Box);
   const [popup2, setPopup2] = useState(false);
   const [service3, setService3] = useState(HouseClosed);
   const [popup3, setPopup3] = useState(false);
@@ -27,12 +28,12 @@ const ServicesSection = () => {
   }
 
   const handleServiceTwo = () => {
-    setService2(RestauroGif);
+    setService2(Box);
     setPopup2(true);
   }
 
   const handleLeaveTwo = () => {
-    setService2(RestauroImg);
+    setService2(Box);
     setPopup2(false);
   }
 
@@ -47,7 +48,17 @@ const ServicesSection = () => {
     setPopup3(false);
   }
 
-  console.log(popup1)
+  const navigate = useNavigate();
+
+  const goToServices1 = () => {
+    navigate('/services', {state:  1 });    
+  }
+  const goToServices2 = () => {
+    navigate('/services', {state:  2 });    
+  }
+  const goToServices3 = () => {
+    navigate('/services', {state:  3 });    
+  }
 
   return (
     <div className='container services-section'>
@@ -58,8 +69,7 @@ const ServicesSection = () => {
           </Link>
       </div>
       <div className='flex-bet'>
-      <Link to='/services'>
-        <div className='services-cont'>
+        <div className='services-cont' onClick={goToServices1}>
           <div className={popup2 === true || popup3 === true ? `services-container disabled` : 'services-container'}> 
             <img className='services-img' src={service1} onMouseOver={handleServiceOne} onMouseLeave={handleLeaveOne}/>
           </div>
@@ -68,22 +78,18 @@ const ServicesSection = () => {
           </div>
           {popup1 === true && <PopUp text='Virtual restoration and reconstruction allow you to be transported through time and cultures.'/>}
         </div>
-      </Link>
 
-      <Link to='/services'>
-        <div className='services-cont'>
+        <div className='services-cont'onClick={goToServices2}> 
           <div className={popup1 === true || popup3 === true ? `services-container disabled` : 'services-container'}> 
-          <img className='services-img' src={service2} onMouseOver={handleServiceTwo} onMouseLeave={handleLeaveTwo}/>
+          <img className='services-img' src={service2} onMouseOver={handleServiceTwo} onMouseLeave={handleLeaveTwo} />
           </div>
           <div>
-            <p className='center'>Virtual Restoration and Reconstruction</p>
+            <p className='center'>Digitalization of objects and collections</p>
           </div>
           {popup2 === true && <PopUp text='Digital photogrammetry and 3D modelling create accurate and photorealistic high-resolution 3D documentation.'/>}
         </div>
-      </Link>
 
-      <Link to='/services'>
-        <div className='services-cont'>
+        <div className='services-cont' onClick={goToServices3}>
           <div className={popup1 === true || popup2 === true ? `services-container disabled` : 'services-container'}> 
             <img className='services-img' src={service3} onMouseOver={handleServiceThree} onMouseLeave={handleLeaveThree}/>
           </div>
@@ -92,7 +98,6 @@ const ServicesSection = () => {
           </div>
           {popup3 === true && <PopUp text='Architectural 3D models based on CAD plans, using photorealistic materials and naturalistic assets.'/>}
         </div>
-      </Link>
 
       </div>
     </div>
