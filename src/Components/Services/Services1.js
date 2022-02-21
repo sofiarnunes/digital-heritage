@@ -5,6 +5,7 @@ import HouseClosed from '../../Assets/img/services/arquite-img1.png';
 import Box from '../../Assets/img/services/collection1.png';
 import LinkedIn from '../../Assets/linkedin.svg';
 import Message from '../../Assets/message.svg';
+import { CSSTransition } from 'react-transition-group';
 
 const Services = (props) => {
 
@@ -32,6 +33,11 @@ const Services = (props) => {
   }
 
   return (
+    <CSSTransition
+    in={true}
+    appear={true}
+    timeout={500}
+    classNames='fade'>
     <div>
       <div className='container-1 services-page'>
         <div className='center'>
@@ -124,6 +130,7 @@ const Services = (props) => {
         </div>
       </div>
     </div>
+    </CSSTransition>
   )
 };
 
