@@ -27,11 +27,19 @@ import LowRelief5 from '../../Assets/img/projects/relief-mob-2.jpg';
 import LowRelief6 from '../../Assets/img/projects/relief-mob-3.jpg';
 import LowReliefv1 from '../../Assets/img/projects/Complex/Relief/relief-v1.jpg';
 import LowReliefh1 from '../../Assets/img/projects/Complex/Relief/relief-h1.jpg';
+import LowReliefv2 from '../../Assets/img/projects/Complex/Relief/relief-v2.mp4';
+import LowReliefh2 from '../../Assets/img/projects/Complex/Relief/relief-h2.mp4';
+import LowReliefv3 from '../../Assets/img/projects/Complex/Relief/relief-v3.jpg';
+import LowReliefh3 from '../../Assets/img/projects/Complex/Relief/relief-h3.jpg';
 import TouchCollection1 from '../../Assets/img/projects/collection-1.jpg';
 import TouchCollection2 from '../../Assets/img/projects/collection-panel.jpg';
 import TouchCollection3 from '../../Assets/img/projects/collection-mob-1.jpg';
 import TouchCollection4 from '../../Assets/img/projects/collection-mob-2.jpg';
 import TouchCollection5 from '../../Assets/img/projects/collection-mob-3.jpg';
+import Touchv1 from '../../Assets/img/projects/Complex/Collection/collection-v1.JPG';
+import Touchh1 from '../../Assets/img/projects/Complex/Collection/collection-h1.jpeg';
+import Touchv3 from '../../Assets/img/projects/Complex/Collection/collection-v3.JPG';
+import Touchh3 from '../../Assets/img/projects/Complex/Collection/collection-h3.mp4';
 
 
 const DataProjects = [
@@ -48,6 +56,10 @@ const DataProjects = [
         img_4: TouchCollection3,
         img_5: TouchCollection4,
         img_6: TouchCollection5,
+        v1: Touchv1,
+        h1: Touchh1,
+        v3: Touchv3,
+        h3: Touchh3,
         title_1: '3D digitization and modelling',
         description_1: 'A group of representative artworks from different collections from the Calouste Gulbenkian Museum were selected to create a 3D printed Touch Collection for visually impaired audiences. The 3D models of the artworks were first created through digital photogrammetry and 3D modelling.',
         title_2: 'Interactive models',
@@ -71,6 +83,10 @@ const DataProjects = [
         img_6: LowRelief6,
         v1: LowReliefv1,
         h1: LowReliefh1,
+        v2: LowReliefv2,
+        h2: LowReliefh2,
+        v3: LowReliefv3,
+        h3: LowReliefh3,
         title_1: '3D model',
         description_1: 'This Egyptian low relief (300-250 B.C.), from the Calouste Gulbenkian Museum, is thought to be a once painted artist\'s study. A 3D model of the artwork was first created, using digital photogrammetry.',
         title_2: 'Virtual Restoration',

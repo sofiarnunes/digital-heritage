@@ -6,6 +6,18 @@ import Box from '../../Assets/img/services/collection1.png';
 import LinkedIn from '../../Assets/linkedin.svg';
 import Message from '../../Assets/message.svg';
 import { CSSTransition } from 'react-transition-group';
+import Restoration1 from '../../Assets/img/services/restoration-1.jpg';
+import Restoration2 from '../../Assets/img/services/restoration-2.jpg';
+import Restoration3 from '../../Assets/img/services/restoration-3.jpg';
+import Restoration4 from '../../Assets/img/services/restoration-4.jpg';
+import Digitalization1 from '../../Assets/img/services/digitalization-1.jpg';
+import Digitalization2 from '../../Assets/img/services/digitalization-2.jpg';
+import Digitalization3 from '../../Assets/img/services/digitalization-3.jpg';
+import Digitalization4 from '../../Assets/img/services/digitalization-4.jpg';
+import Architecture1 from '../../Assets/img/services/architecture_1.jpg';
+import Architecture2 from '../../Assets/img/services/architecture_2.jpg';
+import Architecture3 from '../../Assets/img/services/architecture_3.jpg';
+import Architecture4 from '../../Assets/img/services/architecture_4.jpg';
 
 const Services = (props) => {
 
@@ -75,11 +87,11 @@ const Services = (props) => {
       {clicked === 1 ?
           <div ref={scrollRef} className='center service-box1 container-1'>
             <h4 className='x-large mb-3 mt-3'>Virtual Restoration and Reconstruction</h4>
-            <div className='services-grid mb-3' style={{}}>
-              <div className='services-grid-1'></div>
-              <div className='services-grid-2'></div>
-              <div className='services-grid-3'></div>
-              <div className='services-grid-4'></div>
+            <div className='services-grid mb-3'>
+              <div className='services-grid-1'><img src={Restoration1}/></div>
+              <div className='services-grid-2'><img src={Restoration2}/></div>
+              <div className='services-grid-3'><img src={Restoration3}/></div>
+              <div className='services-grid-4'><img src={Restoration4}/></div>
             </div>
             <div className='medium txt-left'>
               <p className='mb-2 regular'>We explore conservation and restoration methodologies through a range of digital tools to give new meaning to heritage objects.</p>
@@ -94,11 +106,11 @@ const Services = (props) => {
           : clicked === 2 ?
           <div ref={scrollRef} className='center service-box2'>
             <h4 className='x-large mb-3 mt-3'>Digitalization of objects and collections</h4>
-            <div className='services-grid mb-3' style={{}}>
-              <div className='services-grid-1'></div>
-              <div className='services-grid-2'></div>
-              <div className='services-grid-3'></div>
-              <div className='services-grid-4'></div>
+            <div className='services-grid mb-3'>
+              <div className='services-grid-1'><img src={Digitalization1}/></div>
+              <div className='services-grid-2'><img src={Digitalization2}/></div>
+              <div className='services-grid-3'><img src={Digitalization3}/></div>
+              <div className='services-grid-4'><img src={Digitalization4}/></div>
             </div>
             <div className='medium txt-left'>
               <p className='mb-2 regular'>Using digital photogrammetry and 3D modelling, we create accurate and photorealistic high-resolution 3D documentation that best fits your needs, guaranteeing a fluid and correct visualization.</p>
@@ -108,11 +120,11 @@ const Services = (props) => {
         : clicked === 3 && 
         <div ref={scrollRef} className='center service-box3'>
           <h4 className='x-large mb-3 mt-3'>Architectural Models</h4>
-          <div className='services-grid mb-3' style={{}}>
-            <div className='services-grid-1'></div>
-            <div className='services-grid-2'></div>
-            <div className='services-grid-3'></div>
-            <div className='services-grid-4'></div>
+          <div className='services-grid mb-3'>
+            <div className='services-grid-1'><img src={Architecture1}/></div>
+            <div className='services-grid-2'><img src={Architecture2}/></div>
+            <div className='services-grid-3'><img src={Architecture3}/></div>
+            <div className='services-grid-4'><img src={Architecture4}/></div>
           </div>
           <div className='medium txt-left'>
             <p className='mb-2 regular'>We create architectural 3D models based on CAD plans, using photorealistic materials and naturalistic assets that bring the model to life.</p>

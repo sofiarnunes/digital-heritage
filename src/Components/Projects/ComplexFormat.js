@@ -43,24 +43,55 @@ const ComplexFormat = () => {
                 <li onClick={handleChange} value={2} className={active === 2 && `project-menu-active`}>{item.title_2}</li>
                 <li onClick={handleChange} value={3} className={active === 3 && `project-menu-active`}>{item.title_3}</li>
               </ul>
-              {active === 1 ?
+              {active === 1 && item.name_1 === 'touch collection' ?
+                <div className='project-grid'>
+                  <div className='grid-img1'><img className='touch' src={item.v1}/></div>
+                  <div className='grid-img2'><img className='touch' src={item.h1}/></div>
+                  <p className='grid-txt-1'>{item.description_1}</p>
+                </div>
+              : active === 1 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
                 <div className='project-grid'>
                   <div className='grid-img1'><img src={item.v1}/></div>
                   <div className='grid-img2'><img src={item.h1}/></div>
                   <p className='grid-txt-1'>{item.description_1}</p>
                 </div>
-              : active === 2 ?
+              : active === 2 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
               <div className='project-grid'>
-                <div className='grid-img1'></div>
-                <div className='grid-img2'></div>
+                <div className='grid-img1'>
+                  <video autoPlay loop muted>
+                    <source src={item.v2} type="video/mp4"/>
+                  </video>
+                </div>
+                <div className='grid-img2'>
+                  <video autoPlay loop muted>
+                    <source src={item.h2} type="video/mp4"/>
+                  </video>
+                </div> 
                 <p className='grid-txt-1'>{item.description_2}</p>
               </div>
-              :
+              : active === 2 && item.name_1 === 'touch collection' ?
               <div className='project-grid'>
-                <div className='grid-img1'></div>
-                <div className='grid-img2'></div>
+                  <div className='grid-img1'><img className='touch' src={item.v1}/></div>
+                  <div className='grid-img2'><img className='touch' src={item.h1}/></div>
+                <p className='grid-txt-1'>{item.description_2}</p>
+              </div>
+              : active === 3 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
+              <div className='project-grid'>
+                <div className='grid-img1'><img className='relief' src={item.v3}/></div>
+                <div className='grid-img2'><img className='relief' src={item.h3}/></div>
                 <p className='grid-txt-1'>{item.description_3}</p>
               </div>
+              : active === 3 && item.name_1 === 'touch collection' ?
+              <div className='project-grid'>
+                <div className='grid-img1'><img src={item.v3}/></div>
+                <div className='grid-img2'>
+                  <video autoPlay loop muted>
+                    <source src={item.h3} type="video/mp4"/>
+                  </video>
+                </div>
+                <p className='grid-txt-1'>{item.description_3}</p>
+              </div>
+              : null
             }  
             </div> 
           }

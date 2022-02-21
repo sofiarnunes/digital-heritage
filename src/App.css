@@ -390,7 +390,6 @@ ul {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: grey;
     height: 450px;
     width: 411px;
     overflow: hidden;
@@ -400,12 +399,29 @@ ul {
     width: 100%;
   }
 
+  .grid-img1 video {
+    height: 100%;
+    position: relative;
+    left: -25%;
+  }
+
+  .grid-img1 .relief {
+    position: relative;
+    top: -14%;
+  }
+
+  .grid-img1 .touch {
+    height: 100%;
+    width: 150%;
+    position: relative;
+    left: -20%;
+  }
+
   .grid-img2 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: grey;
     height: 255px;
     width: 700px;
     overflow: hidden;
@@ -413,6 +429,21 @@ ul {
 
   .grid-img2 img {
     width: 100%;
+  }
+
+  .grid-img2 video {
+    width: 100%;
+    position: relative;
+    top: -10%;
+  }
+
+  .grid-img2 .relief {
+    height: 100%;
+  }
+
+  .grid-img2 .touch {
+    position: relative;
+    top: -30%;
   }
 
   .grid-txt-1 {
@@ -509,40 +540,63 @@ ul {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: grey;
     height: 152px;
     width: 184px;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-1 img {
+    width: 100%;
+    position: absolute;
+  }
+
   .services-grid-2 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-color: grey;
-    height: 100%x;
+    height: 100%;
     width: 184px;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-2 img {
+    height: 100%;
+    position: absolute;
+  }
+
   .services-grid-3 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: grey;
     height: 100%;
     width: 184px;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-3 img {
+    height: 100%;
+    position: absolute;
+  }
+
   .services-grid-4 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color: grey;
     height: 152px;
     width: 184px;
     overflow: hidden;
+    position: relative;
+  }
+
+  .services-grid-4 img {
+    width: 100%;
+    position: absolute;
   }
 
   /* CONTACT */
@@ -1169,21 +1223,33 @@ ul {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: grey;
     height: 152px;
     width: 184px;
     overflow: hidden;
+    position: relative;
+  }
+  .services-grid-1 img {
+    width: 100%;
+    position: absolute;
+    left: 0;
   }
   .services-grid-2 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-color: grey;
-    height: 100%x;
+    height: 100%;
     width: 184px;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-2 img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+
   .services-grid-3 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1193,7 +1259,15 @@ ul {
     height: 100%;
     width: 184px;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-3 img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+
   .services-grid-4 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1203,6 +1277,13 @@ ul {
     height: 152px;
     width: 184px;
     overflow: hidden;
+    position: relative;
+  }
+
+  .services-grid-4 img {
+    width: 100%;
+    position: absolute;
+    left: 0;
   }
 
   .footer-services {
@@ -1876,7 +1957,15 @@ ul {
     height: 152px;
     width: 184px;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-1 img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
   .services-grid-2 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -1886,7 +1975,15 @@ ul {
     height: 100%;
     width: 184px;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-2 img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+
   .services-grid-3 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1896,7 +1993,15 @@ ul {
     height: 100%;
     width: 184px;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-3 img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+
   .services-grid-4 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1906,6 +2011,13 @@ ul {
     height: 152px;
     width: 184px;
     overflow: hidden;
+    position: relative;
+  }
+
+  .services-grid-4 img {
+    width: 100%;
+    position: absolute;
+    left: 0;
   }
 
   .footer-services {
@@ -2665,7 +2777,16 @@ ul {
     height: 122px;
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-1 img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+
   .services-grid-2 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -2675,7 +2796,15 @@ ul {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-2 img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+
   .services-grid-3 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -2685,7 +2814,15 @@ ul {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
+
+  .services-grid-3 img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+  }
+
   .services-grid-4 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -2695,6 +2832,13 @@ ul {
     height: 122px;
     width: 100%;
     overflow: hidden;
+    position: relative;
+  }
+
+  .services-grid-4 img {
+    width: 100%;
+    position: absolute;
+    left: 0;
   }
 
   .footer-services {
