@@ -85,7 +85,7 @@ const Services = (props) => {
         </div>
       </div>
       {clicked === 1 ?
-          <div ref={scrollRef} className='center service-box1 container-1'>
+          <div ref={scrollRef} className='center service-box1'>
             <h4 className='x-large mb-3 mt-3'>Virtual Restoration and Reconstruction</h4>
             <div className='services-grid mb-3'>
               <div className='services-grid-1'><img src={Restoration1}/></div>
