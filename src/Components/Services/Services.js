@@ -88,7 +88,7 @@ const Services = (props) => {
         </div>
       </div>
       {clicked === 1 ?
-          <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '75vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
+          <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '80vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
             <div className='services-grid'>
               <div className='services-grid-1'><img src={Restoration1}/></div>
               <div className='services-grid-2'><img src={Restoration2}/></div>
@@ -106,7 +106,7 @@ const Services = (props) => {
             </div>
           </div>
           : clicked === 2 ?
-            <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '77vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
+            <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '80vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
               <div className='services-grid'>
                 <div className='services-grid-1'><img src={Digitalization1}/></div>
                 <div className='services-grid-2'><img src={Digitalization2}/></div>
@@ -119,7 +119,7 @@ const Services = (props) => {
               </div>
             </div>
         : clicked === 3 && 
-          <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '77vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
+          <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '80vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
             <div className='services-grid'>
               <div className='services-grid-1'><img src={Architecture1}/></div>
               <div className='services-grid-2'><img src={Architecture2}/></div>

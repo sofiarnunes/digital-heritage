@@ -123,7 +123,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     top: 42%;
-    z-index: 10;
+    z-index: -100;
   }
 
   /* ABOUT */
@@ -151,7 +151,7 @@ ul {
     height: 75vh;
     width: 100%;
     padding: 0 10%;
-    z-index: 100;
+    z-index: 50;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -192,11 +192,11 @@ ul {
 
   /* FOOTER */
   .footer {
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    top: 750px;
+    top: 305vh;
     height: 50px;
     width: 90%;
     background-color: var(--light-color);
