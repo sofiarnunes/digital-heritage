@@ -38,8 +38,11 @@ import TouchCollection4 from '../../Assets/img/projects/collection-mob-2.jpg';
 import TouchCollection5 from '../../Assets/img/projects/collection-mob-3.jpg';
 import Touchv1 from '../../Assets/img/projects/Complex/Collection/collection-v1.JPG';
 import Touchh1 from '../../Assets/img/projects/Complex/Collection/collection-h1.jpeg';
+import Touchv2 from '../../Assets/img/projects/Complex/Collection/collection-v2.mp4';
+import Touchh2 from '../../Assets/img/projects/Complex/Collection/collection-h2.png';
 import Touchv3 from '../../Assets/img/projects/Complex/Collection/collection-v3.JPG';
 import Touchh3 from '../../Assets/img/projects/Complex/Collection/collection-h3.mp4';
+
 
 
 const DataProjects = [
@@ -58,6 +61,8 @@ const DataProjects = [
         img_6: TouchCollection5,
         v1: Touchv1,
         h1: Touchh1,
+        v2: Touchv2,
+        h2: Touchh2,
         v3: Touchv3,
         h3: Touchh3,
         title_1: '3D digitization and modelling',

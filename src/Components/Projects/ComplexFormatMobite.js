@@ -75,9 +75,15 @@ const ComplexFormatMobile = () => {
                 </div>
                 : active === 2 && item.name_1 === 'touch collection' ?
                 <div className='project-grid'>
-                    <div className='grid-img1'><img className='touch' src={item.h1}/></div>
-                    <p className='grid-txt-1'>{item.description_2}</p>
-                    <div className='grid-img2'><img className='touch' src={item.v1}/></div>
+                  <div className='grid-img1'><img className='touch' src={item.h2}/></div>
+                  <p className='grid-txt-1'>{item.description_2}</p>
+                  <div className='grid-img2'>
+                    <div className='touch'>
+                      <video autoPlay loop muted>
+                        <source src={item.v2} type="video/mp4"/>
+                      </video>   
+                    </div>
+                  </div>               
                 </div>
                 : active === 3 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
                 <div className='project-grid'>
