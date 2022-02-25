@@ -27,6 +27,7 @@ const Contact = (props) => {
       <div className='contacts-container flex-wrap'>
         <div className='form-box' >
           <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="hidden" name="form-name" value="contact" />
             <input 
               type='text' 
               id="nome" 
