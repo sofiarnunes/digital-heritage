@@ -50,7 +50,7 @@ const Contact = (props) => {
       <p className='mb-2 msg'>Fill out the form and we will get back to you shortly.</p>
       <div className='contacts-container flex-wrap'>
         <div className='form-box' >
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} netlify>
             <input type="hidden" name="form-name" value="contact" />
             <input 
               type='text' 
