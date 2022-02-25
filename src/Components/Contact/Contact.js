@@ -26,7 +26,7 @@ const Contact = (props) => {
       <p className='mb-2 msg'>Fill out the form and we will get back to you shortly.</p>
       <div className='contacts-container flex-wrap'>
         <div className='form-box' >
-          <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
             <input 
               type='text' 
               id="nome" 
