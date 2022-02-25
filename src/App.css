@@ -185,7 +185,7 @@ ul {
     padding: 1rem;
     background-color: var(--light);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    width: 20%;
+    width: 334px;
     position: absolute;
     top: 100%;
   }
