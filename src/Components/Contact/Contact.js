@@ -29,26 +29,26 @@ const Contact = (props) => {
           <form name="Contact Form" method="post" data-netlify="true">
             <input 
               type='text' 
-              id="first_name" 
+              // id="first_name" 
               name="first_name"
               placeholder='First Name'
               className='contact-input'
               required/>
             <input 
               type='text' 
-              id="last_name" 
+              // id="last_name" 
               name="last_name"
               placeholder='Last Name'
               className='contact-input'
               required/>
             <input 
               type='text' 
-              id="email" 
+              // id="email" 
               name="email"
               placeholder='Email'
               className='contact-input'
               required/>
-            <textarea className='contact-area' name="msg" required></textarea>
+            <textarea className='contact-area' name="mensage" required></textarea>
             <button className='button-contact uppercase' type="submit"> 
                   Send</button>
           </form>
