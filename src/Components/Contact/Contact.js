@@ -27,7 +27,7 @@ const Contact = (props) => {
       <p className='mb-2 msg'>Fill out the form and we will get back to you shortly.</p>
       <div className='contacts-container flex-wrap'>
         <div className='form-box' >
-          <form onSubmit={handleSubmit} name='contact-form' method='POST' data-netlify='true'>
+          <form name='contact-form' method='POST' data-netlify='true'>
             <input type="hidden" name="form-name" value="contact-form" />
             <input 
               type='text' 
