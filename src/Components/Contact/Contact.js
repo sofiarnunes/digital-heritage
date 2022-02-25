@@ -4,6 +4,7 @@ import Bg from '../../Assets/img/services/bg-service.png';
 import LinkedIn from '../../Assets/linkedin.svg';
 import Message from '../../Assets/message.svg';
 import { CSSTransition } from 'react-transition-group';
+import Success from '../Utilities/Success';
 
 
 
@@ -13,6 +14,30 @@ const Contact = (props) => {
     props.home()
   }, [props.home])  
 
+  const [click, setClick] = useState(false);
+  const [values, setValues] = useState({
+    nome: '',
+    apelido: '',
+    email: '',
+    mensagem: ''
+  })
+
+  const submit = (e) => {
+    e.preventDefault();
+    if(values.nome.length && values.apelido.length && values.email.length && values.mensagem.length ){
+      setClick(true)
+      setTimeout(() => {
+        setClick(false);
+      }, 1000);
+    }
+  }
+
+  const handleChange = (e) => {
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value
+    })
+  }
 
   return (
     <CSSTransition
@@ -35,6 +60,7 @@ const Contact = (props) => {
               name="nome"
               placeholder='First Name'
               className='contact-input'
+              onChange={handleChange}
               required/>
             <input 
               type='text' 
@@ -42,6 +68,7 @@ const Contact = (props) => {
               name="apelido"
               placeholder='Last Name'
               className='contact-input'
+              onChange={handleChange}
               required/>
             <input 
               type='text' 
@@ -49,13 +76,15 @@ const Contact = (props) => {
               name="email"
               placeholder='Email'
               className='contact-input'
+              onChange={handleChange}
               required/>
             <textarea 
               className='contact-area' 
               name="mensagem" 
               id="mensagem" 
+              onChange={handleChange}
               required></textarea>
-            <button className='button-contact uppercase' type="submit"> 
+            <button className='button-contact uppercase' type="submit" onClick={submit}> 
                   Send</button>
           </form>
         </div>
@@ -87,6 +116,7 @@ const Contact = (props) => {
           </Link>
         </div>
       </div>
+      {click && <Success/>}
     </div>
     </CSSTransition>
   )

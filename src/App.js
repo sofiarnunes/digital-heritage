@@ -10,7 +10,6 @@ import Contact from './Components/Contact/Contact';
 import Services from './Components/Services/Services';
 import Services1 from './Components/Services/Services1';
 import Projects from './Components/Projects/Projects';
-// import LatestProjects from './Components/Projects/LatestProjects';
 import NavHamb from './Components/Navbar/NavHamb';
 import Test from './Components/Test';
 import SimpleFormat from './Components/Projects/SimpleFormat';

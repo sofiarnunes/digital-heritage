@@ -184,8 +184,8 @@ ul {
   .popup {
     padding: 1rem;
     background-color: var(--light);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-    width: 332px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 20%;
     position: absolute;
     top: 100%;
   }
@@ -662,6 +662,12 @@ ul {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.2s linear;
+    cursor: pointer;
+  }
+  .button-contact:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
   }
 
   .contact-info {
@@ -1424,6 +1430,13 @@ ul {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.2s linear;
+    cursor: pointer;
+  }
+
+  .button-contact:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
   }
 
   .contact-info {
@@ -2207,6 +2220,11 @@ ul {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.2s linear;
+  }
+  .button-contact:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
   }
 
   .contact-info {
@@ -3087,6 +3105,14 @@ ul {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.2 linear;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+
+  .button-contact:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
   }
 
   .contact-info {
