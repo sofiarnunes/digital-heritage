@@ -11,30 +11,7 @@ const Contact = (props) => {
   
   useEffect(() => {
     props.home()
-  }, [props.home])
-
-  const [values, setValues] = useState({
-    nome: '',
-    apelido: '',
-    email: '',
-    mensagem: ''
-  }) 
-  
-  const handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: {"form-name": "contact", ...values}
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
-
-    e.preventDefault();
-  }
-
-  const handleChange = (e) => {
-    setValues({ [e.target.name]: e.target.value });
-  }
+  }, [props.home])  
 
 
   return (
@@ -50,16 +27,14 @@ const Contact = (props) => {
       <p className='mb-2 msg'>Fill out the form and we will get back to you shortly.</p>
       <div className='contacts-container flex-wrap'>
         <div className='form-box' >
-          <form onSubmit={handleSubmit} netlify>
-            <input type="hidden" name="form-name" value="contact" />
+          <form onSubmit={handleSubmit} name='contact-form' method='POST' data-netlify='true'>
+            <input type="hidden" name="form-name" value="contact-form" />
             <input 
               type='text' 
               id="nome" 
               name="nome"
               placeholder='First Name'
               className='contact-input'
-              value={values.nome}
-              onChange={handleChange}
               required/>
             <input 
               type='text' 
@@ -67,8 +42,6 @@ const Contact = (props) => {
               name="apelido"
               placeholder='Last Name'
               className='contact-input'
-              value={values.apelido}
-              onChange={handleChange}
               required/>
             <input 
               type='text' 
@@ -76,15 +49,11 @@ const Contact = (props) => {
               name="email"
               placeholder='Email'
               className='contact-input'
-              value={values.email}
-              onChange={handleChange}
               required/>
             <textarea 
               className='contact-area' 
               name="mensagem" 
               id="mensagem" 
-              value={values.mensagem}
-              onChange={handleChange}
               required></textarea>
             <button className='button-contact uppercase' type="submit"> 
                   Send</button>
