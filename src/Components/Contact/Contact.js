@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import Bg from '../../Assets/img/services/bg-service.png';
 import LinkedIn from '../../Assets/linkedin.svg';
@@ -20,11 +20,11 @@ const Contact = (props) => {
     mensagem: ''
   }) 
   
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...values })
+      body: {"form-name": "contact", ...values}
     })
       .then(() => alert("Success!"))
       .catch(error => alert(error));
