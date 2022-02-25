@@ -26,29 +26,29 @@ const Contact = (props) => {
       <p className='mb-2 msg'>Fill out the form and we will get back to you shortly.</p>
       <div className='contacts-container flex-wrap'>
         <div className='form-box' >
-          <form name="contact" netlify>
+          <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
             <input 
               type='text' 
-              // id="first_name" 
-              name="first_name"
+              id="nome" 
+              name="nome"
               placeholder='First Name'
               className='contact-input'
               required/>
             <input 
               type='text' 
-              // id="last_name" 
-              name="last_name"
+              id="apelido" 
+              name="apelido"
               placeholder='Last Name'
               className='contact-input'
               required/>
             <input 
               type='text' 
-              // id="email" 
+              id="email" 
               name="email"
               placeholder='Email'
               className='contact-input'
               required/>
-            <textarea className='contact-area' name="mensage" required></textarea>
+            <textarea className='contact-area' name="mensagem" id="mensagem" required></textarea>
             <button className='button-contact uppercase' type="submit"> 
                   Send</button>
           </form>
