@@ -22,8 +22,7 @@ const Contact = (props) => {
     mensagem: ''
   })
 
-  const submit = (e) => {
-    e.preventDefault();
+  const submit = () => {
     if(values.nome.length && values.apelido.length && values.email.length && values.mensagem.length ){
       setClick(true)
       setTimeout(() => {
