@@ -71,8 +71,8 @@ function App() {
         }
 
         <Routes>
-          <Route exact path="/" element={<Navigate to="/home" />} />
-          <Route exact path="/home" element={<HomePage  history={history} home={homeTrue} />} />
+          {/* <Route exact path="/" element={<Navigate to="/home" />} /> */}
+          <Route exact path="/" element={<HomePage  history={history} home={homeTrue} />} />
           <Route exact path="/about" element={<About home={homeFalse}/>} />
           <Route exact path="/projects" element={<Projects home={homeFalse}/>} />
           {nav === 'row' ?
