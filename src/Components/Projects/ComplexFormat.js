@@ -58,12 +58,12 @@ const ComplexFormat = () => {
               : active === 2 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
               <div className='project-grid'>
                 <div className='grid-img1'>
-                  <video autoPlay loop muted>
+                  <video autoPlay loop muted playsInline>
                     <source src={item.v2} type="video/mp4"/>
                   </video>
                 </div>
                 <div className='grid-img2'>
-                  <video autoPlay loop muted>
+                  <video autoPlay loop muted playsInline>
                     <source src={item.h2} type="video/mp4"/>
                   </video>
                 </div> 
@@ -73,7 +73,7 @@ const ComplexFormat = () => {
               <div className='project-grid'>
                 <div className='grid-img1'>
                   <div className='touch'>
-                    <video autoPlay loop muted>
+                    <video autoPlay loop muted playsInline>
                       <source src={item.v2} type="video/mp4"/>
                     </video>   
                   </div>
@@ -91,7 +91,7 @@ const ComplexFormat = () => {
               <div className='project-grid'>
                 <div className='grid-img1'><img src={item.v3}/></div>
                 <div className='grid-img2'>
-                  <video autoPlay loop muted>
+                  <video autoPlay loop muted playsInline>
                     <source src={item.h3} type="video/mp4"/>
                   </video>
                 </div>
