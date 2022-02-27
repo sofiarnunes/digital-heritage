@@ -22,7 +22,7 @@ const Hero = () => {
           <img src={FrameHero}/>
           <p className='play x-small xx-bold'>Digital Heritage uses digital media to further understand, preserve, and disseminate cultural and natural heritage.</p>
         </div>
-        <video preload='auto' autoPlay loop muted playsInline>
+        <video preload autoPlay loop muted playsInline>
             <source src={BannerHero} type="video/mp4"/>
         </video>
     </div>
