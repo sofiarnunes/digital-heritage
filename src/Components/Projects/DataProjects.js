@@ -70,7 +70,7 @@ const DataProjects = [
         title_2: 'Interactive models',
         description_2: 'The 3D models were further developed to open and close their doors and drawers, like the original objects, to ensure a fuller comprehension of these artworks and an interactivity similar to the original.',
         title_3: '3D Printing',
-        description_3: 'The models will be 3D printed to be felt by visually impaired audiences, during the museum exhibition.',
+        description_3: 'The models will be 3D printed to be touched by visually impaired audiences, during the museum exhibition.',
     },
     {
         name: 'Virtual restoration of an Egyptian low relief (300-250 BC)',

@@ -82,7 +82,7 @@ const Services = (props) => {
               <img className='services-img' src={HouseClosed}/>
             </div>
             <div style={{marginTop: '20px'}}>
-              <p className='center medium'>Architectural Model</p>
+              <p className='center medium'>Architectural Models</p>
             </div>
           </div>
         </div>

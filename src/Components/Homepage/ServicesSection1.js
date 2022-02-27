@@ -87,7 +87,7 @@ const ServicesSection1 = () => {
           <div className='services-container'> 
             <img className='services-img' src={service3} onClick={handleServiceThree} onMouseLeave={handleLeaveThree}/>
           </div>
-          <p className='x-medium center mt-1'>Architectural Model</p>
+          <p className='x-medium center mt-1'>Architectural Models</p>
           {popup3 === true && <PopUp text='Architectural 3D models based on CAD plans, using photorealistic materials and naturalistic assets.'/>}
         </div>
       </div>
