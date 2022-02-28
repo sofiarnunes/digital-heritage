@@ -10,7 +10,7 @@ const AboutSection1 = () => {
         <div>
           <p className='mb medium play'>From digitizing cultural assets, to uncovering new layers of meaning in reconstructed and restored artifacts, we guarantee beautiful and informative results and treat each project as a unique undertaking.</p>
           <Link to='/contact'>
-            <button className='btn-center btn btn-light mt'>Contact us</button>
+            <button className='btn-center btn btn-light mt-2'>Contact us</button>
           </Link>
         </div>
       </div>
