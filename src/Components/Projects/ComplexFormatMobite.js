@@ -31,7 +31,7 @@ const ComplexFormatMobile = () => {
     appear={true}
     timeout={500}
     classNames='fade'>
-    <div className='container'>
+    <div className='container complex-container'>
       {DataProjects.map((item) => {
         return(
           <>

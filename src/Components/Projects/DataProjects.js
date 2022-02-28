@@ -65,7 +65,7 @@ const DataProjects = [
         h2: Touchh2,
         v3: Touchv3,
         h3: Touchh3,
-        title_1: '3D digitization and modelling',
+        title_1: '3D digitization & modelling',
         description_1: 'A group of representative artworks from different collections from the Calouste Gulbenkian Museum were selected to create a 3D printed Touch Collection for visually impaired audiences. The 3D models of the artworks were first created through digital photogrammetry and 3D modelling.',
         title_2: 'Interactive models',
         description_2: 'The 3D models were further developed to open and close their doors and drawers, like the original objects, to ensure a fuller comprehension of these artworks and an interactivity similar to the original.',
