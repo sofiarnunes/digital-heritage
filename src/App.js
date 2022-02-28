@@ -64,7 +64,7 @@ function App() {
             <Test/>
           </div > 
           : (home === true && venus === 'middle2') && 
-          <div style={{position: 'absolute', top:'130vh', left: '50%', transform: 'translateX(-50%)', zIndex: '100', height: '420px', width: '80%', overflow: 'hidden'}}>
+          <div style={{position: 'absolute', top:'140vh', left: '50%', transform: 'translateX(-50%)', zIndex: '100', height: '420px', width: '80%', overflow: 'hidden'}}>
             <Test/>
           </div> 
 
