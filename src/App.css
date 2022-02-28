@@ -71,7 +71,7 @@ ul {
   /* HOME PAGE */
   .title-hero {
     position: absolute;
-    top: 40%;
+    top: 48%;
     transform: translateY(-50%);
     left: 15%;
     z-index: 100;
@@ -79,7 +79,7 @@ ul {
 
   .sub-title-hero {
     position: absolute;
-    top: 55%;
+    top: 63%;
     transform: translateY(-50%);
     left: 15.3%;
     z-index: 100;
@@ -90,7 +90,7 @@ ul {
     width: 200px;
     text-align: right;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     z-index: 10;
   }
@@ -109,16 +109,6 @@ ul {
     position: relative;
     z-index: -50;
   }
-  /* .banner {
-    position: relative;
-    height: 100vh;
-    top: -8vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    z-index: -1000;
-  } */
 
   .banner video {
     position: absolute;

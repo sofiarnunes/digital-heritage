@@ -62,9 +62,9 @@ function App() {
           : (home === true && venus === 'middle1') ?
           <div style={{position: 'absolute', zIndex: '1000', top:'45%', left: '18%'}}>
             <Test/>
-          </div> 
+          </div > 
           : (home === true && venus === 'middle2') && 
-          <div style={{position: 'absolute', zIndex: '1000', top:'46%', left: '-17%'}}>
+          <div style={{position: 'absolute', zIndex: '1000', top:'108vh', left: '50%', zIndex: '10', height: '90vh', overflow: 'hidden'}}>
             <Test/>
           </div> 
 
