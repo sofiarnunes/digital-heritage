@@ -3054,7 +3054,7 @@ ul {
 
   .footer-services {
     position: fixed;
-    bottom: -1px;
+    bottom: -5px;
     left: 0;
     height: 50px;
     width: 100%;
@@ -3070,7 +3070,7 @@ ul {
     width: 100%;
     background-color: var(--light-color);
     border-top: 1px solid var(--x-light-grey);
-    padding: 0 45%;
+    padding: 0 40%;
   }
 
   /* CONTACT */
