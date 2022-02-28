@@ -2432,6 +2432,7 @@ ul {
   }
 
   /* SERVICES HOME */
+
   .services-section {
     position: absolute;
     width: 100vw;
@@ -2440,7 +2441,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 30vh;
   }
   .services-tab {
     display: none;
@@ -2471,7 +2472,7 @@ ul {
     padding: 1rem;
     background-color: var(--light);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-    width: 300px;
+    width: 322px;
   }
 
   .pop-plus {
@@ -2495,7 +2496,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    top: 1530px;
+    top: 1650px;
     height: 50px;
     width: 100%;
     background-color: var(--light-color);
