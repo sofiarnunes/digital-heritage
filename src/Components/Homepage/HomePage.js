@@ -28,21 +28,19 @@ const HomePage = (props) => {
   return (
   <div>
       <Hero/>
-      <div >
-        <img src={img} className='venus-home'/>
-        {img === Venus ?
-          <>
-            <AboutSection/>
-            <ServicesSection />
-          </>
-        : img === Venus1 || img === Venus2 ?
+      <img src={img} className='venus-home'/>
+      {img === Venus ?
         <>
-          <AboutSection1 />
-          <ServicesSection1 {...props}/>
+          <AboutSection/>
+          <ServicesSection />
         </>
-          :null
-      }
-        </div>
+      : img === Venus1 || img === Venus2 ?
+      <>
+        <AboutSection1 />
+        <ServicesSection1 {...props}/>
+      </>
+        :null
+    }
       <Footer/>
   </div>
   )

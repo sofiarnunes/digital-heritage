@@ -6,6 +6,7 @@ import Hamb from '../../Assets/hamb.svg';
 const NavHamb = () => {
 
     const [menu, setMenu] = useState(false);
+    const [navBar, setNavBar] = useState(false);
     let menuRef = useRef();
 
     const handleOpen = (e) => {
@@ -35,10 +36,20 @@ const NavHamb = () => {
         }
     }, [])
     
+    const changeBackground = () => {
+        if(window.scrollY > 0){
+            setNavBar(true)
+        } else {
+            setNavBar(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
+
   return (
     <div>
-        <div className='flex-bet p-1'>
-            <Link to='/home'>
+        <div className={`flex-bet nav-hamb ${navBar === true && 'active'}`}>
+            <Link to='/'>
                 <img src={DarkLogo} alt='logo'/>
             </Link>
             <div style={{zIndex: '1050'}}><img onClick={handleOpen} src={Hamb} alt='hamb' /></div>

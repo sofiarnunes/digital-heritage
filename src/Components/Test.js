@@ -51,19 +51,19 @@ const Model = () => {
   // }, [])
 
   return (
-    <div>
+    <>
       {venus === 'side' ?
-      <div>
-        <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '80vh', left: '45%'} : {position: 'absolute', top: '80vh', left: '50%', zIndex: '2000', opacity: '0.4', width: '90px'}}/>
-        <Canvas style={hover === true ? {height: '140vh', width:'500px',  position: 'relative'} : {height: '140vh', width:'500px',  position: 'relative', opacity: '0.6'}}>
+      <>
+        <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '80vh', left: '45%'} : {position: 'absolute', top: '40vh', left: '50%', zIndex: '2000', opacity: '0.4', width: '90px'}}/>
+        <Canvas style={hover === true ? {height: '140vh', width:'500px',  position: 'relative',zIndex: '-100', top: '-300px'} : {height: '140vh', width:'500px',  position: 'relative', opacity: '0.6', zIndex: '-100', top: '-300px'}}>
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} />
           <Suspense fallback={null}>
-            <Venus  style={{position:'absolute'}}/>
+            <Venus/>
           </Suspense>
         </Canvas>
-      </div> 
+      </> 
         : venus === 'middle2' ?
       <div style={{width: '100%', height: '90vh', overflow: 'hidden'}}>
         <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '30vh', left: '45%'} : {position: 'absolute', top: '55vh', left: '50%', zIndex: '2000', opacity: '0.4', width: '90px'}}/>   
@@ -90,7 +90,7 @@ const Model = () => {
       </div>
       }
       
-    </div>
+    </>
   )
 }
 
