@@ -11,7 +11,7 @@ const Model = () => {
   useEffect(() => {
     if(window.innerWidth > 1001){
       setVenus('side')
-    } else if(window.innerWidth <= 1001 ){
+    } else if(window.innerWidth <= 1001 && window.innerWidth > 480){
       setVenus('middle1')
     } else if(window.innerWidth <= 480 ){
       setVenus('middle2')
@@ -64,10 +64,10 @@ const Model = () => {
           </Suspense>
         </Canvas>
       </> 
-        : venus === 'middle2' ?
-      <div style={{width: '100%', height: '90vh', overflow: 'hidden'}}>
-        <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '30vh', left: '45%'} : {position: 'absolute', top: '55vh', left: '50%', zIndex: '2000', opacity: '0.4', width: '90px'}}/>   
-        <Canvas style={hover === true ? {height: '90vh', width:'400px',  position: 'relative', left:'4%'} : {height: '90vh', width:'400px',  position: 'relative', left: '10%', opacity: '0.7'}} >
+        : venus === 'middle1' ?
+      <>
+        <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '25vh', left: '45%'} : {position: 'absolute', top: '25vh', left: '50%', zIndex: '2000', opacity: '0.4', width: '90px'}}/>   
+        <Canvas style={hover === true ? {height: '90vh',  position: 'absolute', top: '-270px', left:'-20px'} : {height: '90vh', position: 'absolute', left: '-30px', top: '-290px', opacity: '0.7'}} >
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} />
@@ -75,8 +75,8 @@ const Model = () => {
             <Venus style={{position:'absolute'}}/>
           </Suspense>
         </Canvas>
-      </div>
-        : venus === 'middle1' &&
+      </>
+        : venus === 'middle2' &&
       <>
         <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '25vh', left: '50%', transform: 'translateX(-50%)'} : {position: 'absolute', top: '25vh',  left: '50%', transform: 'translateX(-50%)', zIndex: '2000', opacity: '0.4', width: '60px'}}/>
         <Canvas style={hover === true ? {height: '680px', width:'300px',  position: 'absolute', top: '-210px', left:'-20px'} : {height: '680px', width:'300px',  position: 'absolute', top: '-210px', left:'-20px', opacity: '0.7'}} >
