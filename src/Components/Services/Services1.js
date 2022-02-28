@@ -93,7 +93,7 @@ const Services = (props) => {
               <div className='services-grid-3'><img src={Restoration3}/></div>
               <div className='services-grid-4'><img src={Restoration4}/></div>
             </div>
-            <div className='medium txt-left'>
+            <div className='medium txt-left' style={{padding: '5rem 0'}}>
               <p className='mb-2 regular'>We explore conservation and restoration methodologies through a range of digital tools to give new meaning to heritage objects.</p>
               <p className='mb-2 regular'>These digital projects support the conservation, preservation, and fuller comprehension of cultural heritage through the:</p>
               <ol className='ml regular'>
