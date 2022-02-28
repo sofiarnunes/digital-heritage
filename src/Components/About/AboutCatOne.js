@@ -21,7 +21,7 @@ const AboutCatOne = ({img, text, next}) => {
             <img className='dots' src={Dots}/>
           </div>
           <div className='about-text'>
-            <h2 className='sub-title uppercase mb-2'>Digital heritage</h2>
+            <h2 className='sub-title uppercase mb-2 mob-title-about'>Digital heritage</h2>
             <p className='about-p play x-medium'>{text}</p>
           </div>
         </div>

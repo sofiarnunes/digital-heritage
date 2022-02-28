@@ -214,6 +214,7 @@ ul {
   .about-container {
     width: 35%;
     margin: 0 auto;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1554,7 +1555,6 @@ ul {
 
   .banner {
     height: 100%;
-    width: 100%;
     overflow: hidden;
   }
 
@@ -2508,19 +2508,22 @@ ul {
 
   /* ABOUT */
   .about-container {
-    width: 77%;
+    padding: 0 1rem;
+    height: 140vh;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .about-text {
     position: relative;
-    top: 68vh;
+    top: 72vh;
+    width: 100%;
     left: 0;
   }
 
   .about-text h2 {
-    margin-bottom: 20px;
-    font-size: 27px !important;
+    margin: 20px;
+    font-size: 25px !important;
     text-align: center;
   }
 
@@ -2531,64 +2534,40 @@ ul {
   }
 
   .lineAbout {
-    height: 3px;
-    width: 100%;
-    background-color: var(--light-pink);
-    position: absolute;
-    top: 75vh;
-    z-index: 0;
     display: none;
   }
 
   .line {
-    position: absolute;
-    bottom: -10px;
-    left: 13%;
+    display: none;
   }
 
   .line p {
-    position: relative;
-    bottom: 25px;
-    color: var(--light-pink);
+    display: none;
   }
 
   .circleAc {
-    height: 25px;
-    width: 25px;
-    border: 3px solid var(--pink);
-    border-radius: 100px;
-    /* z-index: 100; */
+    display: none;
   }
 
   .circleDe {
-    height: 11px;
-    width: 11px;
-    background-color: var(--pink);
-    border-radius: 100px;
-    cursor: pointer;
-    transition: all 0.2s linear;
-  }
-
-  .circleDe:hover {
-    transform: scale(1.2);
+    display: none;
   }
 
   .about-image-cont {
     position: absolute;
     overflow: hidden;
-    width: 320px;
+    width: 98%;
     height: 550px;
     top: 10vh;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
   }
 
   .big-image {
     position: absolute;
-    top: 0;
-    left: -15%;
-    width: 400px;
+    top: -10vh;
+    left: -6%;
     z-index: -1;
+    width: 100%;
   }
 
   /* appear component */
@@ -2646,8 +2625,8 @@ ul {
 
   .arrowAbout {
     position: absolute;
-    left: 83%;
-    top: 40vh;
+    left: 90%;
+    top: 42vh;
   }
 
   .dots {
@@ -2661,7 +2640,7 @@ ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 133vh;
+    top: 140vh;
     height: 50px;
     width: 95%;
     background-color: var(--light-color);
@@ -3504,7 +3483,7 @@ img[alt="logo"] {
   top: 0;
   width: 100%;
   z-index: 1500;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .nav-hamb.active {
