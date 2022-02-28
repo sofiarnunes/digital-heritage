@@ -52,7 +52,7 @@ const NavHamb = () => {
             <Link to='/'>
                 <img src={DarkLogo} alt='logo'/>
             </Link>
-            <div style={{zIndex: '1050'}}><img onClick={handleOpen} src={Hamb} alt='hamb' /></div>
+            <div style={{zIndex: '2000'}}><img onClick={handleOpen} src={Hamb} alt='hamb' /></div>
         </div>
         {
             menu === true &&
