@@ -2320,7 +2320,7 @@ ul {
 
   .title-hero {
     position: absolute;
-    top: 85vh;
+    top: 83vh;
     transform: translateX(-50%);
     left: 50%;
     z-index: 100;
@@ -2333,7 +2333,7 @@ ul {
   .sub-title-hero {
     position: absolute;
     text-align: center;
-    top: 90.5vh;
+    top: 89vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
