@@ -79,7 +79,7 @@ const Model = () => {
         : venus === 'middle1' &&
       <>
         <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '25vh', left: '50%', transform: 'translateX(-50%)'} : {position: 'absolute', top: '25vh',  left: '50%', transform: 'translateX(-50%)', zIndex: '2000', opacity: '0.4', width: '60px'}}/>
-        <Canvas style={hover === true ? {height: '85vh', width:'300px',  position: 'absolute', top: '-220px', left:'-20px'} : {height: '85vh', width:'300px',  position: 'absolute', top: '-215px', left:'-20px', opacity: '0.7'}} >
+        <Canvas style={hover === true ? {height: '85vh', width:'300px',  position: 'absolute', top: '-215px', left:'-20px'} : {height: '85vh', width:'300px',  position: 'absolute', top: '-215px', left:'-20px', opacity: '0.7'}} >
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} />
