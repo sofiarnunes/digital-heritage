@@ -31,7 +31,7 @@ const Gallery = (props) => {
       appear={true}
       timeout={500}
       classNames='fade'>
-      <div className='container-1' style={{height: '100%'}}>
+      <div className='container-1 container-projects' style={{height: '100%'}}>
         <img className='bg-projects' src={Bg}/>
         <div className='title-cont mt'>
           <h2 className='sub-title mb-2 uppercase'>All projects</h2>

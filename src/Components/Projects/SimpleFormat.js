@@ -27,7 +27,7 @@ const SimpleFormat = () => {
     appear={true}
     timeout={500}
     classNames='fade'>
-    <div className='container'>
+    <div className='container simple-container'>
       {DataProjects.map((item) => {
         return(
           <>
