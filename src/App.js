@@ -60,7 +60,7 @@ function App() {
             <Test />
           </div> 
           : (home === true && venus === 'middle1') ?
-          <div style={{position: 'absolute', zIndex: '10', top:'150vh', left: '18%'}}>
+          <div style={{position: 'absolute', zIndex: '10', top:'150vh',  left: '18%'}}>
             <Test/>
           </div > 
           : (home === true && venus === 'middle2') && 
