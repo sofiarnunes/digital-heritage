@@ -567,7 +567,13 @@ ul {
   }
 
   .services-grid-1 img {
-    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .services-grid-1 .arq {
+    width: 100% !important;
+    height: auto !important;
     position: absolute;
   }
 
@@ -587,6 +593,13 @@ ul {
     position: absolute;
   }
 
+  .services-grid-2 .digit {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-55%);
+  }
+
   .services-grid-3 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -603,6 +616,13 @@ ul {
     position: absolute;
   }
 
+  .services-grid-3 .digit {
+    position: absolute;
+    top: -5%;
+    height: auto;
+    width: 100%;
+  }
+
   .services-grid-4 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -615,7 +635,13 @@ ul {
   }
 
   .services-grid-4 img {
-    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .services-grid-4 .arq {
+    width: 100% !important;
+    height: auto !important;
     position: absolute;
   }
 
@@ -1321,11 +1347,19 @@ ul {
     overflow: hidden;
     position: relative;
   }
+
   .services-grid-1 img {
-    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
   }
+
+  .services-grid-1 .arq {
+    width: 100% !important;
+    height: auto !important;
+    position: absolute;
+  }
+
   .services-grid-2 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -1343,12 +1377,18 @@ ul {
     left: 0;
   }
 
+  .services-grid-2 .digit {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-55%);
+  }
+
   .services-grid-3 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: grey;
     height: 100%;
     width: 184px;
     overflow: hidden;
@@ -1361,12 +1401,18 @@ ul {
     left: 0;
   }
 
+  .services-grid-3 .digit {
+    position: absolute;
+    top: -5%;
+    height: auto;
+    width: 100%;
+  }
+
   .services-grid-4 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color: grey;
     height: 152px;
     width: 184px;
     overflow: hidden;
@@ -1374,9 +1420,15 @@ ul {
   }
 
   .services-grid-4 img {
-    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
+  }
+
+  .services-grid-4 .arq {
+    width: 100% !important;
+    height: auto !important;
+    position: absolute;
   }
 
   .footer-services {
@@ -2119,7 +2171,6 @@ ul {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: grey;
     height: 152px;
     width: 184px;
     overflow: hidden;
@@ -2127,9 +2178,19 @@ ul {
   }
 
   .services-grid-1 img {
-    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
+  }
+
+  .services-grid-1 .digit {
+    height: 100%;
+    width: auto;
+  }
+
+  .services-grid-1 .arq {
+    width: 100%;
+    height: auto;
   }
 
   .services-grid-2 {
@@ -2137,7 +2198,6 @@ ul {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-color: grey;
     height: 100%;
     width: 184px;
     overflow: hidden;
@@ -2155,7 +2215,6 @@ ul {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: grey;
     height: 100%;
     width: 184px;
     overflow: hidden;
@@ -2168,12 +2227,25 @@ ul {
     left: 0;
   }
 
+  .services-grid-3 .digit {
+    position: absolute;
+    top: -5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .services-grid-2 .digit {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-55%);
+  }
+
   .services-grid-4 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color: grey;
     height: 152px;
     width: 184px;
     overflow: hidden;
@@ -2181,9 +2253,19 @@ ul {
   }
 
   .services-grid-4 img {
-    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
+  }
+
+  .services-grid-4 .digit {
+    height: 100%;
+    width: auto;
+  }
+
+  .services-grid-4 .arq {
+    width: 100%;
+    height: auto;
   }
 
   .footer-services {
@@ -2996,7 +3078,6 @@ ul {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: grey;
     height: 122px;
     width: 100%;
     overflow: hidden;
@@ -3004,10 +3085,14 @@ ul {
   }
 
   .services-grid-1 img {
-    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
-    top: -20px;
+  }
+
+  .services-grid-1 .arq {
+    width: 100%;
+    height: auto;
   }
 
   .services-grid-2 {
@@ -3015,7 +3100,6 @@ ul {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-color: grey;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -3028,12 +3112,23 @@ ul {
     left: 0;
   }
 
+  .services-grid-2 .digit {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-55%);
+  }
+
+  .services-grid-2 .arq {
+    width: 100%;
+    height: auto;
+  }
+
   .services-grid-3 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: grey;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -3046,12 +3141,23 @@ ul {
     left: 0;
   }
 
+  .services-grid-3 .digit {
+    position: absolute;
+    top: -9%;
+    height: auto;
+    width: 100%;
+  }
+
+  .services-grid-3 .arq {
+    width: 100%;
+    height: auto;
+  }
+
   .services-grid-4 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color: grey;
     height: 122px;
     width: 100%;
     overflow: hidden;
@@ -3059,9 +3165,14 @@ ul {
   }
 
   .services-grid-4 img {
-    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
+  }
+
+  .services-grid-4 .arq {
+    width: 100%;
+    height: auto;
   }
 
   .footer-services {

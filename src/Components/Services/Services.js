@@ -6,14 +6,14 @@ import Box from '../../Assets/img/services/collection1.png';
 import LinkedIn from '../../Assets/linkedin.svg';
 import Message from '../../Assets/message.svg';
 import { CSSTransition } from 'react-transition-group';
-import Restoration1 from '../../Assets/img/services/restoration-1.jpg';
-import Restoration2 from '../../Assets/img/services/restoration-2.jpg';
-import Restoration3 from '../../Assets/img/services/restoration-3.jpg';
-import Restoration4 from '../../Assets/img/services/restoration-4.jpg';
-import Digitalization1 from '../../Assets/img/services/digitalization-1.jpg';
-import Digitalization2 from '../../Assets/img/services/digitalization-2.jpg';
-import Digitalization3 from '../../Assets/img/services/digitalization-3.jpg';
-import Digitalization4 from '../../Assets/img/services/digitalization-4.jpg';
+import Restoration1 from '../../Assets/img/services/service-1/restoration-1.jpg';
+import Restoration2 from '../../Assets/img/services/service-1/restoration-2.jpg';
+import Restoration3 from '../../Assets/img/services/service-1/restoration-3.jpg';
+import Restoration4 from '../../Assets/img/services/service-1/restoration-4.jpg';
+import Digitalization1 from '../../Assets/img/services/service-2/digitalization-1.jpg';
+import Digitalization2 from '../../Assets/img/services/service-2/digitalization-2.png';
+import Digitalization3 from '../../Assets/img/services/service-2/digitalization-3.png';
+import Digitalization4 from '../../Assets/img/services/service-2/digitalization-4.png';
 import Architecture1 from '../../Assets/img/services/architecture_1.jpg';
 import Architecture2 from '../../Assets/img/services/architecture_2.jpg';
 import Architecture3 from '../../Assets/img/services/architecture_3.jpg';
@@ -108,10 +108,10 @@ const Services = (props) => {
           : clicked === 2 ?
             <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '90vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
               <div className='services-grid'>
-                <div className='services-grid-1'><img src={Digitalization1}/></div>
-                <div className='services-grid-2'><img src={Digitalization2}/></div>
-                <div className='services-grid-3'><img src={Digitalization3}/></div>
-                <div className='services-grid-4'><img src={Digitalization4}/></div>
+                <div className='services-grid-1'><img className='digit' src={Digitalization1}/></div>
+                <div className='services-grid-2'><img className='digit' src={Digitalization2}/></div>
+                <div className='services-grid-3'><img className='digit' src={Digitalization3}/></div>
+                <div className='services-grid-4'><img className='digit' src={Digitalization4}/></div>
               </div>
               <div className='medium' style={{width: '45%'}}>
                 <p className='mb'>Using digital photogrammetry and 3D modelling, we create accurate and photorealistic high-resolution 3D documentation that best fits your needs, guaranteeing a fluid and correct visualization.</p>
@@ -121,10 +121,10 @@ const Services = (props) => {
         : clicked === 3 && 
           <div ref={scrollRef} className='flex-around' style={{position: 'relative', top: '90vh', padding:'5% 10% 8% 10%', backgroundColor: '#f6f6f6'}}>
             <div className='services-grid'>
-              <div className='services-grid-1'><img src={Architecture1}/></div>
-              <div className='services-grid-2'><img src={Architecture2}/></div>
-              <div className='services-grid-3'><img src={Architecture3}/></div>
-              <div className='services-grid-4'><img src={Architecture4}/></div>
+              <div className='services-grid-1'><img className='arq' src={Architecture1}/></div>
+              <div className='services-grid-2'><img className='arq' src={Architecture2}/></div>
+              <div className='services-grid-3'><img className='arq' src={Architecture3}/></div>
+              <div className='services-grid-4'><img className='arq' src={Architecture4}/></div>
             </div>
             <div className='medium' style={{width: '45%'}}>
               <p className='mb'>We create architectural 3D models based on CAD plans, using photorealistic materials and naturalistic assets that bring the model to life.</p>
