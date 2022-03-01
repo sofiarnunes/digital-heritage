@@ -3765,7 +3765,7 @@ img[alt="logo"] {
 }
 
 .swiper {
-  width: 45%;
+  width: 100%;
   height: 100%;
   --swiper-theme-color: #ccc;
 }
