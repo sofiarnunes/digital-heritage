@@ -4,23 +4,17 @@ import DataProjects from './DataProjects';
 import { CSSTransition } from 'react-transition-group';
 import LinkedIn from '../../Assets/linkedin.svg';
 import Message from '../../Assets/message.svg';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
+import "swiper/css/effect-fade";
 
 const SimpleFormat = () => {
 
   const { state } = useLocation();  
   const [img, setImg] = useState('');
-
-  useEffect(() => {
-    DataProjects.map(item => setImg(item.img_6))
-    setTimeout(() => {
-      DataProjects.map(item => setImg(item.img_5))
-    }, 7000);
-    setTimeout(() => {
-      DataProjects.map(item => setImg(item.img_4))
-    }, 14000);
-    
-  }, [])
-  
+ 
   return (
     <CSSTransition
     in={true}
@@ -48,9 +42,23 @@ const SimpleFormat = () => {
               {item.name_1 === 'Casa Guerrero' ?
               <div className='flex-bet pb'>
                 <p className='project-description'>{item.description}</p>
-                <div className='side-cont-projects'>
-                  <img className='side-img-projects' src={img}/>
-                </div>
+                <Swiper effect={"fade"} navigation={true} pagination={{ clickable: true }} modules={[EffectFade, Autoplay, Pagination, Navigation]} autoplay={{ delay: 2500, disableOnInteraction: true }}>
+                  <SwiperSlide>    
+                    <div className='side-cont-projects'>
+                      <img src={item.img_6}/>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='side-cont-projects'>
+                      <img src={item.img_5}/>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='side-cont-projects'>
+                      <img src={item.img_4}/>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
               :
               <div className='flex-bet pb'>

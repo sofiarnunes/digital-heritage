@@ -16,6 +16,7 @@ import SimpleFormat from './Components/Projects/SimpleFormat';
 import ComplexFormat from './Components/Projects/ComplexFormat';
 import SimpleFormatMobile from './Components/Projects/SimpleFormatMobile';
 import ComplexFormatMobile from './Components/Projects/ComplexFormatMobite';
+import "swiper/css/bundle";
 
 function App() {
   const history = createBrowserHistory({});
