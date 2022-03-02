@@ -30,7 +30,7 @@ import LowReliefh1 from '../../Assets/img/projects/Complex/Relief/relief-h1.jpg'
 import LowReliefv2 from '../../Assets/img/projects/Complex/Relief/relief-v2.mp4';
 import LowReliefh2 from '../../Assets/img/projects/Complex/Relief/relief-h2.mp4';
 import LowReliefv3 from '../../Assets/img/projects/Complex/Relief/relief-v3.jpg';
-import LowReliefh3 from '../../Assets/img/projects/Complex/Relief/relief-h3.jpg';
+import LowReliefh3 from '../../Assets/img/projects/Complex/Relief/relief-h3.mp4';
 import TouchCollection1 from '../../Assets/img/projects/collection-1.jpg';
 import TouchCollection2 from '../../Assets/img/projects/collection-panel.jpg';
 import TouchCollection3 from '../../Assets/img/projects/collection-mob-1.jpg';

@@ -187,7 +187,7 @@ ul {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     width: 334px;
     position: absolute;
-    top: 100%;
+    top: 102%;
   }
 
   /* FOOTER */
@@ -428,10 +428,11 @@ ul {
   }
 
   .grid-img1 .touch video {
-    height: 170%;
-    position: relative;
-    left: 13%;
-    top: -6%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-55%);
   }
 
   .grid-img2 {
@@ -464,6 +465,10 @@ ul {
   .grid-img2 .touch {
     position: relative;
     top: -30%;
+  }
+
+  .grid-vid {
+    width: 100%;
   }
 
   .grid-txt-1 {
@@ -1194,10 +1199,10 @@ ul {
   }
 
   .grid-img1 .touch video {
-    height: 150%;
-    position: relative;
-    left: 20%;
-    top: -5%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-54%);
   }
 
   .grid-img2 {
@@ -1625,7 +1630,7 @@ ul {
   .description-container img {
     position: absolute;
     left: -10%;
-    top: -20%;
+    top: -10%;
     width: 220px;
   }
 
@@ -2026,10 +2031,10 @@ ul {
   }
 
   .grid-img1 .touch video {
-    height: 150%;
-    position: relative;
-    left: 10%;
-    top: -5%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-61%);
   }
 
   .grid-img2 {
@@ -2312,7 +2317,7 @@ ul {
 
   .form-box {
     width: 80%;
-    height: 500px;
+    height: 450px;
     padding: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
@@ -2520,7 +2525,7 @@ ul {
     position: absolute;
     right: 0;
     top: 35%;
-    z-index: 10;
+    z-index: 0;
     overflow: hidden;
     width: 100%;
   }
@@ -2877,11 +2882,15 @@ ul {
     top: -15%;
   }
 
+  .grid-img1 .touch2 {
+    width: 100%;
+  }
+
   .grid-img2 .touch video {
-    height: 165%;
-    position: relative;
-    left: 13%;
-    top: -6%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-67%);
   }
 
   .grid-img2 {
@@ -3367,11 +3376,12 @@ ul {
 
 .exo {
   font-family: "Exo", sans-serif;
+  font-weight: 500;
 }
 
-.play {
+/* .play {
   font-family: "Playfair Display", serif;
-}
+} */
 
 /*  FONTSIZES */
 .xx-small {

@@ -47,7 +47,7 @@ const Contact = (props) => {
     <div className='container-1 contacts-page'>
       <img className='contact-bg' src={Bg}/>
       <h2 className='uppercase sub-title mt'>Contact our team</h2>
-      <p className='msg'>We will be happy to answer your questions.</p>
+      <p className='msg'>We would be happy to answer your questions.</p>
       <p className='mb-2 msg'>Fill out the form and we will get back to you shortly.</p>
       <div className='contacts-container flex-wrap'>
         <div className='form-box' >
@@ -103,7 +103,7 @@ const Contact = (props) => {
           </div>
           <div >
             <h4 className='info-title-2'>Feedback</h4>
-            <p className='mb'>We’d love to hear from you, even if it’s just to say hello or your opinion on our services.</p>
+            <p className='mb'>We would love to hear from you. Feel free to reach out and get in touch to discuss your ideas and plan your next project.</p>
           </div>
         </div>
       </div>

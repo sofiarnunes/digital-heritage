@@ -8,11 +8,16 @@ import Message from '../../Assets/message.svg';
 const ComplexFormat = () => {
 
   const { state } = useLocation(); 
-  const [active, setActive] = useState(1);   
+  const [active, setActive] = useState(1);
+  const [cat, setCat] = useState('1');
+     
 
   const handleChange = (e) => {
     setActive(e.target.value)
+    setCat('2');
   }
+  
+  console.log(active)
 
   return (
     <CSSTransition
@@ -84,7 +89,13 @@ const ComplexFormat = () => {
               : active === 3 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
               <div className='project-grid'>
                 <div className='grid-img1'><img className='relief' src={item.v3}/></div>
-                <div className='grid-img2'><img className='relief' src={item.h3}/></div>
+                <div className='grid-img2'>      
+                  <div>            
+                    <video autoPlay loop muted playsInline>
+                      <source src={item.h3} type="video/mp4"/>
+                    </video>
+                  </div>
+                  </div>
                 <p className='grid-txt-1'>{item.description_3}</p>
               </div>
               : active === 3 && item.name_1 === 'touch collection' ?

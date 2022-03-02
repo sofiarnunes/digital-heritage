@@ -55,7 +55,7 @@ const Model = () => {
       {venus === 'side' ?
       <>
         <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '80vh', left: '45%'} : {position: 'absolute', top: '40vh', left: '50%', zIndex: '2000', opacity: '0.4', width: '90px'}}/>
-        <Canvas style={hover === true ? {height: '140vh', width:'500px',  position: 'relative',zIndex: '-100', top: '-300px'} : {height: '140vh', width:'500px',  position: 'relative', opacity: '0.6', zIndex: '-100', top: '-300px'}}>
+        <Canvas style={hover === true ? {height: '140vh', width:'500px',  position: 'relative',zIndex: '-100', top: '-230px'} : {height: '140vh', width:'500px',  position: 'relative', opacity: '0.6', zIndex: '-100', top: '-300px'}}>
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} />
@@ -67,7 +67,7 @@ const Model = () => {
         : venus === 'middle1' ?
       <>
         <img ref={hoverRef} src={Manip} style={hover === true ? {display: 'none', position: 'absolute', zIndex: '2000', top: '25vh', left: '45%'} : {position: 'absolute', top: '25vh', left: '50%', zIndex: '2000', opacity: '0.4', width: '90px'}}/>   
-        <Canvas style={hover === true ? {height: '90vh',  position: 'absolute', top: '-270px', left:'-20px'} : {height: '90vh', position: 'absolute', left: '-30px', top: '-290px', opacity: '0.7'}} >
+        <Canvas style={hover === true ? {height: '90vh',  position: 'absolute', top: '-230px', left:'-20px'} : {height: '90vh', position: 'absolute', left: '-30px', top: '-230px', opacity: '0.7'}} >
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} />

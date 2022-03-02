@@ -26,6 +26,10 @@ const NavHamb = () => {
                 setTimeout(() => {
                     setMenu(false)
                 }, 300);
+            } else {
+                setTimeout(() => {
+                    setMenu(false)
+                }, 50);
             }
         }
 
