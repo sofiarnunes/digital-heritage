@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import NavBar from './Components/Navbar/NavBar';
 import NavBarPT from './Components/Navbar/NavBarPT';
-import { Routes, Route, Navigate }from 'react-router-dom';
+import { Routes, Route }from 'react-router-dom';
 import { BrowserRouter }from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 import About from './Components/About/About';
@@ -127,7 +127,6 @@ function App() {
       </Routes>
       : null}
         
-        {/* <Footer/> */}
       </div>
     </BrowserRouter>
   );

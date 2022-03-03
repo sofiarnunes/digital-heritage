@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import DataProjects from './DataProjects';
 import { CSSTransition } from 'react-transition-group';
@@ -13,7 +13,6 @@ import "swiper/css/effect-fade";
 const SimpleFormat = () => {
 
   const { state } = useLocation();  
-  const [img, setImg] = useState('');
  
   return (
     <CSSTransition

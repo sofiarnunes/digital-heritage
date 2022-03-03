@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import DataProjects from './DataProjects';
 import { CSSTransition } from 'react-transition-group';
