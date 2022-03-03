@@ -54,6 +54,9 @@ const SimpleFormatMobile = () => {
                 
               </Swiper>
               <p style={{width: '90%', margin: '20px auto'}} className='left'>{item.description}</p>
+              {item.name_1 === 'roman mural painting' &&
+                <p className='xx-small left' style={{width: '90%', margin: '20px auto'}}>*credit: the original photograph was shot by Luigi Spina.</p>
+              }
             </div> 
           }
           </>
