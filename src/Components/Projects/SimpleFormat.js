@@ -64,8 +64,11 @@ const SimpleFormat = () => {
               :
               <div className='flex-bet pb'>
                 <p className='project-description-1'>{item.description}</p>
-                <div className='side-cont-projects-1'>
+                <div className='side-cont-projects-1' style={{position: 'relative'}}>
                   <img className='side-img-projects' src={item.img_4}/>
+                    {item.name_1 === 'roman mural painting' &&
+                      <p className='xx-small' style={{position: 'absolute', left: '3%', bottom: '0'}}>*credit: the original photograph was shot by Luigi Spina.</p>
+                    }
                 </div>
               </div>
               }
