@@ -83,7 +83,7 @@ const ComplexFormat = () => {
                     </video>   
                   </div>
                 </div>               
-                <div className='grid-img2'><img className='touch' src={item.h2}/></div>
+                <div className='grid-img2'><img className='touch2' src={item.h2}/></div>
                 <p className='grid-txt-1'>{item.description_2}</p>
               </div>
               : active === 3 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?

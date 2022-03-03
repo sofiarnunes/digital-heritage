@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import NavBar from './Components/Navbar/NavBar';
+import NavBarPT from './Components/Navbar/NavBarPT';
 import { Routes, Route, Navigate }from 'react-router-dom';
 import { BrowserRouter }from 'react-router-dom';
 import {createBrowserHistory} from 'history';
@@ -11,6 +12,7 @@ import Services from './Components/Services/Services';
 import Services1 from './Components/Services/Services1';
 import Projects from './Components/Projects/Projects';
 import NavHamb from './Components/Navbar/NavHamb';
+import NavHambPT from './Components/Navbar/NavHambPT';
 import Test from './Components/Test';
 import SimpleFormat from './Components/Projects/SimpleFormat';
 import ComplexFormat from './Components/Projects/ComplexFormat';
@@ -23,6 +25,7 @@ function App() {
 
   const [nav, setNav] = useState()
   const [venus, setVenus] = useState()
+  const [lang, setLang] = useState('en')
 
   useEffect(() => {
     if(window.innerWidth >= 1001){
@@ -54,7 +57,12 @@ function App() {
   return (
     <BrowserRouter history={history}>
       <div>
-        {nav === 'row' ? <NavBar/> : <NavHamb/>}
+        {lang === 'en' ?
+          nav === 'row' ? <NavBar/> : <NavHamb/>
+        :  
+          nav === 'row' ? <NavBarPT/> : <NavHambPT/>
+      }
+        
         {
           (home === true && venus === 'side') ?
           <div style={{position: 'absolute', top:'108vh', left: '50%', zIndex: '10', height: '90vh', overflow: 'hidden'}}>
@@ -70,42 +78,55 @@ function App() {
           </div> 
 
         }
+        {nav === 'hamb' ?
+          <div style={{position: 'absolute', top: '1.1rem', right: '5rem', cursor: 'pointer', zIndex: '2000'}}>
+            <p style={{fontSize: '14px'}}><span className={lang === 'en' ? 'en-active mr' : 'en mr'} onClick={() => setLang('en')}>EN</span> | <span className={lang === 'pt' ? 'pt-active ml' : 'pt ml'} onClick={() => setLang('pt')}>PT</span></p>
+          </div>
+        :
+          <div style={{position: 'absolute', top: '2rem', right: '2rem', cursor: 'pointer', zIndex: '2000'}}>
+            <p style={{fontSize: '14px'}}><span className={lang === 'en' ? 'en-active' : 'en'} onClick={() => setLang('en')}>EN</span> | <span className={lang === 'pt' ? 'pt-active mr' : 'pt mr'} onClick={() => setLang('pt')}>PT</span></p>
+          </div>
+        }
+        
 
+        {lang === 'en' ?
         <Routes>
-          {/* <Route exact path="/" element={<Navigate to="/home" />} /> */}
-          <Route exact path="/" element={<HomePage  history={history} home={homeTrue} />} />
-          <Route exact path="/about" element={<About home={homeFalse}/>} />
-          <Route exact path="/projects" element={<Projects home={homeFalse}/>} />
-          {nav === 'row' ?
-            <Route path="/projects/virtual-restoration-roman-mural-painting" element={<SimpleFormat home={homeFalse}/>} />
-            :
-            <Route path="/projects/virtual-restoration-roman-mural-painting" element={<SimpleFormatMobile home={homeFalse}/>} />
-          }
-          {nav === 'row' ?
-            <Route path="/projects/3D-modelling-casa-guerrero" element={<SimpleFormat home={homeFalse}/>} />
-            :
-            <Route path="/projects/3D-modelling-casa-guerrero" element={<SimpleFormatMobile home={homeFalse}/>} />
-          }
-          {nav === 'row' ?
-            <Route path="/projects/virtual-restoration-egyptian-low-relief" element={<ComplexFormat home={homeFalse}/>} />
-            :
-            <Route path="/projects/virtual-restoration-egyptian-low-relief" element={<ComplexFormatMobile home={homeFalse}/>} />
-          }
-          {nav === 'row' ? 
-            <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<ComplexFormat home={homeFalse}/>} />
+        {/* <Route exact path="/" element={<Navigate to="/home" />} /> */}
+        <Route exact path="/" element={<HomePage  history={history} home={homeTrue} />} />
+        <Route exact path="/about" element={<About home={homeFalse}/>} />
+        <Route exact path="/projects" element={<Projects home={homeFalse}/>} />
+        {nav === 'row' ?
+          <Route path="/projects/virtual-restoration-roman-mural-painting" element={<SimpleFormat home={homeFalse}/>} />
           :
-            <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<ComplexFormatMobile home={homeFalse}/>} />
-          }
-
-          {/* <Route exact path="/latest-projects" element={<LatestProjects home={homeFalse}/>} /> */}
-          {venus === 'middle1' || venus === 'middle2'?
-          <Route exact path="/services" element={<Services1 home={homeFalse}/>} />  
+          <Route path="/projects/virtual-restoration-roman-mural-painting" element={<SimpleFormatMobile home={homeFalse}/>} />
+        }
+        {nav === 'row' ?
+          <Route path="/projects/3D-modelling-casa-guerrero" element={<SimpleFormat home={homeFalse}/>} />
           :
-          <Route exact path="/services" element={<Services home={homeFalse}/>} />
-          }
-          <Route exact path="/contact" element={<Contact home={homeFalse}/>} />
+          <Route path="/projects/3D-modelling-casa-guerrero" element={<SimpleFormatMobile home={homeFalse}/>} />
+        }
+        {nav === 'row' ?
+          <Route path="/projects/virtual-restoration-egyptian-low-relief" element={<ComplexFormat home={homeFalse}/>} />
+          :
+          <Route path="/projects/virtual-restoration-egyptian-low-relief" element={<ComplexFormatMobile home={homeFalse}/>} />
+        }
+        {nav === 'row' ? 
+          <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<ComplexFormat home={homeFalse}/>} />
+        :
+          <Route path="/projects/digitization-3Dprinting-for-touch-collection" element={<ComplexFormatMobile home={homeFalse}/>} />
+        }
 
-        </Routes>
+        {/* <Route exact path="/latest-projects" element={<LatestProjects home={homeFalse}/>} /> */}
+        {venus === 'middle1' || venus === 'middle2'?
+        <Route exact path="/services" element={<Services1 home={homeFalse}/>} />  
+        :
+        <Route exact path="/services" element={<Services home={homeFalse}/>} />
+        }
+        <Route exact path="/contact" element={<Contact home={homeFalse}/>} />
+
+      </Routes>
+      : null}
+        
         {/* <Footer/> */}
       </div>
     </BrowserRouter>

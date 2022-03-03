@@ -42,23 +42,25 @@ const SimpleFormat = () => {
               {item.name_1 === 'Casa Guerrero' ?
               <div className='flex-bet pb'>
                 <p className='project-description'>{item.description}</p>
-                <Swiper effect={"fade"} navigation={true} pagination={{ clickable: true }} modules={[EffectFade, Autoplay, Pagination, Navigation]} autoplay={{ delay: 2500, disableOnInteraction: true }}>
-                  <SwiperSlide>    
-                    <div className='side-cont-projects'>
-                      <img src={item.img_6}/>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className='side-cont-projects'>
-                      <img src={item.img_5}/>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className='side-cont-projects'>
-                      <img src={item.img_4}/>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
+                <div style={{width: '45%'}}>
+                  <Swiper effect={"fade"} navigation={true} pagination={{ clickable: true }} modules={[EffectFade, Autoplay, Pagination, Navigation]} autoplay={{ delay: 2500, disableOnInteraction: true }}>
+                    <SwiperSlide>    
+                      <div className='side-cont-projects'>
+                        <img src={item.img_6}/>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className='side-cont-projects'>
+                        <img src={item.img_5}/>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className='side-cont-projects'>
+                        <img src={item.img_4}/>
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
+                </div>
               </div>
               :
               <div className='flex-bet pb'>

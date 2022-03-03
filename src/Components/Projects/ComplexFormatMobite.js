@@ -1,25 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import DataProjects from './DataProjects';
 import { useLocation, Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import LinkedIn from '../../Assets/linkedin.svg';
 import Message from '../../Assets/message.svg';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
+import "swiper/css/effect-fade";
 
 const ComplexFormatMobile = () => {
 
   const { state } = useLocation(); 
-  const [active, setActive] = useState(1);  
-  const [img, setImg] = useState(1);  
-  
-  useEffect(() => {
-    DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_4)));
-    setTimeout(() => {
-      DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_5)));
-    }, 5000);
-    setTimeout(() => {
-      DataProjects.filter(item => item.name_1 === state.name).map((data => setImg(data.img_6)));
-    }, 10000);    
-  }, [])
+  const [active, setActive] = useState(1);    
 
   const handleChange = (e) => {
     setActive(e.target.value)
@@ -39,9 +33,17 @@ const ComplexFormatMobile = () => {
             <div className='container-1 mt-2'>
               <h2 className='sub-title uppercase center large'>{item.name_1}</h2>
               <p className='mb-2 center x-small'>{item.date_begin} - {item.date_end}</p>
-              <div className='mb-2'>
-                <img style={{width: '100%'}} src={img}/>
-              </div>
+              <Swiper style={{marginBottom: '50px'}} effect={"fade"} navigation={true} pagination={{ clickable: true }} modules={[EffectFade, Autoplay, Pagination, Navigation]} autoplay={{ delay: 2500, disableOnInteraction: true }}>
+                <SwiperSlide >    
+                    <img style={{width: '100vw'}} src={item.img_4}/>
+                </SwiperSlide>
+                <SwiperSlide>    
+                    <img style={{width: '100%'}} src={item.img_5}/>
+                </SwiperSlide>
+                <SwiperSlide>    
+                    <img style={{width: '100%'}} src={item.img_6}/>
+                </SwiperSlide>                
+              </Swiper>
               <ul className='project-menu x-small flex-bet uppercase'>
                 <li onClick={handleChange} value={1} className={active === 1 && `project-menu-active`}>{item.title_1}</li>
                 <li onClick={handleChange} value={2} className={active === 2 && `project-menu-active`}>{item.title_2}</li>
