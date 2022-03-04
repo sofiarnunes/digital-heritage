@@ -19,6 +19,7 @@ import ComplexFormatMobile from './Components/Projects/ComplexFormatMobite';
 import "swiper/css/bundle";
 
 function App() {
+
   const history = createBrowserHistory({});
 
   const [nav, setNav] = useState()
@@ -44,10 +45,6 @@ function App() {
   }, [setNav, window.innerWidth])
 
   const[home, setHome] = useState();
-
-  const langEN = () => {
-    setLang('en');
-  }
 
   const homeTrue = () => {
     setHome(true)
@@ -120,12 +117,10 @@ function App() {
         :
         <Route exact path="/services" element={<Services lang={lang} home={homeFalse}/>} />
         }
-        <Route exact path="/contact" element={<Contact set={langEN} lang={lang} home={homeFalse}/>} />
+        <Route exact path="/contact" element={<Contact lang={lang} home={homeFalse}/>} />
 
       </Routes>
-      
       : 
-
       <Routes>
       {/* <Route exact path="/" element={<Navigate to="/home" />} /> */}
       <Route exact path="/" element={<HomePage lang={lang} history={history} home={homeTrue} />} />
