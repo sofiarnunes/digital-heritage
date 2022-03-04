@@ -57,7 +57,7 @@ const NavHamb = ({lang}) => {
     <div>
         <div className={`flex-bet nav-hamb ${navBar === true && 'active'}`}>
             <Link to='/'>
-                <img src={DarkLogo} alt='logo'/>
+                <img src={DarkLogo} alt='logo' onClick={handleCat}/>
             </Link>
             <div style={{zIndex: '2000'}}><img onClick={handleOpen} src={Hamb} alt='hamb' /></div>
         </div>
