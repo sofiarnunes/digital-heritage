@@ -23,7 +23,7 @@ function App() {
 
   const [nav, setNav] = useState()
   const [venus, setVenus] = useState()
-  const [lang, setLang] = useState('en')
+  const [lang, setLang] = useState('pt')
 
   useEffect(() => {
     if(window.innerWidth >= 1001){
