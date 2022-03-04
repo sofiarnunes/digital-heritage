@@ -8,6 +8,12 @@ import Venus2 from '../../Assets/bg-home2.png';
 import ServicesSection from './ServicesSection';
 import ServicesSection1 from './ServicesSection1';
 import Footer from '../Footer/Footer';
+import HeroPT from './HeroPT';
+import AboutSectionPT from '../Homepage/AboutSectionPT';
+import AboutSection1PT from '../Homepage/AboutSection1PT';
+import ServicesSectionPT from './ServicesSectionPT';
+import ServicesSection1PT from './ServicesSection1PT';
+
 
 const HomePage = (props) => {
 
@@ -24,9 +30,12 @@ const HomePage = (props) => {
     }
   }, [setImg, window.innerWidth, props.home()])
 
+  console.log(props)
  
   return (
   <div>
+    {props.lang === 'en' ?
+      <>
       <Hero/>
       <img src={img} className='venus-home'/>
       {img === Venus ?
@@ -35,13 +44,34 @@ const HomePage = (props) => {
           <ServicesSection />
         </>
       : img === Venus1 || img === Venus2 ?
-      <>
-        <AboutSection1 />
-        <ServicesSection1 {...props}/>
-      </>
+        <>
+          <AboutSection1 />
+          <ServicesSection1 {...props}/>
+        </>
         :null
-    }
+      }
       <Footer/>
+      </>
+      : 
+      <>
+      <HeroPT/>
+      <img src={img} className='venus-home'/>
+      {img === Venus ?
+        <>
+          <AboutSectionPT/>
+          <ServicesSectionPT />
+        </>
+      : img === Venus1 || img === Venus2 ?
+        <>
+          <AboutSection1PT />
+          <ServicesSection1PT {...props}/>
+        </>
+        :null
+      }
+      <Footer/> 
+      </>
+  }
+     
   </div>
   )
 };

@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import DarkLogo from '../../Assets/logo-dark.svg';
 import Hamb from '../../Assets/hamb.svg';
 
-const NavHamb = () => {
+const NavHamb = ({lang}) => {
 
     const [menu, setMenu] = useState(false);
     const [navBar, setNavBar] = useState(false);
+    const[active, setActive] = useState('');
     let menuRef = useRef();
 
     const handleOpen = (e) => {
@@ -15,9 +16,11 @@ const NavHamb = () => {
         } else {
             setMenu(false)
         }
-    
     }
 
+    const handleCat = (e) => {
+        setActive(e.target.value);
+    }
 
     useEffect(() => {
         let handler = (event) => {
@@ -61,28 +64,54 @@ const NavHamb = () => {
         {
             menu === true &&
             <div className='side-bar'>
+                {lang === 'en' ?
                 <ul ref={menuRef} className='uppercase bold exo nav'>
                     <Link to='/about'>
-                        <li className={`cat`}>
+                        <li value={1} className={`cat ${active === 1 && 'active'}`} onClick={handleCat}>
                         about
                         </li>
                     </Link>
                     <Link to='/projects'>
-                        <li className={`cat`}>
+                        <li value={2} className={`cat ${active === 2 && 'active'}`} onClick={handleCat}>
                         projects
                         </li>
                     </Link>
                     <Link to='/services'>
-                        <li className={`cat`}>
+                        <li value={3} className={`cat ${active === 3 && 'active'}`} onClick={handleCat}>
                         services
                         </li>
                     </Link>
                     <Link to='/contact'>
-                        <li  className={`cat`}>
+                        <li value={4} className={`cat ${active === 4 && 'active'}`} onClick={handleCat}>
                         contact
                         </li>
                     </Link>
                 </ul>
+                :
+                <ul ref={menuRef} className='uppercase bold exo nav'>
+                    <Link to='/about'>
+                        <li value={1} className={`cat ${active === 1 && 'active'}`} onClick={handleCat}>
+                        sobre
+                        </li>
+                    </Link>
+                    <Link to='/projects'>
+                        <li value={2} className={`cat ${active === 2 && 'active'}`} onClick={handleCat}>
+                        projetos
+                        </li>
+                    </Link>
+                    <Link to='/services'>
+                        <li value={3} className={`cat ${active === 3 && 'active'}`} onClick={handleCat}>
+                        serviços
+                        </li>
+                    </Link>
+                    <Link to='/contact'>
+                        <li value={4} className={`cat ${active === 4 && 'active'}`} onClick={handleCat}>
+                        contactos
+                        </li>
+                    </Link>
+                </ul>
+                }
+                
             </div>
         }
         

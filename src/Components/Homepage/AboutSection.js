@@ -12,7 +12,6 @@ const AboutSection = () => {
               <button className='btn btn-light'>Contact us</button>
             </Link>
           </div>
-          <div></div>
       </div>
     )
 };
