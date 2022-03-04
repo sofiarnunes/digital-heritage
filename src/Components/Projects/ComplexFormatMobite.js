@@ -92,10 +92,12 @@ const ComplexFormatMobile = (props) => {
                 </div>
                 : active === 3 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
                 <div className='project-grid'>
-                  <div className='grid-img1'>            
-                    <video autoPlay loop muted playsInline>
-                      <source src={item.h3} type="video/mp4"/>
-                    </video>
+                  <div className='grid-img1'>    
+                    <div>        
+                      <video autoPlay loop muted playsInline>
+                        <source src={item.h3} type="video/mp4"/>
+                      </video>
+                    </div>
                   </div>                  
                   <p className='grid-txt-1'>{item.description_3}</p>
                   <div className='grid-img2'><img className='relief' src={item.v3}/></div>
