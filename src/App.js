@@ -45,6 +45,10 @@ function App() {
 
   const[home, setHome] = useState();
 
+  const langEN = () => {
+    setLang('en');
+  }
+
   const homeTrue = () => {
     setHome(true)
   }
@@ -116,7 +120,7 @@ function App() {
         :
         <Route exact path="/services" element={<Services lang={lang} home={homeFalse}/>} />
         }
-        <Route exact path="/contact" element={<Contact lang={lang} home={homeFalse}/>} />
+        <Route exact path="/contact" element={<Contact set={langEN} lang={lang} home={homeFalse}/>} />
 
       </Routes>
       

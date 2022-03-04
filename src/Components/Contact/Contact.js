@@ -30,6 +30,11 @@ const Contact = (props) => {
       setTimeout(() => {
         setClick(false);
       }, 1000);
+      if(props.lang === 'en'){
+        setTimeout(() => {
+          props.set();
+        }, 2000);
+      }
     }
   }
 
