@@ -1759,7 +1759,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    top: 1770px;
+    top: 180vh;
     height: 50px;
     width: 100%;
     background-color: var(--light-color);
@@ -3297,7 +3297,7 @@ ul {
 
   .contact-info {
     width: 80%;
-    height: 200px;
+    height: 250px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;

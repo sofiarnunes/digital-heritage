@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import darkLogo from '../../Assets/logo-dark.svg'
 import lightLogo from '../../Assets/logo-light.svg'
 
-const NavBar = () => {
+const NavBar = ({lang}) => {
 
     const[logo, setLogo] = useState(darkLogo);
     const[active, setActive] = useState('');
@@ -33,6 +33,7 @@ const NavBar = () => {
 
     return (
     <div className={`navbar ${navBar === true && 'active'}`} onMouseOver={handleLight} onMouseLeave={handleDark}>
+        {lang === 'en' ?
         <ul className='flex-around uppercase exo nav'>
             <Link to='/about'>
                 <li value={1} onClick={handleCat} className={`cat ${active === 1 && 'active'}`}>
@@ -63,7 +64,39 @@ const NavBar = () => {
                 </li>
             </Link>
         </ul>
+        :
+        <ul className='flex-around uppercase exo nav'>
+            <Link to='/about'>
+                <li value={1} onClick={handleCat} className={`cat ${active === 1 && 'active'}`}>
+                sobre
+                </li>
+            </Link>
 
+            <Link to='/projects'>
+                <li value={2} onClick={handleCat} className={`cat ${active === 2 && 'active'}`}>
+                projetos
+                </li>
+            </Link>
+
+            <Link to='/'>
+                <li value='home' onClick={handleCat}>
+                    <img className={`${navBar === true && 'active-img'}`} src={logo} alt='logo'/>
+                </li>
+            </Link>
+            <Link to='/services'>
+                <li value={3} onClick={handleCat} className={`cat ${active === 3 && 'active'}`}>
+                serviços
+                </li>
+            </Link>
+
+            <Link to='/contact'>
+                <li  value={4} onClick={handleCat} className={`cat ${active === 4 && 'active'}`}>
+                contactos
+                </li>
+            </Link>
+        </ul>
+    }
+        
     </div>
   )
 };

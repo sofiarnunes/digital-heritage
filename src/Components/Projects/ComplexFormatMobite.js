@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import DataProjects from './DataProjects';
+import DataProjectsPT from './DataProjectsPT';
 import { useLocation, Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import LinkedIn from '../../Assets/linkedin.svg';
@@ -10,7 +11,7 @@ import "swiper/css/navigation";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css/effect-fade";
 
-const ComplexFormatMobile = () => {
+const ComplexFormatMobile = (props) => {
 
   const { state } = useLocation(); 
   const [active, setActive] = useState(1);    
@@ -19,6 +20,8 @@ const ComplexFormatMobile = () => {
     setActive(e.target.value)
   }
 
+  const dataArray = props.lang === 'en' ? DataProjects : DataProjectsPT;
+
   return (
     <CSSTransition
     in={true}
@@ -26,12 +29,12 @@ const ComplexFormatMobile = () => {
     timeout={500}
     classNames='fade'>
     <div className='container complex-container'>
-      {DataProjects.map((item) => {
+      {dataArray.map((item) => {
         return(
           <>
           {item.name_1 === state.name &&
             <div className='container-1 mt-2'>
-              <h2 className='sub-title uppercase center large'>{item.name_1}</h2>
+              <h2 className='sub-title uppercase center large'>{item.name_11}</h2>
               <p className='mb-2 center x-small'>{item.date_begin} - {item.date_end}</p>
               <Swiper style={{marginBottom: '50px'}} effect={"fade"} navigation={true} pagination={{ clickable: true }} modules={[EffectFade, Autoplay, Pagination, Navigation]} autoplay={{ delay: 2500, disableOnInteraction: true }}>
                 <SwiperSlide >    

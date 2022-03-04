@@ -4,7 +4,7 @@ import Arrow from '../../Assets/arrow-right-grey.svg';
 import Dots from '../../Assets/three-dots-one.svg';
 
 
-const AboutCatOne = ({img, text, next}) => {
+const AboutCatOne = ({img, text, next, title}) => {
 
   return (
       <div>
@@ -21,7 +21,7 @@ const AboutCatOne = ({img, text, next}) => {
             <img className='dots' src={Dots}/>
           </div>
           <div className='about-text'>
-            <h2 className='sub-title uppercase mb-2 mob-title-about'>Digital heritage</h2>
+            <h2 className='sub-title uppercase mb-2 mob-title-about'>{title}</h2>
             <p className='about-p play x-medium'>{text}</p>
           </div>
         </div>
