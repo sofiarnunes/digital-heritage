@@ -69,6 +69,16 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    if(lang === undefined){
+      Cookies.set('lang', 'pt');
+      window.location.reload(true);
+    }
+  }, [lang])
+
+  console.log('lang');
+  console.log(lang)
+
   return (
     <BrowserRouter history={history}>
       <div>
