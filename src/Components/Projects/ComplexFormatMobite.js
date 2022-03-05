@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import DataProjects from './DataProjects';
 import DataProjectsPT from './DataProjectsPT';
 import { useLocation, Link } from 'react-router-dom';
@@ -12,6 +12,10 @@ import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css/effect-fade";
 
 const ComplexFormatMobile = (props) => {
+
+  useEffect(() => {
+    props.home()
+  }, [props.home, props])
 
   const { state } = useLocation(); 
   const [active, setActive] = useState(1);    

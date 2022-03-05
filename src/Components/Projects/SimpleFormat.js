@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import DataProjects from './DataProjects';
 import DataProjectsPT from './DataProjectsPT';
@@ -12,6 +12,10 @@ import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css/effect-fade";
 
 const SimpleFormat = (props) => {
+
+  useEffect(() => {
+    props.home()
+  }, [props.home, props])
 
   const { state } = useLocation();  
  

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import DataProjects from './DataProjects';
 import DataProjectsPT from './DataProjectsPT';
 import { useLocation, Link } from 'react-router-dom';
@@ -7,6 +7,10 @@ import LinkedIn from '../../Assets/linkedin.svg';
 import Message from '../../Assets/message.svg';
 
 const ComplexFormat = (props) => {
+
+  useEffect(() => {
+    props.home()
+  }, [props.home, props])
 
   const { state } = useLocation(); 
   const [active, setActive] = useState(1);

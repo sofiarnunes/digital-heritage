@@ -46,7 +46,7 @@ function App() {
     }
   }, [setNav])
 
-  const[home, setHome] = useState(true);
+  const[home, setHome] = useState();
 
   const homeTrue = () => {
     setHome(true)
