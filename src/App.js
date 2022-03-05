@@ -46,7 +46,7 @@ function App() {
     }
   }, [setNav])
 
-  const[home, setHome] = useState();
+  const[home, setHome] = useState(true);
 
   const homeTrue = () => {
     setHome(true)
@@ -75,9 +75,6 @@ function App() {
       window.location.reload(true);
     }
   }, [lang])
-
-  console.log('lang');
-  console.log(lang)
 
   return (
     <BrowserRouter history={history}>
