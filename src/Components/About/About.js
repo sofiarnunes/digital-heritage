@@ -136,7 +136,7 @@ const About = (props) => {
                       <img  src={Dots1} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
-                        <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Digital heritage</h2>
+                        <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Mission</h2>
                         <p className='about-p play x-medium txt-left'>Digital Heritage was created by Rute Rebocho, in 2022. Our work aims for the digital preservation, restoration, and reconstruction of cultural and natural heritage. This company responds to the pressing need for the digital preservation and dissemination of heritage and allow us to be transported in time and perceive cultural heritage in a way that cannot be attainable in its current physical state.</p>
                       </div> 
                     </div>
@@ -147,7 +147,7 @@ const About = (props) => {
                       <img  src={Dots2} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
-                        <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Digital heritage</h2>
+                        <h2 className='sub-title uppercase mb-2 mob-title-about mt'>About me</h2>
                         <p className='about-p play x-medium txt-left'>Rute is a specialist in Virtual Restoration of cultural heritage, with a Master in Virtual Heritage. She also has a degree and a master’s degree in Conservation and Restoration, which proves to be a valuable asset in the manipulation, study, and understanding of cultural heritage objects in any digital project.</p>
                       </div> 
                     </div>
@@ -158,7 +158,7 @@ const About = (props) => {
                       <img  src={Dots3} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
-                        <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Digital heritage</h2>
+                        <h2 className='sub-title uppercase mb-2 mob-title-about mt'>About me</h2>
                         <p className='about-p play x-medium txt-left'>Using the rare level of access provided to Rute, by the Calouste Gulbenkian Museum (Lisbon, Portugal), she further developed techniques for the digital capture, preservation, and reconstruction of invaluable artworks at a national and international level, generating new meaning for historical artifacts.</p>
                       </div> 
                     </div>
