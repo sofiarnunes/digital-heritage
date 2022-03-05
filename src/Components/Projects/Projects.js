@@ -58,7 +58,7 @@ const Gallery = (props) => {
               <option value='all'>Todos</option>
               <option value='1'>Restauro e Reconstrução Virtual</option>
               <option value='2'>Objetos e Coleções Digitalizados</option>
-              <option value='3'>Modelos 3D arquitetónicos</option>
+              <option value='3'>Modelos Arquitetónicos</option>
             </select>
             <img className='drop-arrow' src={Arrow} alt='arrow'/>
           </div>

@@ -75,7 +75,7 @@ const Services = (props) => {
             <img className='services-img' src={Box} alt='Digitalization of objects and collections'/>
             </div>
             <div style={{marginTop: '20px'}}>
-              <p className='center medium'>Digitalization of objects and collections</p>
+              <p className='center medium'>Digitization of Objects and Collections</p>
             </div>
           </div>
 
@@ -174,7 +174,7 @@ const Services = (props) => {
               <img className='services-img' src={HouseClosed} alt='Modelos 3D arquitetónicos'/>
             </div>
             <div style={{marginTop: '20px'}}>
-              <p className='center medium'>Modelos 3D arquitetónicos</p>
+              <p className='center medium'>Modelos Arquitetónicos</p>
             </div>
           </div>
         </div>

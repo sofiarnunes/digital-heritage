@@ -177,11 +177,11 @@ const Contact = (props) => {
             </div>
             <div>
               <h4 className='info-title-2'>Suporte</h4>
-              <p className='mb'>Se necessitar de alguma assistência, entre em contato connosco através do formulário ou do e-mail acima.</p>
+              <p className='mb'>Se necessitar de alguma assistência, entre em contacto connosco através do formulário ou do e-mail acima.</p>
             </div>
             <div >
               <h4 className='info-title-2'>Comentários</h4>
-              <p className='mb'>Gostaríamos muito de ouvir sua opinião. Entre em contacto connosco para discutir as suas ideias e planear o seu próximo projeto.</p>
+              <p className='mb'>Gostaríamos muito de ouvir a sua opinião. Entre em contacto connosco para discutir as suas ideias e planear o seu próximo projeto.</p>
             </div>
           </div>
         </div>

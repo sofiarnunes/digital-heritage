@@ -5,17 +5,15 @@ import CasaGuerrero4 from '../../Assets/img/projects/guerrero-2.jpg';
 import CasaGuerrero5 from '../../Assets/img/projects/guerrero-3.jpg';
 import CasaGuerrero6 from '../../Assets/img/projects/casa-guerrero-mob-1.jpg';
 import CasaGuerrero7 from '../../Assets/img/projects/casa-guerrero-mob-2.jpg';
-import CasaGuerrero8 from '../../Assets/img/projects/casa-guerrero-mob-3.jpg';
-import CasaGuerrero9 from '../../Assets/img/projects/casa-guerrero-mob-4.jpg';
-import CasaGuerrero10 from '../../Assets/img/projects/casa-guerrero-mob-5.jpg';
-import CasaGuerrero11 from '../../Assets/img/projects/casa-guerrero-mob-6.jpg';
+import CasaGuerrero8 from '../../Assets/img/projects/casa-guerrero-mob-4.jpg';
+import CasaGuerrero9 from '../../Assets/img/projects/casa-guerrero-mob-5.jpg';
+import CasaGuerrero10 from '../../Assets/img/projects/casa-guerrero-mob-6.jpg';
 import RomanMural from '../../Assets/img/projects/roman-mural-1.png';
 import RomanMural2 from '../../Assets/img/projects/roman-mural-2.png';
 import RomanMural3 from '../../Assets/img/projects/mural-panel.jpg';
 import RomanMural4 from '../../Assets/img/projects/mural-1.gif';
 import RomanMural6 from '../../Assets/img/projects/mural-mob-1.jpg';
 import RomanMural7 from '../../Assets/img/projects/mural-mob-2.jpg';
-import RomanMural8 from '../../Assets/img/projects/mural-mob-3.jpg';
 import RomanMural9 from '../../Assets/img/projects/mural-mob-4.jpg';
 import RomanMural10 from '../../Assets/img/projects/mural-mob-5.jpg';
 import RomanMural11 from '../../Assets/img/projects/mural-mob-6.jpg';
@@ -117,7 +115,7 @@ const DataProjectsPT = [
         img_5: RomanMural6,
         img_6: RomanMural7,
         img_7: RomanMural11,
-        img_8: RomanMural8,
+        img_8: RomanMural6,
         img_9: RomanMural9,
         img_10: RomanMural10,
         img_11: RomanMural10,
@@ -144,7 +142,6 @@ const DataProjectsPT = [
         img_9: CasaGuerrero8,
         img_10: CasaGuerrero9,
         img_11: CasaGuerrero10,
-        img_12: CasaGuerrero11,
         description: 'Utilizando plantas CAD da Casa Guerrero, do arquiteto Alberto Campo Baeza, em Cádis, Espanha, foi criado um modelo 3D deste espaço arquitetónico. O entorno também foi considerado na criação de um ambiente fotorrealista, com a modelação de água, árvores e outros elementos vegetalistas.',
     },
 ]

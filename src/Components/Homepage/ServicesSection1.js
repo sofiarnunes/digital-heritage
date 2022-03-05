@@ -5,6 +5,7 @@ import RestauroGif from '../../Assets/img/services/restauro-gif.gif';
 import HouseClosed from '../../Assets/img/services/arquite-img1.png';
 import HouseOpened from '../../Assets/img/services/arquite-img2.png';
 import Box from '../../Assets/img/services/collection1.png';
+import Box2 from '../../Assets/img/services/collection2.png';
 import PopUp from '../Utilities/PopUp';
 
 
@@ -34,7 +35,7 @@ const ServicesSection1 = () => {
   }
 
   const handleServiceTwo = () => {
-    setService2(Box);
+    setService2(Box2);
     setPopup2(true);
     if(popup2 === true){
       navigate('/services', {state:  2 });    
@@ -80,7 +81,7 @@ const ServicesSection1 = () => {
           <div className='services-container'> 
             <img className='services-img' src={service2} onClick={handleServiceTwo} onMouseLeave={handleLeaveTwo} alt='digitalization of objects and collections'/>
           </div>
-          <p className='x-medium center mt-1'>Digitalization of objects and collections</p>
+          <p className='x-medium center mt-1'>Digitization of Objects and Collections</p>
           {popup2 === true && <PopUp text='Digital photogrammetry and 3D modelling create accurate and photorealistic high-resolution 3D documentation.'/>}
         </div>
         <div className={popup1 === true || popup2 === true ? `services-cont disabled` : 'services-cont'}>

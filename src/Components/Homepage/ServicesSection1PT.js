@@ -5,6 +5,7 @@ import RestauroGif from '../../Assets/img/services/restauro-gif.gif';
 import HouseClosed from '../../Assets/img/services/arquite-img1.png';
 import HouseOpened from '../../Assets/img/services/arquite-img2.png';
 import Box from '../../Assets/img/services/collection1.png';
+import Box2 from '../../Assets/img/services/collection2.png';
 import PopUp from '../Utilities/PopUp';
 
 
@@ -34,7 +35,7 @@ const ServicesSection1PT = () => {
   }
 
   const handleServiceTwo = () => {
-    setService2(Box);
+    setService2(Box2);
     setPopup2(true);
     if(popup2 === true){
       navigate('/services', {state:  2 });    
@@ -87,7 +88,7 @@ const ServicesSection1PT = () => {
           <div className='services-container'> 
             <img className='services-img' src={service3} onClick={handleServiceThree} onMouseLeave={handleLeaveThree} alt='Modelos 3D arquitetónicos'/>
           </div>
-          <p className='x-medium center mt-1'>Modelos 3D arquitetónicos</p>
+          <p className='x-medium center mt-1'>Modelos Arquitetónicos</p>
           {popup3 === true && <PopUp text='Modelos 3D arquitetônicos baseados em planos CAD, usando materiais fotorrealistas com aspeto naturalista.'/>}
         </div>
       </div>

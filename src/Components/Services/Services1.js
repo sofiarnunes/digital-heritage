@@ -72,7 +72,7 @@ const Services = (props) => {
             <img className='services-img' src={Box} alt='Digitalization of objects and collections'/>
             </div>
             <div style={{marginTop: '20px'}}>
-              <p className='center'>Digitalization of objects and collections</p>
+              <p className='center'>Digitization of Objects and Collections</p>
             </div>
           </div>
 
@@ -107,7 +107,7 @@ const Services = (props) => {
           </div>
           : clicked === 2 ?
           <div ref={scrollRef} className='center service-box2'>
-            <h4 className='x-large mb-3 mt-3'>Digitalization of objects and collections</h4>
+            <h4 className='x-large mb-3 mt-3'>Digitization of Objects and Collections</h4>
             <div className='services-grid mb-3'>
               <div className='services-grid-1'><img className='digit' src={Digitalization1} alt='digitalization'/></div>
               <div className='services-grid-2'><img className='digit' src={Digitalization2} alt='digitalization'/></div>
@@ -174,7 +174,7 @@ const Services = (props) => {
               <img className='services-img' src={HouseClosed} alt='Modelos 3D arquitetónicos'/>
             </div>
             <div style={{marginTop: '20px'}}>
-              <p className='center'>Modelos 3D arquitetónicos</p>
+              <p className='center'>Modelos Arquitetónicos</p>
             </div>
           </div>
         </div>
@@ -214,7 +214,7 @@ const Services = (props) => {
           </div>
         : clicked === 3 && 
         <div ref={scrollRef} className='center service-box3'>
-          <h4 className='x-large mb-3 mt-3'>Modelos 3D arquitetónicos</h4>
+          <h4 className='x-large mb-3 mt-3'>Modelos Arquitetónicos</h4>
           <div className='services-grid mb-3'>
             <div className='services-grid-1'><img className='arq' src={Architecture1} alt='arquitecture'/></div>
             <div className='services-grid-2'><img className='arq' src={Architecture2} alt='arquitecture'/></div>

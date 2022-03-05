@@ -95,7 +95,7 @@ const ServicesSectionPT = () => {
             <img className='services-img' src={service3} onMouseOver={handleServiceThree} onMouseLeave={handleLeaveThree} alt='Modelos 3D arquitetónicos'/>
           </div>
           <div>
-            <p className='center'>Modelos 3D arquitetónicos</p>
+            <p className='center'>Modelos Arquitetónicos</p>
           </div>
           {popup3 === true && <PopUp text='Modelos 3D arquitetônicos baseados em planos CAD, usando materiais fotorrealistas com aspeto naturalista.'/>}
         </div>

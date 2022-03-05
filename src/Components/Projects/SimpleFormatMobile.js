@@ -44,14 +44,9 @@ const SimpleFormatMobile = (props) => {
                 <SwiperSlide>    
                     <img style={{width: '100%'}} src={item.img_10} alt='project'/>
                 </SwiperSlide>
-                {(item.name !== 'Virtual restoration of a roman mural painting' || item.name !== 'Restauro virtual de uma pintura mural romana') && 
+                {(item.name_1 !== 'roman mural painting') && 
                   <SwiperSlide>    
                       <img style={{width: '100%'}} src={item.img_11} alt='project'/>
-                  </SwiperSlide>
-                }
-                {(item.name !== 'Virtual restoration of a roman mural painting' || item.name !== 'Restauro virtual de uma pintura mural romana') && 
-                  <SwiperSlide>    
-                    <img style={{width: '100%'}} src={item.img_12} alt='project'/>
                   </SwiperSlide>
                 }
                 

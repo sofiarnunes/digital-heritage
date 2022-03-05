@@ -85,7 +85,7 @@ const ServicesSection = () => {
           <img className='services-img' src={service2} onMouseOver={handleServiceTwo} onMouseLeave={handleLeaveTwo} alt='digitalization of objects and collections'/>
           </div>
           <div>
-            <p className='center'>Digitalization of objects and collections</p>
+            <p className='center'>Digitization of Objects and Collections</p>
           </div>
           {popup2 === true && <PopUp text='Digital photogrammetry and 3D modelling create accurate and photorealistic high-resolution 3D documentation.'/>}
         </div>
