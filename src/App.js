@@ -17,14 +17,15 @@ import ComplexFormat from './Components/Projects/ComplexFormat';
 import SimpleFormatMobile from './Components/Projects/SimpleFormatMobile';
 import ComplexFormatMobile from './Components/Projects/ComplexFormatMobite';
 import "swiper/css/bundle";
+import Cookies from 'js-cookie';
 
 function App() {
 
   const history = createBrowserHistory({});
 
-  const [nav, setNav] = useState()
-  const [venus, setVenus] = useState()
-  const [lang, setLang] = useState('pt')
+  const [nav, setNav] = useState();
+  const [venus, setVenus] = useState();
+  const [lang, setLang] = useState(Cookies.get('lang'));
 
   useEffect(() => {
     if(window.innerWidth >= 1001){
@@ -35,6 +36,7 @@ function App() {
       setVenus('middle2')
     }
   }, [setVenus])
+
 
   useEffect(() => {
     if(window.innerWidth > 480){
@@ -51,6 +53,20 @@ function App() {
   }
   const homeFalse = () => {
     setHome(false)
+  }
+
+  const cookiesHandleEn = () => {
+    if(lang === undefined || lang === 'pt'){
+      Cookies.set('lang', 'en');
+      window.location.reload(true);
+    }
+  }
+
+  const cookiesHandlePt = () => {
+    if(lang === undefined || lang === 'en'){
+      Cookies.set('lang', 'pt');
+      window.location.reload(true);
+    }
   }
 
   return (
@@ -79,7 +95,7 @@ function App() {
           </div>
         :
           <div style={{position: 'absolute', top: '2rem', right: '2rem', cursor: 'pointer', zIndex: '2000'}}>
-            <p style={{fontSize: '14px'}}><span className={lang === 'en' ? 'en-active' : 'en'} onClick={() => setLang('en')}>EN</span> | <span className={lang === 'pt' ? 'pt-active mr' : 'pt mr'} onClick={() => setLang('pt')}>PT</span></p>
+            <p style={{fontSize: '14px'}}><span className={lang === 'en' ? 'en-active' : 'en'} onClick={cookiesHandleEn}>EN</span> | <span className={lang === 'pt' ? 'pt-active mr' : 'pt mr'} onClick={cookiesHandlePt}>PT</span></p>
           </div>
         }
         
