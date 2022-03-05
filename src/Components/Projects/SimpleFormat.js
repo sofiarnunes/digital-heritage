@@ -62,7 +62,7 @@ const SimpleFormat = (props) => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className='side-cont-projects'>
-                        <img src={item.img_4} alt='project'/>
+                        <img src={item.img_11} alt='project'/>
                       </div>
                     </SwiperSlide>
                   </Swiper>
