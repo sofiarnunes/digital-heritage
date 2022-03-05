@@ -56,7 +56,7 @@ function App() {
   }
 
   const cookiesHandleEn = () => {
-    if(lang === undefined || lang === 'pt'){
+    if(lang === 'pt'){
       Cookies.set('lang', 'en');
       window.location.reload(true);
     }
