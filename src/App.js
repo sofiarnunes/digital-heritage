@@ -98,7 +98,7 @@ function App() {
         }
         {nav === 'hamb' ?
           <div style={{position: 'absolute', top: '1.1rem', right: '5rem', cursor: 'pointer', zIndex: '2000'}}>
-            <p style={{fontSize: '14px'}}><span className={lang === 'en' ? 'en-active mr' : 'en mr'} onClick={() => setLang('en')}>EN</span> | <span className={lang === 'pt' ? 'pt-active ml' : 'pt ml'} onClick={() => setLang('pt')}>PT</span></p>
+            <p style={{fontSize: '14px'}}><span className={lang === 'en' ? 'en-active mr' : 'en mr'} onClick={cookiesHandleEn}>EN</span> | <span className={lang === 'pt' ? 'pt-active ml' : 'pt ml'} onClick={cookiesHandlePt}>PT</span></p>
           </div>
         :
           <div style={{position: 'absolute', top: '2rem', right: '2rem', cursor: 'pointer', zIndex: '2000'}}>
