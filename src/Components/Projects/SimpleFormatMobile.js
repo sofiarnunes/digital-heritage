@@ -33,25 +33,25 @@ const SimpleFormatMobile = (props) => {
               <p className='mb-2 center x-small'>{item.date_begin} - {item.date_end}</p>
               <Swiper effect={"fade"} navigation={true} pagination={{ clickable: true }} modules={[EffectFade, Autoplay, Pagination, Navigation]} autoplay={{ delay: 2500, disableOnInteraction: true }}>
                 <SwiperSlide style={{marginBottom: '50px'}}>    
-                    <img style={{width: '100vw'}} src={item.img_7}/>
+                    <img style={{width: '100vw'}} src={item.img_7} alt='project'/>
                 </SwiperSlide>
                 <SwiperSlide>    
-                    <img style={{width: '100%'}} src={item.img_8}/>
+                    <img style={{width: '100%'}} src={item.img_8} alt='project'/>
                 </SwiperSlide>
                 <SwiperSlide>    
-                    <img style={{width: '100%'}} src={item.img_9}/>
+                    <img style={{width: '100%'}} src={item.img_9} alt='project'/>
                 </SwiperSlide>
                 <SwiperSlide>    
-                    <img style={{width: '100%'}} src={item.img_10}/>
+                    <img style={{width: '100%'}} src={item.img_10} alt='project'/>
                 </SwiperSlide>
-                {item.name !== 'Virtual restoration of a roman mural painting' || item.name !== 'Restauro virtual de uma pintura mural romana' && 
+                {(item.name !== 'Virtual restoration of a roman mural painting' || item.name !== 'Restauro virtual de uma pintura mural romana') && 
                   <SwiperSlide>    
-                      <img style={{width: '100%'}} src={item.img_11}/>
+                      <img style={{width: '100%'}} src={item.img_11} alt='project'/>
                   </SwiperSlide>
                 }
-                {item.name !== 'Virtual restoration of a roman mural painting' || item.name !== 'Restauro virtual de uma pintura mural romana' && 
+                {(item.name !== 'Virtual restoration of a roman mural painting' || item.name !== 'Restauro virtual de uma pintura mural romana') && 
                   <SwiperSlide>    
-                    <img style={{width: '100%'}} src={item.img_12}/>
+                    <img style={{width: '100%'}} src={item.img_12} alt='project'/>
                   </SwiperSlide>
                 }
                 
@@ -70,7 +70,7 @@ const SimpleFormatMobile = (props) => {
       })}
         <div className='footer-project-comp'>
           <div className='border flex-around'>
-            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
             <Link to='/contact'>
               <img src={Message} alt='message'/>
             </Link>

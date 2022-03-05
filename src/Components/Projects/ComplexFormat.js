@@ -46,7 +46,7 @@ const ComplexFormat = (props) => {
               <h2 className='sub-title uppercase'>{item.name_11}</h2>
               <p className='mb-2'>{item.date_begin} - {item.date_end}</p>
               <div className='mb-2'>
-                <img style={{width: '100%'}} src={item.img_3}/>
+                <img style={{width: '100%'}} src={item.img_3} alt='project'/>
               </div>
               <ul className='project-menu x-small flex-bet uppercase'>
                 <li onClick={handleChange} value={1} className={active === 1 && `project-menu-active`}>{item.title_1}</li>
@@ -55,14 +55,14 @@ const ComplexFormat = (props) => {
               </ul>
               {active === 1 && item.name_1 === 'touch collection' ?
                 <div className='project-grid'>
-                  <div className='grid-img1'><img className='touch' src={item.v1}/></div>
-                  <div className='grid-img2'><img className='touch' src={item.h1}/></div>
+                  <div className='grid-img1'><img className='touch' src={item.v1} alt='project'/></div>
+                  <div className='grid-img2'><img className='touch' src={item.h1} alt='project '/></div>
                   <p className='grid-txt-1'>{item.description_1}</p>
                 </div>
               : active === 1 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
                 <div className='project-grid'>
-                  <div className='grid-img1'><img src={item.v1}/></div>
-                  <div className='grid-img2'><img src={item.h1}/></div>
+                  <div className='grid-img1'><img src={item.v1} alt='project'/></div>
+                  <div className='grid-img2'><img src={item.h1} alt='project'/></div>
                   <p className='grid-txt-1'>{item.description_1}</p>
                 </div>
               : active === 2 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
@@ -88,12 +88,12 @@ const ComplexFormat = (props) => {
                     </video>   
                   </div>
                 </div>               
-                <div className='grid-img2'><img className='touch2' src={item.h2}/></div>
+                <div className='grid-img2'><img className='touch2' src={item.h2} alt='project'/></div>
                 <p className='grid-txt-1'>{item.description_2}</p>
               </div>
               : active === 3 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
               <div className='project-grid'>
-                <div className='grid-img1'><img className='relief' src={item.v3}/></div>
+                <div className='grid-img1'><img className='relief' src={item.v3} alt='project'/></div>
                 <div className='grid-img2'>      
                   <div>            
                     <video autoPlay loop muted playsInline>
@@ -105,7 +105,7 @@ const ComplexFormat = (props) => {
               </div>
               : active === 3 && item.name_1 === 'touch collection' ?
               <div className='project-grid'>
-                <div className='grid-img1'><img src={item.v3}/></div>
+                <div className='grid-img1'><img src={item.v3} alt='project'/></div>
                 <div className='grid-img2'>
                   <video autoPlay loop muted playsInline>
                     <source src={item.h3} type="video/mp4"/>
@@ -122,7 +122,7 @@ const ComplexFormat = (props) => {
       })}
         <div className='footer-project'>
           <div className='border flex-around'>
-            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
             <Link to='/contact'>
               <img src={Message} alt='message'/>
             </Link>

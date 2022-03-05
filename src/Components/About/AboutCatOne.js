@@ -16,16 +16,16 @@ const AboutCatOne = ({img, text, next, title}) => {
               timeout={300}
               classNames='drag'
             >
-                <img className='big-image' src={img}/>
+                <img className='big-image' src={img} alt='working'/>
             </CSSTransition>
-            <img className='dots' src={Dots}/>
+            <img className='dots' src={Dots} alt='dots'/>
           </div>
           <div className='about-text'>
             <h2 className='sub-title uppercase mb-2 mob-title-about'>{title}</h2>
             <p className='about-p play x-medium'>{text}</p>
           </div>
         </div>
-        <img className='arrowAbout pointer' src={Arrow} onClick={next}/>
+        <img className='arrowAbout pointer' src={Arrow} onClick={next} alt='arrow'/>
       </div>
   )
 }

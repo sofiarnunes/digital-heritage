@@ -46,7 +46,7 @@ const About = (props) => {
     } else if(window.innerWidth <= 480){
       setMobile(true);
     }
-  }, [props.home, active])
+  }, [props.home, active, click, props])
 
   const imgAppear = (data) => {
     setClick(true);
@@ -95,7 +95,7 @@ const About = (props) => {
             }
             </div>
             <div className='small'>
-              <img src={ImgBW}/>
+              <img src={ImgBW} alt='rute with an artefact'/>
             </div>
             {/* LINHA */}
             <div>
@@ -120,7 +120,7 @@ const About = (props) => {
               </div>
             </div>
             <div className='footer-about flex-around'>
-              <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+              <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
               <Link to='/contact'>
                 <img src={Message} alt='message'/>
               </Link>
@@ -132,8 +132,8 @@ const About = (props) => {
               <Swiper navigation={false} modules={[Autoplay]} loop={true} autoplay={{ delay: 4500, disableOnInteraction: true }}>
                   <SwiperSlide>
                     <div className='flex-col'>
-                      <img src={Img1}/>
-                      <img  src={Dots1} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}}/>
+                      <img src={Img1} alt='working'/>
+                      <img  src={Dots1} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
                         <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Digital heritage</h2>
@@ -143,8 +143,8 @@ const About = (props) => {
                   </SwiperSlide>
                   <SwiperSlide>
                   <div className='flex-col'>
-                      <img src={Img2}/>
-                      <img  src={Dots2} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}}/>
+                      <img src={Img2} alt='Rute working'/>
+                      <img  src={Dots2} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
                         <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Digital heritage</h2>
@@ -154,8 +154,8 @@ const About = (props) => {
                   </SwiperSlide>
                   <SwiperSlide>
                   <div className='flex-col'>
-                      <img src={Img3}/>
-                      <img  src={Dots3} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}}/>
+                      <img src={Img3} alt='Rute working'/>
+                      <img  src={Dots3} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
                         <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Digital heritage</h2>
@@ -166,7 +166,7 @@ const About = (props) => {
               </Swiper>
               </div>
               <div className='footer-about flex-around'>
-                <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+                <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
                 <Link to='/contact'>
                   <img src={Message} alt='message'/>
                 </Link>
@@ -210,7 +210,7 @@ const About = (props) => {
             }
             </div>
             <div className='small'>
-              <img src={ImgBW}/>
+              <img src={ImgBW} alt='rute with an artefact'/>
             </div>
             {/* LINHA */}
             <div>
@@ -235,7 +235,7 @@ const About = (props) => {
               </div>
             </div>
             <div className='footer-about flex-around'>
-              <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+              <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
               <Link to='/contact'>
                 <img src={Message} alt='message'/>
               </Link>
@@ -247,8 +247,8 @@ const About = (props) => {
               <Swiper navigation={false} modules={[Autoplay]} loop={true} autoplay={{ delay: 4500, disableOnInteraction: true }}>
                   <SwiperSlide>
                     <div className='flex-col'>
-                      <img src={Img1}/>
-                      <img  src={Dots1} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}}/>
+                      <img src={Img1} alt='working'/>
+                      <img  src={Dots1} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
                         <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Missão</h2>
@@ -258,8 +258,8 @@ const About = (props) => {
                   </SwiperSlide>
                   <SwiperSlide>
                   <div className='flex-col'>
-                      <img src={Img2}/>
-                      <img  src={Dots2} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}}/>
+                      <img src={Img2} alt='rute working'/>
+                      <img  src={Dots2} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
                         <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Sobre mim</h2>
@@ -269,8 +269,8 @@ const About = (props) => {
                   </SwiperSlide>
                   <SwiperSlide>
                   <div className='flex-col'>
-                      <img src={Img3}/>
-                      <img  src={Dots3} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}}/>
+                      <img src={Img3} alt='rute working'/>
+                      <img  src={Dots3} style={{width: '50px', position: 'relative', zIndex:'1000', bottom: '20px'}} alt='dots'/>
 
                       <div style={{backgroundColor: 'white'}}>
                         <h2 className='sub-title uppercase mb-2 mob-title-about mt'>Sobre mim</h2>
@@ -281,7 +281,7 @@ const About = (props) => {
               </Swiper>
               </div>
               <div className='footer-about flex-around'>
-                <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+                <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
                 <Link to='/contact'>
                   <img src={Message} alt='message'/>
                 </Link>

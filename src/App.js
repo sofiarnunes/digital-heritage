@@ -34,7 +34,7 @@ function App() {
     } else if(window.innerWidth < 768){
       setVenus('middle2')
     }
-  }, [setVenus, window.innerWidth])
+  }, [setVenus])
 
   useEffect(() => {
     if(window.innerWidth > 480){
@@ -42,7 +42,7 @@ function App() {
     } else if(window.innerWidth <= 480){
       setNav('hamb')
     }
-  }, [setNav, window.innerWidth])
+  }, [setNav])
 
   const[home, setHome] = useState();
 

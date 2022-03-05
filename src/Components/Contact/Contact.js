@@ -14,7 +14,7 @@ const Contact = (props) => {
   
   useEffect(() => {
     props.home()
-  }, [props.home])  
+  }, [props.home, props])  
 
   const [click, setClick] = useState(false);
   const [values, setValues] = useState({
@@ -49,7 +49,7 @@ const Contact = (props) => {
     <div className='container-1 contacts-page'>
       {props.lang === 'en' ?
       <>
-            <img className='contact-bg' src={Bg}/>
+            <img className='contact-bg' src={Bg} alt='red box model openned'/>
       <h2 className='uppercase sub-title mt'>Contact our team</h2>
       <p className='msg'>We would be happy to answer your questions.</p>
       <p className='mb-2 msg'>Fill out the form and we will get back to you shortly.</p>
@@ -98,8 +98,8 @@ const Contact = (props) => {
           </div>
           <div>
             <h4 className='info-title-1'>Contact Information</h4>
-            <div className='flex'><img className='mb-0' src={Phone}/><p className='ml mb-0'>+351 914977566</p></div>
-            <div className='flex'><img className='mb' src={At}/><p className='ml mb'>xxx</p></div>
+            <div className='flex'><img className='mb-0' src={Phone} alt='phone'/><p className='ml mb-0'>+351 914977566</p></div>
+            <div className='flex'><img className='mb' src={At} alt='at'/><p className='ml mb'>xxx</p></div>
           </div>
           <div>
             <h4 className='info-title-2'>Support</h4>
@@ -113,7 +113,7 @@ const Contact = (props) => {
       </div>
       <div className='footer-contact'>
         <div className='border flex-around'>
-          <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+          <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
           <Link to='/contact'>
             <img src={Message} alt='message'/>
           </Link>
@@ -123,7 +123,7 @@ const Contact = (props) => {
       </>
       :
       <>
-        <img className='contact-bg' src={Bg}/>
+        <img className='contact-bg' src={Bg} alt='red box model openned'/>
         <h2 className='uppercase sub-title mt'>Contacte-nos</h2>
         <p className='msg'>Teremos todo o gosto em responder às suas perguntas.</p>
         <p className='mb-2 msg'>Preencha o formulário e retornaremos em breve.</p>
@@ -172,8 +172,8 @@ const Contact = (props) => {
             </div>
             <div>
               <h4 className='info-title-1'>Informações de contacto</h4>
-              <div className='flex'><img className='mb-0' src={Phone}/><p className='ml mb-0'>+351 914977566</p></div>
-              <div className='flex'><img className='mb' src={At}/><p className='ml mb'>xxx</p></div>
+              <div className='flex'><img className='mb-0' src={Phone} alt='phone'/><p className='ml mb-0'>+351 914977566</p></div>
+              <div className='flex'><img className='mb' src={At} alt='at'/><p className='ml mb'>xxx</p></div>
             </div>
             <div>
               <h4 className='info-title-2'>Suporte</h4>
@@ -187,7 +187,7 @@ const Contact = (props) => {
         </div>
         <div className='footer-contact'>
           <div className='border flex-around'>
-            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
             <Link to='/contact'>
               <img src={Message} alt='message'/>
             </Link>

@@ -38,13 +38,13 @@ const ComplexFormatMobile = (props) => {
               <p className='mb-2 center x-small'>{item.date_begin} - {item.date_end}</p>
               <Swiper style={{marginBottom: '50px'}} effect={"fade"} navigation={true} pagination={{ clickable: true }} modules={[EffectFade, Autoplay, Pagination, Navigation]} autoplay={{ delay: 2500, disableOnInteraction: true }}>
                 <SwiperSlide >    
-                    <img style={{width: '100vw'}} src={item.img_4}/>
+                    <img style={{width: '100vw'}} src={item.img_4} alt='project'/>
                 </SwiperSlide>
                 <SwiperSlide>    
-                    <img style={{width: '100%'}} src={item.img_5}/>
+                    <img style={{width: '100%'}} src={item.img_5} alt='project'/>
                 </SwiperSlide>
                 <SwiperSlide>    
-                    <img style={{width: '100%'}} src={item.img_6}/>
+                    <img style={{width: '100%'}} src={item.img_6} alt='project'/>
                 </SwiperSlide>                
               </Swiper>
               <ul className='project-menu x-small flex-bet uppercase'>
@@ -54,15 +54,15 @@ const ComplexFormatMobile = (props) => {
               </ul>
                 {active === 1 && item.name_1 === 'touch collection' ?
                   <div className='project-grid'>
-                    <div className='grid-img1'><img className='touch' src={item.h1}/></div>
+                    <div className='grid-img1'><img className='touch' src={item.h1} alt='project'/></div>
                     <p className='grid-txt-1'>{item.description_1}</p>
-                    <div className='grid-img2'><img className='touch' src={item.v1}/></div>
+                    <div className='grid-img2'><img className='touch' src={item.v1} alt='project'/></div>
                   </div>
                 : active === 1 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
                   <div className='project-grid'>
-                    <div className='grid-img1'><img src={item.h1}/></div>
+                    <div className='grid-img1'><img src={item.h1} alt='project'/></div>
                     <p className='grid-txt-1'>{item.description_1}</p>
-                    <div className='grid-img2'><img src={item.v1}/></div>
+                    <div className='grid-img2'><img src={item.v1} alt='project'/></div>
                   </div>
                 : active === 2 && item.name_1 === 'Egyptian low relief (300-250 BC)' ?
                 <div className='project-grid'>
@@ -80,7 +80,7 @@ const ComplexFormatMobile = (props) => {
                 </div>
                 : active === 2 && item.name_1 === 'touch collection' ?
                 <div className='project-grid'>
-                  <div className='grid-img1'><img className='touch2' src={item.h2}/></div>
+                  <div className='grid-img1'><img className='touch2' src={item.h2} alt='project photo'/></div>
                   <p className='grid-txt-1'>{item.description_2}</p>
                   <div className='grid-img2'>
                     <div className='touch'>
@@ -100,7 +100,7 @@ const ComplexFormatMobile = (props) => {
                     </div>
                   </div>                  
                   <p className='grid-txt-1'>{item.description_3}</p>
-                  <div className='grid-img2'><img className='relief' src={item.v3}/></div>
+                  <div className='grid-img2'><img className='relief' src={item.v3} alt='project'/></div>
                 </div>
                 : active === 3 && item.name_1 === 'touch collection' ?
                 <div className='project-grid'>
@@ -110,7 +110,7 @@ const ComplexFormatMobile = (props) => {
                     </video>
                   </div>
                   <p className='grid-txt-1'>{item.description_3}</p>
-                  <div className='grid-img2'><img src={item.v3}/></div>
+                  <div className='grid-img2'><img src={item.v3} alt='project'/></div>
                 </div>
                 : null
               }
@@ -121,7 +121,7 @@ const ComplexFormatMobile = (props) => {
       })}
         <div className='footer-project-comp'>
           <div className='border flex-around'>
-            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+            <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
             <Link to='/contact'>
               <img src={Message} alt='message'/>
             </Link>

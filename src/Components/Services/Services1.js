@@ -37,7 +37,7 @@ const Services = (props) => {
         setClicked(state);
       }
     }
-  }, [props.home, clicked, state, click])
+  }, [props.home, clicked, state, click, props])
 
   const handleShow = (data) => {
     setClicked(data);
@@ -60,7 +60,7 @@ const Services = (props) => {
         <div className='flex-wrap' style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <div className={clicked === 1 ? 'services-page-cont service-active' : 'services-page-cont'} onClick={() => handleShow(1)}>
             <div className={clicked === 2 || clicked === 3 ? `services-container disabled-1` : 'services-container'}> 
-              <img className='services-img' src={RestauroImg} />
+              <img className='services-img' src={RestauroImg} alt='Virtual Restoration and Reconstruction'/>
             </div>
             <div style={{marginTop: '20px'}}>
               <p className='center' style={{width: '100%'}}>Virtual Restoration and Reconstruction</p>
@@ -69,7 +69,7 @@ const Services = (props) => {
 
           <div className={clicked === 2 ? 'services-page-cont service-active' : 'services-page-cont'} onClick={() => handleShow(2)}>
             <div className={clicked === 1 || clicked === 3 ? `services-container disabled-1` : 'services-container'}> 
-            <img className='services-img' src={Box}/>
+            <img className='services-img' src={Box} alt='Digitalization of objects and collections'/>
             </div>
             <div style={{marginTop: '20px'}}>
               <p className='center'>Digitalization of objects and collections</p>
@@ -78,7 +78,7 @@ const Services = (props) => {
 
           <div className={clicked === 3 ? 'services-page-cont service-active' : 'services-page-cont'} onClick={() => handleShow(3)}>
             <div className={clicked === 1 || clicked === 2 ? `services-container disabled-1` : 'services-container'}> 
-              <img className='services-img' src={HouseClosed}/>
+              <img className='services-img' src={HouseClosed} alt='Architectural Models'/>
             </div>
             <div style={{marginTop: '20px'}}>
               <p className='center'>Architectural Models</p>
@@ -90,10 +90,10 @@ const Services = (props) => {
           <div ref={scrollRef} className='center service-box1'>
             <h4 className='x-large mb-3 mt-3'>Virtual Restoration and Reconstruction</h4>
             <div className='services-grid mb-3'>
-              <div className='services-grid-1'><img src={Restoration1}/></div>
-              <div className='services-grid-2'><img src={Restoration2}/></div>
-              <div className='services-grid-3'><img src={Restoration3}/></div>
-              <div className='services-grid-4'><img src={Restoration4}/></div>
+              <div className='services-grid-1'><img src={Restoration1} alt='restoration'/></div>
+              <div className='services-grid-2'><img src={Restoration2} alt='restoration'/></div>
+              <div className='services-grid-3'><img src={Restoration3} alt='restoration'/></div>
+              <div className='services-grid-4'><img src={Restoration4} alt='restoration'/></div>
             </div>
             <div className='medium txt-left' style={{padding: '1rem 0 5rem 0'}}>
               <p className='mb-2 regular'>We explore conservation and restoration methodologies through a range of digital tools to give new meaning to heritage objects.</p>
@@ -109,10 +109,10 @@ const Services = (props) => {
           <div ref={scrollRef} className='center service-box2'>
             <h4 className='x-large mb-3 mt-3'>Digitalization of objects and collections</h4>
             <div className='services-grid mb-3'>
-              <div className='services-grid-1'><img className='digit' src={Digitalization1}/></div>
-              <div className='services-grid-2'><img className='digit' src={Digitalization2}/></div>
-              <div className='services-grid-3'><img className='digit' src={Digitalization3}/></div>
-              <div className='services-grid-4'><img className='digit' src={Digitalization4}/></div>
+              <div className='services-grid-1'><img className='digit' src={Digitalization1} alt='digitalization'/></div>
+              <div className='services-grid-2'><img className='digit' src={Digitalization2} alt='digitalization'/></div>
+              <div className='services-grid-3'><img className='digit' src={Digitalization3} alt='digitalization'/></div>
+              <div className='services-grid-4'><img className='digit' src={Digitalization4} alt='digitalization'/></div>
             </div>
             <div className='medium txt-left'>
               <p className='mb-2 regular'>Using digital photogrammetry and 3D modelling, we create accurate and photorealistic high-resolution 3D documentation that best fits your needs, guaranteeing a fluid and correct visualization.</p>
@@ -123,10 +123,10 @@ const Services = (props) => {
         <div ref={scrollRef} className='center service-box3'>
           <h4 className='x-large mb-3 mt-3'>Architectural Models</h4>
           <div className='services-grid mb-3'>
-            <div className='services-grid-1'><img className='arq' src={Architecture1}/></div>
-            <div className='services-grid-2'><img className='arq' src={Architecture2}/></div>
-            <div className='services-grid-3'><img className='arq' src={Architecture3}/></div>
-            <div className='services-grid-4'><img className='arq' src={Architecture4}/></div>
+            <div className='services-grid-1'><img className='arq' src={Architecture1} alt='arquitecture'/></div>
+            <div className='services-grid-2'><img className='arq' src={Architecture2} alt='arquitecture'/></div>
+            <div className='services-grid-3'><img className='arq' src={Architecture3} alt='arquitecture'/></div>
+            <div className='services-grid-4'><img className='arq' src={Architecture4} alt='arquitecture'/></div>
           </div>
           <div className='medium txt-left'>
             <p className='mb-2 regular'>We create architectural 3D models based on CAD plans, using photorealistic materials and naturalistic assets that bring the model to life.</p>
@@ -137,7 +137,7 @@ const Services = (props) => {
       
       <div className='footer-services'>
         <div className='border flex-around'>
-          <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+          <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
           <Link to='/contact'>
             <img src={Message} alt='message'/>
           </Link>
@@ -153,7 +153,7 @@ const Services = (props) => {
         <div className='flex-wrap' style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <div className={clicked === 1 ? 'services-page-cont service-active' : 'services-page-cont'} onClick={() => handleShow(1)}>
             <div className={clicked === 2 || clicked === 3 ? `services-container disabled-1` : 'services-container'}> 
-              <img className='services-img' src={RestauroImg} />
+              <img className='services-img' src={RestauroImg} alt='Restauro e Reconstrução Virtual'/>
             </div>
             <div style={{marginTop: '20px'}}>
               <p className='center' style={{width: '100%'}}>Restauro e Reconstrução Virtual</p>
@@ -162,7 +162,7 @@ const Services = (props) => {
 
           <div className={clicked === 2 ? 'services-page-cont service-active' : 'services-page-cont'} onClick={() => handleShow(2)}>
             <div className={clicked === 1 || clicked === 3 ? `services-container disabled-1` : 'services-container'}> 
-            <img className='services-img' src={Box}/>
+            <img className='services-img' src={Box} alt='Objetos e Coleções Digitalizados'/>
             </div>
             <div style={{marginTop: '20px'}}>
               <p className='center'>Objetos e Coleções Digitalizados</p>
@@ -171,7 +171,7 @@ const Services = (props) => {
 
           <div className={clicked === 3 ? 'services-page-cont service-active' : 'services-page-cont'} onClick={() => handleShow(3)}>
             <div className={clicked === 1 || clicked === 2 ? `services-container disabled-1` : 'services-container'}> 
-              <img className='services-img' src={HouseClosed}/>
+              <img className='services-img' src={HouseClosed} alt='Modelos 3D arquitetónicos'/>
             </div>
             <div style={{marginTop: '20px'}}>
               <p className='center'>Modelos 3D arquitetónicos</p>
@@ -183,10 +183,10 @@ const Services = (props) => {
           <div ref={scrollRef} className='center service-box1'>
             <h4 className='x-large mb-3 mt-3'>Restauro e Reconstrução Virtual</h4>
             <div className='services-grid mb-3'>
-              <div className='services-grid-1'><img src={Restoration1}/></div>
-              <div className='services-grid-2'><img src={Restoration2}/></div>
-              <div className='services-grid-3'><img src={Restoration3}/></div>
-              <div className='services-grid-4'><img src={Restoration4}/></div>
+              <div className='services-grid-1'><img src={Restoration1} alt='restoration'/></div>
+              <div className='services-grid-2'><img src={Restoration2} alt='restoration'/></div>
+              <div className='services-grid-3'><img src={Restoration3} alt='restoration'/></div>
+              <div className='services-grid-4'><img src={Restoration4} alt='restoration'/></div>
             </div>
             <div className='medium txt-left' style={{padding: '1rem 0 5rem 0'}}>
               <p className='mb-2 regular'>Exploramos metodologias de conservação e restauro através de um conjunto de ferramentas digitais para dar um novo significado aos objetos patrimoniais.</p>
@@ -202,10 +202,10 @@ const Services = (props) => {
           <div ref={scrollRef} className='center service-box2'>
             <h4 className='x-large mb-3 mt-3'>Objetos e Coleções Digitalizados</h4>
             <div className='services-grid mb-3'>
-              <div className='services-grid-1'><img className='digit' src={Digitalization1}/></div>
-              <div className='services-grid-2'><img className='digit' src={Digitalization2}/></div>
-              <div className='services-grid-3'><img className='digit' src={Digitalization3}/></div>
-              <div className='services-grid-4'><img className='digit' src={Digitalization4}/></div>
+              <div className='services-grid-1'><img className='digit' src={Digitalization1} alt='digitalization'/></div>
+              <div className='services-grid-2'><img className='digit' src={Digitalization2} alt='digitalization'/></div>
+              <div className='services-grid-3'><img className='digit' src={Digitalization3} alt='digitalization'/></div>
+              <div className='services-grid-4'><img className='digit' src={Digitalization4} alt='digitalization'/></div>
             </div>
             <div className='medium txt-left'>
               <p className='mb-2 regular'>Utilizando a fotogrametria digital e a modelação 3D, nós criamos documentação 3D precisa e fotorrealista, de alta resolução, que melhor se adapta às suas necessidades, garantindo uma visualização fluida e correta.</p>
@@ -216,10 +216,10 @@ const Services = (props) => {
         <div ref={scrollRef} className='center service-box3'>
           <h4 className='x-large mb-3 mt-3'>Modelos 3D arquitetónicos</h4>
           <div className='services-grid mb-3'>
-            <div className='services-grid-1'><img className='arq' src={Architecture1}/></div>
-            <div className='services-grid-2'><img className='arq' src={Architecture2}/></div>
-            <div className='services-grid-3'><img className='arq' src={Architecture3}/></div>
-            <div className='services-grid-4'><img className='arq' src={Architecture4}/></div>
+            <div className='services-grid-1'><img className='arq' src={Architecture1} alt='arquitecture'/></div>
+            <div className='services-grid-2'><img className='arq' src={Architecture2} alt='arquitecture'/></div>
+            <div className='services-grid-3'><img className='arq' src={Architecture3} alt='arquitecture'/></div>
+            <div className='services-grid-4'><img className='arq' src={Architecture4} alt='arquitecture'/></div>
           </div>
           <div className='medium txt-left'>
             <p className='mb-2 regular'>Criamos modelos arquitetónicos 3D baseados em planos CAD, usando materiais fotorrealistas e elementos naturalistas que dão vida ao modelo.</p>
@@ -230,7 +230,7 @@ const Services = (props) => {
       
       <div className='footer-services'>
         <div className='border flex-around'>
-          <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+          <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
           <Link to='/contact'>
             <img src={Message} alt='message'/>
           </Link>

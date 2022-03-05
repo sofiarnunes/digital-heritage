@@ -71,21 +71,21 @@ const ServicesSection1PT = () => {
       <div className='flex-bet flex-wrap services-tab'>
         <div className={popup2 === true || popup3 === true ? `services-cont disabled` : 'services-cont'}>
           <div className='services-container'> 
-            <img className='services-img' src={service1} onClick={handleServiceOne} onMouseLeave={handleLeaveOne}/>
+            <img className='services-img' src={service1} onClick={handleServiceOne} onMouseLeave={handleLeaveOne} alt='Restauro e Reconstrução Virtual'/>
           </div>
           <p className='x-medium center mt-1'>Restauro e Reconstrução Virtual</p>
           {popup1 === true && <PopUp text='O restauro e a reconstrução virtual permitem que seja transportado através do tempo e das culturas.'/>}
         </div>
         <div className={popup1 === true || popup3 === true ? `services-cont disabled` : 'services-cont'}>
           <div className='services-container'> 
-            <img className='services-img' src={service2} onClick={handleServiceTwo} onMouseLeave={handleLeaveTwo}/>
+            <img className='services-img' src={service2} onClick={handleServiceTwo} onMouseLeave={handleLeaveTwo} alt='Objetos e Coleções Digitalizados'/>
           </div>
           <p className='x-medium center mt-1'>Objetos e Coleções Digitalizados</p>
           {popup2 === true && <PopUp text='A fotogrametria digital e a modelação 3D criam uma documentação 3D precisa e fotorrealista de alta resolução.'/>}
         </div>
         <div className={popup1 === true || popup2 === true ? `services-cont disabled` : 'services-cont'}>
           <div className='services-container'> 
-            <img className='services-img' src={service3} onClick={handleServiceThree} onMouseLeave={handleLeaveThree}/>
+            <img className='services-img' src={service3} onClick={handleServiceThree} onMouseLeave={handleLeaveThree} alt='Modelos 3D arquitetónicos'/>
           </div>
           <p className='x-medium center mt-1'>Modelos 3D arquitetónicos</p>
           {popup3 === true && <PopUp text='Modelos 3D arquitetônicos baseados em planos CAD, usando materiais fotorrealistas com aspeto naturalista.'/>}

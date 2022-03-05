@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 className='uppercase title title-hero'>Digital {big === true && <br></br>}heritage</h1>
         <p className='sub-title-hero x-small bold' >digital preservation, restoration, and reconstruction</p>
         <div className='description-container'>
-          <img src={FrameHero}/>
+          <img src={FrameHero} alt='frame'/>
           <p className='xx-small bold' style={{lineHeight: '24px'}}>Digital Heritage uses digital media to further understand, preserve, and disseminate cultural and natural heritage.</p>
         </div>
       </div>

@@ -72,7 +72,7 @@ const ServicesSection = () => {
       <div className='flex-bet'>
         <div className='services-cont' onClick={goToServices1}>
           <div className={popup2 === true || popup3 === true ? `services-container disabled` : 'services-container'}> 
-            <img className='services-img' src={service1} onMouseOver={handleServiceOne} onMouseLeave={handleLeaveOne}/>
+            <img className='services-img' src={service1} onMouseOver={handleServiceOne} onMouseLeave={handleLeaveOne} alt='virtual restoration and reconstruction'/>
           </div>
           <div>
             <p className='center'>Virtual Restoration and Reconstruction</p>
@@ -82,7 +82,7 @@ const ServicesSection = () => {
 
         <div className='services-cont'onClick={goToServices2}> 
           <div className={popup1 === true || popup3 === true ? `services-container disabled` : 'services-container'}> 
-          <img className='services-img' src={service2} onMouseOver={handleServiceTwo} onMouseLeave={handleLeaveTwo} />
+          <img className='services-img' src={service2} onMouseOver={handleServiceTwo} onMouseLeave={handleLeaveTwo} alt='digitalization of objects and collections'/>
           </div>
           <div>
             <p className='center'>Digitalization of objects and collections</p>
@@ -92,7 +92,7 @@ const ServicesSection = () => {
 
         <div className='services-cont' onClick={goToServices3}>
           <div className={popup1 === true || popup2 === true ? `services-container disabled` : 'services-container'}> 
-            <img className='services-img' src={service3} onMouseOver={handleServiceThree} onMouseLeave={handleLeaveThree}/>
+            <img className='services-img' src={service3} onMouseOver={handleServiceThree} onMouseLeave={handleLeaveThree} alt='architectural models'/>
           </div>
           <div>
             <p className='center'>Architectural Models</p>

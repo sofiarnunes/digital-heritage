@@ -28,7 +28,7 @@ const HomePage = (props) => {
     } else if(window.innerWidth <= 480){
       setImg(Venus2)
     }
-  }, [setImg, window.innerWidth, props.home()])
+  }, [setImg, window.innerWidth, props.home(), props])
 
   console.log(props)
  
@@ -37,7 +37,7 @@ const HomePage = (props) => {
     {props.lang === 'en' ?
       <>
       <Hero/>
-      <img src={img} className='venus-home'/>
+      <img src={img} className='venus-home' alt='venus background'/>
       {img === Venus ?
         <>
           <AboutSection/>
@@ -55,7 +55,7 @@ const HomePage = (props) => {
       : 
       <>
       <HeroPT/>
-      <img src={img} className='venus-home'/>
+      <img src={img} className='venus-home' alt='venus background'/>
       {img === Venus ?
         <>
           <AboutSectionPT/>

@@ -14,7 +14,7 @@ const Gallery = (props) => {
 
   useEffect(() => {
     props.home()
-  }, [props.home])
+  }, [props.home, props])
 
   const handleSort = (e) => {
     setType(e.target.value);
@@ -35,7 +35,7 @@ const Gallery = (props) => {
       timeout={500}
       classNames='fade'>
       <div className='container-1 container-projects' style={{height: '100%'}}>
-        <img className='bg-projects' src={Bg}/>
+        <img className='bg-projects' src={Bg} alt='projects background'/>
         <div className='title-cont mt'>
           {props.lang === 'en' ?
             <h2 className='sub-title mb-2 uppercase'>All projects</h2>
@@ -50,7 +50,7 @@ const Gallery = (props) => {
               <option value='2'>Digitalized Objects and Collections</option>
               <option value='3'>Architectural 3D Models</option>
             </select>
-            <img className='drop-arrow' src={Arrow}/>
+            <img className='drop-arrow' src={Arrow} alt='arrow'/>
           </div>
           :
           <div>
@@ -60,7 +60,7 @@ const Gallery = (props) => {
               <option value='2'>Objetos e Coleções Digitalizados</option>
               <option value='3'>Modelos 3D arquitetónicos</option>
             </select>
-            <img className='drop-arrow' src={Arrow}/>
+            <img className='drop-arrow' src={Arrow} alt='arrow'/>
           </div>
           }
         </div>
@@ -71,7 +71,7 @@ const Gallery = (props) => {
                 <div className='project-size' key={index}>
                     <div onClick={() => goToComponent (item)} className='project-cat ml-0' key={index}>
                       <div className='img-projects-cont'>
-                      <img className='img-projects' src={item.img_2}/>
+                      <img className='img-projects' src={item.img_2} alt='project photo'/>
                       </div>
                       <div>
                         <p className='projects-title uppercase medium bold'>{item.name_11}</p>
@@ -89,7 +89,7 @@ const Gallery = (props) => {
                 <div className='project-size' key={index}>
                     <div onClick={() => goToComponent (item)} className='project-cat ml-0' key={index}>
                       <div className='img-projects-cont'>
-                      <img className='img-projects' src={item.img_2}/>
+                      <img className='img-projects' src={item.img_2} alt='project photo'/>
                       </div>
                       <div>
                         <p className='projects-title uppercase medium bold'>{item.name_11}</p>
@@ -104,7 +104,7 @@ const Gallery = (props) => {
 
           <div className='footer-projects'>
             <div className='border flex-around'>
-              <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank'><img src={LinkedIn} alt='linkedin'/></a>
+              <a href='https://www.linkedin.com/in/rute-rebocho-1a1079155/' target='_blank' rel="noreferrer"><img src={LinkedIn} alt='linkedin'/></a>
               <Link to='/contact'>
                 <img src={Message} alt='message'/>
               </Link>
