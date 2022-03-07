@@ -115,6 +115,7 @@ ul {
     bottom: -5%;
     width: 100%;
     overflow: hidden;
+    z-index: 10;
   }
 
   .venus-home {
