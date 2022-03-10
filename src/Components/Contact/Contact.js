@@ -173,7 +173,7 @@ const Contact = (props) => {
             <div>
               <h4 className='info-title-1'>Informações de contacto</h4>
               <div className='flex'><img className='mb-0' src={Phone} alt='phone'/><p className='ml mb-0'>+351 914977566</p></div>
-              <div className='flex'><img className='mb' src={At} alt='at'/><p className='ml mb'>xxx</p></div>
+              <div className='flex'><img className='mb' src={At} alt='at'/><p className='ml mb'>rutemenor@gmail.com</p></div>
             </div>
             <div>
               <h4 className='info-title-2'>Suporte</h4>
